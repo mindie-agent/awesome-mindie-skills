@@ -1,5 +1,7 @@
 # Contributing
 
+[中文](CONTRIBUTING.zh.md) | English
+
 Help developers discover and share useful skills for Ascend inference engineering. Contributions can come from individual authors, engineering teams, or community collections. Each entry follows the same requirements for a clear task, traceable source, and documented execution conditions.
 
 ## Ways to contribute

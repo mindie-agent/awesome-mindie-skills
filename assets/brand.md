@@ -1,5 +1,7 @@
 # Brand assets
 
+[中文](brand.zh.md) | English
+
 The README banners pair an Awesome-themed version of the mindie-agent icon with the catalogue title, Ascend inference scope, and community audience. The white mascot wears black sunglasses against its purple tile. Both SVG banners embed the same PNG so that they render as self-contained images.
 
 The organization icon was retrieved from the [mindie-agent GitHub organization](https://github.com/mindie-agent) on 2026-10-15 ([avatar source](https://avatars.githubusercontent.com/u/322608234?v=4&s=256)). The icon retains its owner's rights. The catalogue's original artwork uses the repository's CC0-1.0 license.

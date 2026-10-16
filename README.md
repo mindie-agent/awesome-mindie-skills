@@ -41,7 +41,7 @@
 
 1. **选择技能**：根据工程任务在[技能目录](#技能目录)中选择适用的技能条目；
 2. **查阅范围与依赖**：阅读条目声明的用途、软硬件前提及执行条件（如离线分析、主机工具或需 NPU 硬件）；
-3. **获取源码**：将对应的上游仓库克隆至本地并检出记录的固定 commit（具体安装与依赖命令见[使用指南](docs/getting-started.md)）；
+3. **获取源码**：将对应的上游仓库克隆至本地并检出记录的固定 commit（具体安装与依赖命令见[使用指南](docs/getting-started.zh.md)）；
 4. **加载并提供输入**：在 AI 编程助手或智能体环境中加载技能的 `SKILL.md` 文件，指定目标项目路径与任务参数。
 
 **通用调用示例**：
@@ -59,7 +59,7 @@
 - `主机工具`：运行代码检查、设计规划或 CANN Simulator 模拟等主机侧工具；
 - `设备取决于检查项`：所需运行环境取决于用户选择的验证用例。
 
-审阅范围、复现案例及其证据见各条目记录。字段与判定规则见[条目格式](docs/catalog-format.md)和[验证规则](docs/validation-policy.md)。
+审阅范围、复现案例及其证据见各条目记录。字段与判定规则见[条目格式](docs/catalog-format.zh.md)和[验证规则](docs/validation-policy.zh.md)。
 
 <!-- CATALOG:START -->
 
@@ -270,7 +270,7 @@
 - **引入新来源项目**：推荐公开可访问、许可清晰的技能仓库与工作流集合；
 - **补充运行复现记录**：按技能的执行条件运行用例，分享软件与设备环境、输入、结果和日志。
 
-各来源的条目采用统一的收录标准。提交方式、元数据要求及维护命令见[贡献指南](CONTRIBUTING.md)。
+各来源的条目采用统一的收录标准。提交方式、元数据要求及维护命令见[贡献指南](CONTRIBUTING.zh.md)。
 
 ## 相关资源
 
@@ -278,7 +278,7 @@
 - [CANNBot Skills](https://gitcode.com/cann/cannbot-skills) — 上游技能源（CANN 环境配置、模型适配优化与多路线算子开发）。
 - [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills) — 社区通用智能体技能索引参考。
 - [Awesome manifesto](https://github.com/sindresorhus/awesome/blob/main/awesome.md) — 社区精选清单指导原则。
-- [品牌资产说明](assets/brand.md) — 标识素材与展示规范。
+- [品牌资产说明](assets/brand.zh.md) — 标识素材与展示规范。
 
 ## 许可证
 

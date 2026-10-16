@@ -1,5 +1,7 @@
 # Catalogue format
 
+[中文](catalog-format.zh.md) | English
+
 The catalogue uses YAML schema version 1 and Python 3.10 or later. Install `requirements.txt` before invoking the scripts. Paths are relative to this repository unless a field explicitly refers to upstream source.
 
 ## Taxonomy and sources

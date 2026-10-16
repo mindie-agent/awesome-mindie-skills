@@ -1,5 +1,7 @@
 # Find and use a skill
 
+[中文](getting-started.zh.md) | English
+
 ## Select the workflow
 
 Start from the task navigation in the [Chinese](../README.md) or [English](../README.en.md) README. Choose an entry whose expected output matches your task, then open its linked `SKILL.md`. Read the scope, inputs, workflow, and referenced files. Check the execution tag and the entry's metadata for source revision and validation evidence.

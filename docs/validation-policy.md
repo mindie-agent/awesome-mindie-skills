@@ -1,5 +1,7 @@
 # Review and execution validation
 
+[中文](validation-policy.zh.md) | English
+
 ## Definition review
 
 Every listed skill has a dated inspection of its definition at a fixed source revision. Check its declared task, core workflow, expected outputs, source ownership, license, and execution conditions. Record the files inspected and the scope of the review under `evidence/`.
