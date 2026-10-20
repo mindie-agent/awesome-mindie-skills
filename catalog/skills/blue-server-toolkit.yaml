@@ -1,0 +1,27 @@
+id: blue-server-toolkit
+category: delivery
+summary:
+  zh: 在昇腾 NPU 远程开发服务器上执行高频运维操作：SSH 连接检查与稳定性（ControlMaster 常驻复用）、代码同步、UT 运行、模型/镜像下载、日志查看、容器管理与文件传输；进阶文档覆盖 NPU 进程清理、芯片编号、vLLM 服务管理与 profiling、PD 分离拉起、HDK 安装等专题。
+  en: Operate remote Ascend NPU development servers for high-frequency tasks — SSH
+    connection checks and stability (persistent ControlMaster multiplexing), code
+    sync, UT execution, model and image download, log viewing, container management,
+    and file transfer; advanced docs cover NPU process cleanup, chip numbering, vLLM
+    service management and profiling, PD-disaggregated bring-up, and HDK installation.
+tags:
+- Ascend
+- vLLM Ascend
+- Docker
+- SSH
+execution: host
+role: task
+source:
+  project: blue-server-toolkit
+  path: SKILL.md
+  sha256: dfcf7a979111ed5d1956a1115ddd026cd272db90a87698056e20333e5be5971a
+review:
+  status: definition-reviewed
+  date: '2026-10-20'
+  evidence: evidence/blue-server-toolkit-definition-review-2026-10-20.md
+validation:
+  status: not-recorded
+  cases: []

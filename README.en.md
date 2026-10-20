@@ -63,14 +63,15 @@ Each entry's metadata links to its review scope, reproduction cases, and evidenc
 
 <!-- CATALOG:START -->
 
-53 skills · 10 categories
+54 skills · 10 categories
 
-Definitions reviewed: 53 · Entries with execution reproductions: 0. See each entry's metadata for scope.
+Definitions reviewed: 54 · Entries with execution reproductions: 0. See each entry's metadata for scope.
 
 | Upstream Source | Listed | Maintainer | License |
 |---|---|---|---|
 | [vllm-ascend-skills](https://github.com/pisceskkk/vllm-ascend-skills) | 17 | pisceskkk | MIT |
 | [cannbot-skills](https://gitcode.com/cann/cannbot-skills) | 36 | CANNBot SIG (cann) | CANN Open Software License v2.0 |
+| [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 1 | xuchi-0808 | MIT |
 
 - [Environment and dependencies](#environment)
 - [Model integration and conversion](#model-integration)
@@ -256,6 +257,8 @@ Map changes to build, correctness, and performance checks and record coverage.
 
 - [ascendc-code-review](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/ascendc-code-review/SKILL.md) — Route Ascend C reviews by file, PR, or targeted question to check coding rules and design consistency.
   `CANNBot` `Ascend C` `Host tools` · [Metadata](catalog/skills/ascendc-code-review.yaml)
+- [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit/blob/b9f5529774c67482696c830b91af25a39c82c949/SKILL.md) — Operate remote Ascend NPU development servers for high-frequency tasks — SSH connection checks and stability (persistent ControlMaster multiplexing), code sync, UT execution, model and image download, log viewing, container management, and file transfer; advanced docs cover NPU process cleanup, chip numbering, vLLM service management and profiling, PD-disaggregated bring-up, and HDK installation.
+  `Ascend` `vLLM Ascend` `Docker` `SSH` `Host tools` · [Metadata](catalog/skills/blue-server-toolkit.yaml)
 - [vllm-ascend-change-validation](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-change-validation/SKILL.md) — Map a vLLM or vllm-ascend diff to sufficient correctness, build and performance evidence and summarize coverage.
   `vLLM Ascend` `Hardware depends on checks` · [Metadata](catalog/skills/vllm-ascend-change-validation.yaml)
 

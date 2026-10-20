@@ -10,3 +10,8 @@ sources:
     revision: 393564ae43f304426db2c206e361cd43b2811413
     license: CANN Open Software License v2.0
     maintainer: CANNBot SIG (cann)
+  blue-server-toolkit:
+    repository: https://github.com/xuchi-0808/blue-server-toolkit
+    revision: b9f5529774c67482696c830b91af25a39c82c949
+    license: MIT
+    maintainer: xuchi-0808

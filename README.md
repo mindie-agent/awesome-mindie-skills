@@ -63,14 +63,15 @@
 
 <!-- CATALOG:START -->
 
-53 个技能 · 10 个分类
+54 个技能 · 10 个分类
 
-定义已审阅：53 · 已有运行复现记录：0。具体范围见各条目记录。
+定义已审阅：54 · 已有运行复现记录：0。具体范围见各条目记录。
 
 | 来源项目 | 已收录 | 维护者 | 许可证 |
 |---|---|---|---|
 | [vllm-ascend-skills](https://github.com/pisceskkk/vllm-ascend-skills) | 17 | pisceskkk | MIT |
 | [cannbot-skills](https://gitcode.com/cann/cannbot-skills) | 36 | CANNBot SIG (cann) | CANN Open Software License v2.0 |
+| [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 1 | xuchi-0808 | MIT |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -256,6 +257,8 @@
 
 - [ascendc-code-review](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/ascendc-code-review/SKILL.md) — 按文件、PR 或定向问题路由 Ascend C 代码检视，检查规范与设计一致性。
   `CANNBot` `Ascend C` `主机工具` · [条目](catalog/skills/ascendc-code-review.yaml)
+- [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit/blob/b9f5529774c67482696c830b91af25a39c82c949/SKILL.md) — 在昇腾 NPU 远程开发服务器上执行高频运维操作：SSH 连接检查与稳定性（ControlMaster 常驻复用）、代码同步、UT 运行、模型/镜像下载、日志查看、容器管理与文件传输；进阶文档覆盖 NPU 进程清理、芯片编号、vLLM 服务管理与 profiling、PD 分离拉起、HDK 安装等专题。
+  `Ascend` `vLLM Ascend` `Docker` `SSH` `主机工具` · [条目](catalog/skills/blue-server-toolkit.yaml)
 - [vllm-ascend-change-validation](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-change-validation/SKILL.md) — 根据 baseline/candidate 差异确定构建、正确性与性能检查，报告通过项及覆盖缺口。
   `vLLM Ascend` `设备取决于检查项` · [条目](catalog/skills/vllm-ascend-change-validation.yaml)
 
