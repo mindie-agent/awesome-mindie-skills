@@ -12,6 +12,6 @@ sources:
     maintainer: CANNBot SIG (cann)
   blue-server-toolkit:
     repository: https://github.com/xuchi-0808/blue-server-toolkit
-    revision: b9f5529774c67482696c830b91af25a39c82c949
+    revision: 5707a86922713f830f1f5fea2bedbb0a0a1cdc3a
     license: MIT
     maintainer: xuchi-0808

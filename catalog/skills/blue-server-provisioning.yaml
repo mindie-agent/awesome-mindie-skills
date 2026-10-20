@@ -1,0 +1,24 @@
+id: blue-server-provisioning
+category: environment
+summary:
+  zh: 全新昇腾服务器与容器初始化：裸机 HDK 驱动与固件安装（HwHiAiUser、先驱动后固件）、start-docker-A2/A3/A5.sh 建容器、镜像 ID 纪律。
+  en: Bring up fresh Ascend servers and containers — bare-metal HDK driver and firmware
+    installation (HwHiAiUser, driver before firmware), container creation with
+    start-docker-A2/A3/A5.sh, and image-ID discipline.
+tags:
+- Ascend
+- CANN
+- Docker
+execution: npu
+role: task
+source:
+  project: blue-server-toolkit
+  path: skills/blue-server-provisioning/SKILL.md
+  sha256: 82bdef8caeaefa0f8cfd7d6d6962c3c172648f588b67de9875e22c215464c7f0
+review:
+  status: definition-reviewed
+  date: '2026-10-20'
+  evidence: evidence/blue-server-toolkit-definition-review-2026-10-20.md
+validation:
+  status: not-recorded
+  cases: []
