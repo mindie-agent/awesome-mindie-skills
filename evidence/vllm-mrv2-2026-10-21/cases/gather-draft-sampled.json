@@ -1,0 +1,424 @@
+[
+  {
+    "name": "smoke_two_logits",
+    "kernel": "_gather_draft_sampled_kernel",
+    "target": "vllm.v1.worker.gpu.spec_decode.rejection_sampler:_gather_draft_sampled_kernel",
+    "source": {
+      "operator_id": "vllm.v1.worker.gpu.spec_decode.rejection_sampler._gather_draft_sampled_kernel",
+      "source_lock": "dc1e53e673a6beaac310c1683ee5f9ae2e7e7471ae27209d7f6890d63998546f",
+      "target_commit": "db9527a46873454610df6dbedf79a36d6bf1a7f6"
+    },
+    "scenario": "单请求含一个草稿位置；prefill 已完成，正常收集 token 与 position",
+    "grid": [
+      1
+    ],
+    "arguments": {
+      "draft_sampled_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "pos_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int64",
+        "initializer": "zeros"
+      },
+      "input_ids_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          17,
+          23
+        ]
+      },
+      "positions_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int64",
+        "initializer": "arange",
+        "start": 100
+      },
+      "logits_indices_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int64",
+        "initializer": "arange"
+      },
+      "expanded_idx_mapping_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "expanded_local_pos_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int32",
+        "initializer": "arange"
+      },
+      "prefill_len_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "full",
+        "value": 100
+      },
+      "num_logits": 2,
+      "BLOCK_SIZE": 1024
+    }
+  },
+  {
+    "name": "mixed_placeholder_state_mapping",
+    "kernel": "_gather_draft_sampled_kernel",
+    "target": "vllm.v1.worker.gpu.spec_decode.rejection_sampler:_gather_draft_sampled_kernel",
+    "source": {
+      "operator_id": "vllm.v1.worker.gpu.spec_decode.rejection_sampler._gather_draft_sampled_kernel",
+      "source_lock": "dc1e53e673a6beaac310c1683ee5f9ae2e7e7471ae27209d7f6890d63998546f",
+      "target_commit": "db9527a46873454610df6dbedf79a36d6bf1a7f6"
+    },
+    "scenario": "两个请求映射到状态槽 0 与 2；第二个请求的草稿位置满足占位符条件",
+    "grid": [
+      1
+    ],
+    "arguments": {
+      "draft_sampled_ptr": {
+        "shape": [
+          6
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "pos_ptr": {
+        "shape": [
+          6
+        ],
+        "dtype": "int64",
+        "initializer": "zeros"
+      },
+      "input_ids_ptr": {
+        "shape": [
+          6
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          11,
+          12,
+          13,
+          21,
+          22,
+          23
+        ]
+      },
+      "positions_ptr": {
+        "shape": [
+          6
+        ],
+        "dtype": "int64",
+        "initializer": "values",
+        "values": [
+          100,
+          101,
+          102,
+          200,
+          201,
+          202
+        ]
+      },
+      "logits_indices_ptr": {
+        "shape": [
+          6
+        ],
+        "dtype": "int64",
+        "initializer": "arange"
+      },
+      "expanded_idx_mapping_ptr": {
+        "shape": [
+          6
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      },
+      "expanded_local_pos_ptr": {
+        "shape": [
+          6
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "prefill_len_ptr": {
+        "shape": [
+          3
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          100,
+          0,
+          201
+        ]
+      },
+      "num_logits": 6,
+      "BLOCK_SIZE": 1024
+    }
+  },
+  {
+    "name": "tile_minus_one_1023",
+    "kernel": "_gather_draft_sampled_kernel",
+    "target": "vllm.v1.worker.gpu.spec_decode.rejection_sampler:_gather_draft_sampled_kernel",
+    "source": {
+      "operator_id": "vllm.v1.worker.gpu.spec_decode.rejection_sampler._gather_draft_sampled_kernel",
+      "source_lock": "dc1e53e673a6beaac310c1683ee5f9ae2e7e7471ae27209d7f6890d63998546f",
+      "target_commit": "db9527a46873454610df6dbedf79a36d6bf1a7f6"
+    },
+    "scenario": "单请求长草稿序列，1023 行，覆盖单 tile 最后一条掩码",
+    "grid": [
+      1
+    ],
+    "arguments": {
+      "draft_sampled_ptr": {
+        "shape": [
+          1023
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "pos_ptr": {
+        "shape": [
+          1023
+        ],
+        "dtype": "int64",
+        "initializer": "zeros"
+      },
+      "input_ids_ptr": {
+        "shape": [
+          1023
+        ],
+        "dtype": "int32",
+        "initializer": "arange",
+        "start": 10
+      },
+      "positions_ptr": {
+        "shape": [
+          1023
+        ],
+        "dtype": "int64",
+        "initializer": "arange",
+        "start": 1000
+      },
+      "logits_indices_ptr": {
+        "shape": [
+          1023
+        ],
+        "dtype": "int64",
+        "initializer": "arange"
+      },
+      "expanded_idx_mapping_ptr": {
+        "shape": [
+          1023
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "expanded_local_pos_ptr": {
+        "shape": [
+          1023
+        ],
+        "dtype": "int32",
+        "initializer": "arange"
+      },
+      "prefill_len_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "full",
+        "value": 1000
+      },
+      "num_logits": 1023,
+      "BLOCK_SIZE": 1024
+    }
+  },
+  {
+    "name": "tile_exact_1024",
+    "kernel": "_gather_draft_sampled_kernel",
+    "target": "vllm.v1.worker.gpu.spec_decode.rejection_sampler:_gather_draft_sampled_kernel",
+    "source": {
+      "operator_id": "vllm.v1.worker.gpu.spec_decode.rejection_sampler._gather_draft_sampled_kernel",
+      "source_lock": "dc1e53e673a6beaac310c1683ee5f9ae2e7e7471ae27209d7f6890d63998546f",
+      "target_commit": "db9527a46873454610df6dbedf79a36d6bf1a7f6"
+    },
+    "scenario": "单请求长草稿序列，1024 行，覆盖完整 tile",
+    "grid": [
+      1
+    ],
+    "arguments": {
+      "draft_sampled_ptr": {
+        "shape": [
+          1024
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "pos_ptr": {
+        "shape": [
+          1024
+        ],
+        "dtype": "int64",
+        "initializer": "zeros"
+      },
+      "input_ids_ptr": {
+        "shape": [
+          1024
+        ],
+        "dtype": "int32",
+        "initializer": "arange",
+        "start": 10
+      },
+      "positions_ptr": {
+        "shape": [
+          1024
+        ],
+        "dtype": "int64",
+        "initializer": "arange",
+        "start": 1000
+      },
+      "logits_indices_ptr": {
+        "shape": [
+          1024
+        ],
+        "dtype": "int64",
+        "initializer": "arange"
+      },
+      "expanded_idx_mapping_ptr": {
+        "shape": [
+          1024
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "expanded_local_pos_ptr": {
+        "shape": [
+          1024
+        ],
+        "dtype": "int32",
+        "initializer": "arange"
+      },
+      "prefill_len_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "full",
+        "value": 1000
+      },
+      "num_logits": 1024,
+      "BLOCK_SIZE": 1024
+    }
+  },
+  {
+    "name": "tile_plus_one_1025",
+    "kernel": "_gather_draft_sampled_kernel",
+    "target": "vllm.v1.worker.gpu.spec_decode.rejection_sampler:_gather_draft_sampled_kernel",
+    "source": {
+      "operator_id": "vllm.v1.worker.gpu.spec_decode.rejection_sampler._gather_draft_sampled_kernel",
+      "source_lock": "dc1e53e673a6beaac310c1683ee5f9ae2e7e7471ae27209d7f6890d63998546f",
+      "target_commit": "db9527a46873454610df6dbedf79a36d6bf1a7f6"
+    },
+    "scenario": "单请求长草稿序列，1025 行，覆盖第二个 program 的尾部掩码",
+    "grid": [
+      2
+    ],
+    "arguments": {
+      "draft_sampled_ptr": {
+        "shape": [
+          1025
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "pos_ptr": {
+        "shape": [
+          1025
+        ],
+        "dtype": "int64",
+        "initializer": "zeros"
+      },
+      "input_ids_ptr": {
+        "shape": [
+          1025
+        ],
+        "dtype": "int32",
+        "initializer": "arange",
+        "start": 10
+      },
+      "positions_ptr": {
+        "shape": [
+          1025
+        ],
+        "dtype": "int64",
+        "initializer": "arange",
+        "start": 1000
+      },
+      "logits_indices_ptr": {
+        "shape": [
+          1025
+        ],
+        "dtype": "int64",
+        "initializer": "arange"
+      },
+      "expanded_idx_mapping_ptr": {
+        "shape": [
+          1025
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "expanded_local_pos_ptr": {
+        "shape": [
+          1025
+        ],
+        "dtype": "int32",
+        "initializer": "arange"
+      },
+      "prefill_len_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "full",
+        "value": 1000
+      },
+      "num_logits": 1025,
+      "BLOCK_SIZE": 1024
+    }
+  }
+]

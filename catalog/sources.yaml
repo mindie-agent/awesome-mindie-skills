@@ -10,3 +10,8 @@ sources:
     revision: 393564ae43f304426db2c206e361cd43b2811413
     license: CANN Open Software License v2.0
     maintainer: CANNBot SIG (cann)
+  vllm-mrv2-kernel-tools:
+    repository: https://github.com/Liamup777/vllm-mrv2-kernel-tools
+    revision: ed71b1b56994e419998e4cd85f5ace013f92447d
+    license: Apache-2.0
+    maintainer: Liamup777
