@@ -10,3 +10,8 @@ sources:
     revision: 393564ae43f304426db2c206e361cd43b2811413
     license: CANN Open Software License v2.0
     maintainer: CANNBot SIG (cann)
+  vllm-ascend-pd-disaggregation-skills:
+    repository: https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills
+    revision: 2852c18ac977783f336f8c8864ca84dfee3f5cc6
+    license: MIT
+    maintainer: nwpu-zxr
