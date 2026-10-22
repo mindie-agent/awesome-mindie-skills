@@ -35,3 +35,8 @@ sources:
     revision: 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
     license: Apache-2.0
     maintainer: Yuli-yx collection; original authors credited in ATTRIBUTION.md
+  blue-server-toolkit:
+    repository: https://github.com/xuchi-0808/blue-server-toolkit
+    revision: 5707a86922713f830f1f5fea2bedbb0a0a1cdc3a
+    license: MIT
+    maintainer: xuchi-0808

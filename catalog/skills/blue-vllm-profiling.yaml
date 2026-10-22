@@ -1,0 +1,24 @@
+id: blue-vllm-profiling
+category: profiling
+summary:
+  zh: vLLM on Ascend 的 profiling 采集与判读：启动 flags、/start_profile 与 /stop_profile、稳态窗口选取、逐 rank analyse() 解析、step_trace_time 分桶、算子归因与瓶颈定位。
+  en: Capture and interpret profiling for vLLM on Ascend — launch flags, /start_profile
+    and /stop_profile, steady-state windows, per-rank analyse() parsing, step_trace_time
+    buckets, operator attribution, and bottleneck triage.
+tags:
+- vLLM Ascend
+- Profiling
+- torch_npu
+execution: npu
+role: task
+source:
+  project: blue-server-toolkit
+  path: skills/blue-vllm-profiling/SKILL.md
+  sha256: 4ab5d43b239ddbeab58f7c9c00c0307a921cfdd96be61e3c3b5ea97f75c492f1
+review:
+  status: definition-reviewed
+  date: '2026-10-20'
+  evidence: evidence/blue-server-toolkit-definition-review-2026-10-20.md
+validation:
+  status: not-recorded
+  cases: []

@@ -63,9 +63,9 @@ Each entry's metadata links to its review scope, reproduction cases, and evidenc
 
 <!-- CATALOG:START -->
 
-76 skills · 10 categories
+83 skills · 10 categories
 
-Definitions reviewed: 76 · Entries with execution reproductions: 0. See each entry's metadata for scope.
+Definitions reviewed: 83 · Entries with execution reproductions: 0. See each entry's metadata for scope.
 
 | Upstream Source | Listed | Maintainer | License |
 |---|---|---|---|
@@ -76,6 +76,7 @@ Definitions reviewed: 76 · Entries with execution reproductions: 0. See each en
 | [va-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 10 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | MIT |
 | [va-hixl-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 5 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | CANN-2.0 |
 | [va-apache-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 4 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | Apache-2.0 |
+| [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
 
 - [Environment and dependencies](#environment)
 - [Model integration and conversion](#model-integration)
@@ -96,6 +97,10 @@ Check drivers, CANN, framework compatibility, containers, and devices.
 
 - [ascendc-env-check](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/ascendc-env-check/SKILL.md) — Check NPU status, CANN configuration, and development dependencies, and report device architecture and environment findings.
   `CANNBot` `CANN` `NPU execution` · [Metadata](catalog/skills/ascendc-env-check.yaml)
+- [blue-server-provisioning](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-server-provisioning/SKILL.md) — Bring up fresh Ascend servers and containers — bare-metal HDK driver and firmware installation (HwHiAiUser, driver before firmware), container creation with start-docker-A2/A3/A5.sh, and image-ID discipline.
+  `Ascend` `CANN` `Docker` `NPU execution` · [Metadata](catalog/skills/blue-server-provisioning.yaml)
+- [blue-vllm-ascend-build](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-ascend-build/SKILL.md) — Build or upgrade vllm-ascend from source — editable two-step install, version pairing via vllm-main-verified.commit, setuptools 77 or newer, pip mirror setup, rsync-then-chown sync, and an error-keyword FAQ; pure CPU.
+  `vLLM Ascend` `CANN` `Host tools` · [Metadata](catalog/skills/blue-vllm-ascend-build.yaml)
 - [cann-env-setup](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/cann-env-setup/SKILL.md) — Guide CANN installation, environment configuration, and driver and Python interface checks.
   `CANNBot` `CANN` `NPU execution` · [Metadata](catalog/skills/cann-env-setup.yaml)
 - [machine-management](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/machine-management/SKILL.md) — Add, verify, repair, or remove a managed remote NPU host for this workspace.
@@ -134,6 +139,8 @@ Deploy colocated or disaggregated services and verify topology, endpoints, and r
 
 - [ascend-memcache-pooling](https://github.com/Yuli-yx/awesome-mindie-skills/blob/2844c25cd3f63cd0cd817cce866de827653babf2/skills/ascend-memcache-pooling/SKILL.md) — Deploy A3/A5 DRAM/SSD pools, preserve P/D transport, inspect Host RoCE and monitor multi-DP HBM, external reuse and SSD readback evidence.
   `MemCache` `MemFabric` `vLLM Ascend` `SSD` `Host RoCE` `Monitoring` `NPU execution` `Workflow` · [Metadata](catalog/skills/ascend-memcache-pooling.yaml)
+- [blue-vllm-service](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-service/SKILL.md) — Manage the vLLM-on-Ascend service lifecycle — start and stop vllm serve in containers, health checks, multi-service layout, P/D disaggregated bring-up (mooncake, load-balance proxy), TP and parallelism planning, and graph-mode debugging.
+  `vLLM Ascend` `NPU execution` · [Metadata](catalog/skills/blue-vllm-service.yaml)
 - [model-infer-parallel-analysis](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-analysis/SKILL.md) — Analyze model structure and Atlas A2/A3 specifications to propose parallel_config candidates with quantitative rationale.
   `CANNBot` `PyTorch` `Parallelism` `Host tools` · [Metadata](catalog/skills/model-infer-parallel-analysis.yaml)
 - [model-infer-parallel-impl](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-impl/SKILL.md) — Implement approved TP/EP configurations across parallel layers, communication groups, weights, and launch settings, then validate execution.
@@ -185,6 +192,8 @@ Collect or analyze traces, per-rank behavior, and HBM use with traceable evidenc
   `Ascend` `Profiling` `Offline analysis` · [Metadata](catalog/skills/ascend-profiling-analysis.yaml)
 - [ascend-profiling-collection](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/ascend-profiling-collection/SKILL.md) — Collect one Ascend torch-profiler case end-to-end on a workspace-managed remote NPU container.
   `Ascend` `vLLM Ascend` `NPU execution` `Workflow` · [Metadata](catalog/skills/ascend-profiling-collection.yaml)
+- [blue-vllm-profiling](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-profiling/SKILL.md) — Capture and interpret profiling for vLLM on Ascend — launch flags, /start_profile and /stop_profile, steady-state windows, per-rank analyse() parsing, step_trace_time buckets, operator attribution, and bottleneck triage.
+  `vLLM Ascend` `Profiling` `torch_npu` `NPU execution` · [Metadata](catalog/skills/blue-vllm-profiling.yaml)
 - [ge-memory-analysis](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/graph/ge-memory-analysis/SKILL.md) — Triage GE device memory, host leaks, and operator addresses, and attribute memory use from logs and reports.
   `CANNBot` `GE` `HBM` `Hardware depends on checks` · [Metadata](catalog/skills/ge-memory-analysis.yaml)
 - [model-infer-perf-breakdown](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-perf-breakdown/SKILL.md) — Break down kernel_details.csv and traces by model component and generate an HTML report of timing, gaps, and anomalous layers.
@@ -266,6 +275,8 @@ Reduce startup, communication, graph, and operator failures and verify fixes.
   `CANNBot` `Ascend C` `Hardware depends on checks` · [Metadata](catalog/skills/ascendc-precision-debug.yaml)
 - [asys-toolkit](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/tools/asys-toolkit/SKILL.md) — Use asys in Ascend EP environments to collect failure information, inspect device health, and parse diagnostic artifacts.
   `CANNBot` `CANN` `asys` `Hardware depends on checks` · [Metadata](catalog/skills/asys-toolkit.yaml)
+- [blue-npu-fabric](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-npu-fabric/SKILL.md) — Diagnose cross-machine NPU data-plane and fabric identity — hccs_ping RoCE checks and false positives, firewalld host-TCP blocking, 950DT (A5) rootinfo, ub_endpoint, and urma_admin, plus EID drift; routed by EI error codes.
+  `Ascend` `RoCE` `NPU execution` · [Metadata](catalog/skills/blue-npu-fabric.yaml)
 - [debugging-vllm-ascend-pd-accuracy](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/debugging-vllm-ascend-pd-accuracy/SKILL.md) — Diagnose PD repetition and accuracy divergence using P/D/proxy comparisons, single-variable experiments, KV fingerprints and first-divergence evidence.
   `vLLM Ascend` `PD` `KV transfer` `Accuracy` `NPU execution` `Workflow` · [Metadata](catalog/skills/debugging-vllm-ascend-pd-accuracy.yaml)
 - [driver-peermem-check](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/driver-peermem-check/SKILL.md) — 分析 Ascend 驱动 .run 包中是否包含 npu_peermem.ko 及相关源码。适用于：
@@ -304,6 +315,10 @@ Map changes to build, correctness, and performance checks and record coverage.
 
 - [ascendc-code-review](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/ascendc-code-review/SKILL.md) — Route Ascend C reviews by file, PR, or targeted question to check coding rules and design consistency.
   `CANNBot` `Ascend C` `Host tools` · [Metadata](catalog/skills/ascendc-code-review.yaml)
+- [blue-npu-ops](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-npu-ops/SKILL.md) — Operate a single NPU server — npu-smi status reading, HBM usage and orphan release, precise-PID cleanup of leftover processes, idle checks, A3 chip numbering and device visibility mapping, and torch-based FLOPS measurement.
+  `Ascend` `HBM` `NPU execution` · [Metadata](catalog/skills/blue-npu-ops.yaml)
+- [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-server-toolkit/SKILL.md) — Perform high-frequency daily operations on remote Ascend NPU development servers — SSH connection checks and stability (persistent ControlMaster multiplexing), code sync, UT execution, model and image download, log viewing, container management, and file transfer; also the routing hub when unsure which sibling skill fits.
+  `Ascend` `Docker` `SSH` `Host tools` · [Metadata](catalog/skills/blue-server-toolkit.yaml)
 - [hixl-pr-review](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/hixl-pr-review/SKILL.md) — HIXL 代码检视技能。用于检视 GitCode 上的 HIXL 项目 PR，当用户要求检视PR，审查PR时调用此skill。
 自动分析代码变更，检查内存泄漏、安全漏洞和可读性，生成结构化报告并发布评论。
 .

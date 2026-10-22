@@ -63,9 +63,9 @@
 
 <!-- CATALOG:START -->
 
-76 个技能 · 10 个分类
+83 个技能 · 10 个分类
 
-定义已审阅：76 · 已有运行复现记录：0。具体范围见各条目记录。
+定义已审阅：83 · 已有运行复现记录：0。具体范围见各条目记录。
 
 | 来源项目 | 已收录 | 维护者 | 许可证 |
 |---|---|---|---|
@@ -76,6 +76,7 @@
 | [va-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 10 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | MIT |
 | [va-hixl-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 5 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | CANN-2.0 |
 | [va-apache-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 4 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | Apache-2.0 |
+| [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -96,6 +97,10 @@
 
 - [ascendc-env-check](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/ascendc-env-check/SKILL.md) — 查询 NPU 状态、CANN 配置和开发依赖，输出设备架构与环境检查结果。
   `CANNBot` `CANN` `执行需 NPU` · [条目](catalog/skills/ascendc-env-check.yaml)
+- [blue-server-provisioning](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-server-provisioning/SKILL.md) — 全新昇腾服务器与容器初始化：裸机 HDK 驱动与固件安装（HwHiAiUser、先驱动后固件）、start-docker-A2/A3/A5.sh 建容器、镜像 ID 纪律。
+  `Ascend` `CANN` `Docker` `执行需 NPU` · [条目](catalog/skills/blue-server-provisioning.yaml)
+- [blue-vllm-ascend-build](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-ascend-build/SKILL.md) — 从源码构建或升级 vllm-ascend：两步 editable 安装、按 vllm-main-verified.commit 配对版本、setuptools≥77、pip 镜像配置、rsync 后 chown 同步、错误关键词 FAQ；纯 CPU 操作。
+  `vLLM Ascend` `CANN` `主机工具` · [条目](catalog/skills/blue-vllm-ascend-build.yaml)
 - [cann-env-setup](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/cann-env-setup/SKILL.md) — 指导 CANN 安装、环境变量配置及驱动和 Python 接口验证。
   `CANNBot` `CANN` `执行需 NPU` · [条目](catalog/skills/cann-env-setup.yaml)
 - [machine-management](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/machine-management/SKILL.md) — 接入、验证和修复远端 NPU 主机
@@ -134,6 +139,8 @@
 
 - [ascend-memcache-pooling](https://github.com/Yuli-yx/awesome-mindie-skills/blob/2844c25cd3f63cd0cd817cce866de827653babf2/skills/ascend-memcache-pooling/SKILL.md) — 部署 A3/A5 DRAM/SSD 池化，保留 P/D 传输，核对 Host RoCE，并监控多 DP 的 HBM、池复用与 SSD 回读证据。
   `MemCache` `MemFabric` `vLLM Ascend` `SSD` `Host RoCE` `Monitoring` `执行需 NPU` `流程编排` · [条目](catalog/skills/ascend-memcache-pooling.yaml)
+- [blue-vllm-service](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-service/SKILL.md) — vLLM on Ascend 的服务生命周期：容器内起停 vllm serve、健康检查、多服务布局、P/D 分离拉起（mooncake、负载均衡 proxy）、TP/并行度规划、graph 模式排障。
+  `vLLM Ascend` `执行需 NPU` · [条目](catalog/skills/blue-vllm-service.yaml)
 - [model-infer-parallel-analysis](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-analysis/SKILL.md) — 根据模型结构与 Atlas A2/A3 规格分析并行策略，输出 parallel_config 候选和定量依据。
   `CANNBot` `PyTorch` `Parallelism` `主机工具` · [条目](catalog/skills/model-infer-parallel-analysis.yaml)
 - [model-infer-parallel-impl](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-impl/SKILL.md) — 按确认的 TP/EP 配置改造并行层、通信组、权重和启动配置，并验证模型运行。
@@ -185,6 +192,8 @@
   `Ascend` `Profiling` `离线分析` · [条目](catalog/skills/ascend-profiling-analysis.yaml)
 - [ascend-profiling-collection](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/ascend-profiling-collection/SKILL.md) — 采集单次 Ascend torch profiler 工作负载
   `Ascend` `vLLM Ascend` `执行需 NPU` `流程编排` · [条目](catalog/skills/ascend-profiling-collection.yaml)
+- [blue-vllm-profiling](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-profiling/SKILL.md) — vLLM on Ascend 的 profiling 采集与判读：启动 flags、/start_profile 与 /stop_profile、稳态窗口选取、逐 rank analyse() 解析、step_trace_time 分桶、算子归因与瓶颈定位。
+  `vLLM Ascend` `Profiling` `torch_npu` `执行需 NPU` · [条目](catalog/skills/blue-vllm-profiling.yaml)
 - [ge-memory-analysis](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/graph/ge-memory-analysis/SKILL.md) — 分诊 GE Device 显存、Host 泄漏及算子地址问题，结合日志和报告进行内存归因。
   `CANNBot` `GE` `HBM` `设备取决于检查项` · [条目](catalog/skills/ge-memory-analysis.yaml)
 - [model-infer-perf-breakdown](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-perf-breakdown/SKILL.md) — 将 kernel_details.csv 与 trace 按模型组件拆解，生成耗时、空隙和异常层 HTML 报告。
@@ -266,6 +275,8 @@
   `CANNBot` `Ascend C` `设备取决于检查项` · [条目](catalog/skills/ascendc-precision-debug.yaml)
 - [asys-toolkit](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/tools/asys-toolkit/SKILL.md) — 在 Ascend EP 环境使用 asys 收集故障信息、检查设备健康并解析诊断产物。
   `CANNBot` `CANN` `asys` `设备取决于检查项` · [条目](catalog/skills/asys-toolkit.yaml)
+- [blue-npu-fabric](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-npu-fabric/SKILL.md) — 跨机 NPU 数据面与 fabric 身份排查：hccs_ping RoCE 连通性判读与假阳性识别、firewalld 主机 TCP 拦截、950DT（A5）rootinfo/ub_endpoint/urma_admin、EID 漂移，按 EI 错误码路由。
+  `Ascend` `RoCE` `执行需 NPU` · [条目](catalog/skills/blue-npu-fabric.yaml)
 - [debugging-vllm-ascend-pd-accuracy](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/debugging-vllm-ascend-pd-accuracy/SKILL.md) — 对照 P、D 和代理响应，以单变量实验、KV 指纹及首次输出偏差定位 P/D 复读、乱码和精度异常。
   `vLLM Ascend` `PD` `KV transfer` `Accuracy` `执行需 NPU` `流程编排` · [条目](catalog/skills/debugging-vllm-ascend-pd-accuracy.yaml)
 - [driver-peermem-check](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/driver-peermem-check/SKILL.md) — 检查驱动包的 peer-memory 支持
@@ -297,6 +308,10 @@
 
 - [ascendc-code-review](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/ascendc-code-review/SKILL.md) — 按文件、PR 或定向问题路由 Ascend C 代码检视，检查规范与设计一致性。
   `CANNBot` `Ascend C` `主机工具` · [条目](catalog/skills/ascendc-code-review.yaml)
+- [blue-npu-ops](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-npu-ops/SKILL.md) — 单服务器 NPU 运维操作：npu-smi 状态判读、HBM 占用与残留释放、按精确 PID 清理遗留进程、空闲检查、A3 芯片编号与可见设备映射、torch 实测算力。
+  `Ascend` `HBM` `执行需 NPU` · [条目](catalog/skills/blue-npu-ops.yaml)
+- [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-server-toolkit/SKILL.md) — 在昇腾 NPU 远程开发服务器上执行高频日常操作：SSH 连接检查与稳定性（ControlMaster 常驻复用）、代码同步、UT 运行、模型/镜像下载、日志查看、容器管理与文件传输；也是不确定用哪个姊妹 skill 时的路由入口。
+  `Ascend` `Docker` `SSH` `主机工具` · [条目](catalog/skills/blue-server-toolkit.yaml)
 - [hixl-pr-review](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/hixl-pr-review/SKILL.md) — 按 HIXL 规则检视代码变更
   `Ascend` `HIXL` `离线分析` `流程编排` · [条目](catalog/skills/hixl-pr-review.yaml)
 - [hixl-srs-doc-generator](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/hixl-srs-doc-generator/SKILL.md) — 编写和评审 HIXL 需求规格设计

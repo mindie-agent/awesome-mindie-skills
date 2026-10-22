@@ -1,0 +1,23 @@
+id: blue-vllm-service
+category: serving
+summary:
+  zh: vLLM on Ascend 的服务生命周期：容器内起停 vllm serve、健康检查、多服务布局、P/D 分离拉起（mooncake、负载均衡 proxy）、TP/并行度规划、graph 模式排障。
+  en: Manage the vLLM-on-Ascend service lifecycle — start and stop vllm serve in
+    containers, health checks, multi-service layout, P/D disaggregated bring-up
+    (mooncake, load-balance proxy), TP and parallelism planning, and graph-mode
+    debugging.
+tags:
+- vLLM Ascend
+execution: npu
+role: task
+source:
+  project: blue-server-toolkit
+  path: skills/blue-vllm-service/SKILL.md
+  sha256: e4c83b327d48ecc0491f36dee2cd51d385110d138aa6e627f4344419c8a902be
+review:
+  status: definition-reviewed
+  date: '2026-10-20'
+  evidence: evidence/blue-server-toolkit-definition-review-2026-10-20.md
+validation:
+  status: not-recorded
+  cases: []
