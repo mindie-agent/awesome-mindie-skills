@@ -30,6 +30,45 @@ git -C cannbot-skills checkout --detach 393564ae43f304426db2c206e361cd43b2811413
 
 CANNBot entrypoints use paths such as `model/<name>/SKILL.md`, `ops/<name>/SKILL.md`, `graph/<name>/SKILL.md`, and `tools/<name>/SKILL.md`. Entrypoints can route to sibling skills, platform-specific instructions, or plugin agents. The upstream installation guide describes plugin discovery and setup.
 
+### Additional PD workflows
+
+```bash
+git clone https://github.com/Yuli-yx/awesome-va-skills.git
+git -C awesome-va-skills checkout --detach 8d9f7ee56d088f15a398181590c4512bfc725d6f
+```
+
+The three listed entrypoints are under `.agents/skills/`. Preserve each entire
+package, including scripts, references, examples, agent metadata and LICENSE.
+Pure-role capacity acceptance also uses the AISBench PD benchmark package at
+the same revision. The AISBench skill originates from wangxiaoteng888; see the
+source collection's `ATTRIBUTION.md` for the original revision and adaptations.
+MIT applies to these three packages; other packages retain their own licenses.
+
+Install the selected skill's Python/tool dependencies and obtain the external
+AISBench/prefix-wrapper checkout where needed. Registration does not start
+services or download models. Inventories and case files are runtime inputs.
+The collection also contains legacy `.agents/lib/`, `.agents/scripts/` and
+`.remote-dev/` tooling: preserve those paths if choosing its managed-tool
+integration, or use configured MindIE remote companions. The legacy layout
+does not claim compatibility with current MindIE component interfaces.
+
+### Additional VA collection workflows
+
+The new `va-workflows`, `va-apache-workflows` and `va-hixl-workflows` sources
+share the complete collection snapshot below, with separate license groups:
+
+```bash
+git clone https://github.com/Yuli-yx/awesome-va-skills.git awesome-va-collection
+git -C awesome-va-collection checkout --detach 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
+```
+
+Keep the complete selected package and required `.agents/lib/`, `.agents/scripts/`
+and `.remote-dev/` paths. Legacy execution helpers have not been ported to a new
+MindIE coordinator API. Inspect differences before integrating with an existing
+workspace; do not overwrite its runtime state. Original package attribution and
+MIT/Apache/CANN license distinctions remain in the collection's ATTRIBUTION.md.
+The earlier three PD entries intentionally retain their separate reviewed source.
+
 ## Load the selected instructions
 
 Give your coding assistant the actual entrypoint path from `source.path` in the selected catalogue entry, the target repository, and the task inputs. If your client supports discovering skill directories, configure discovery using that client's documented settings and verify that the selected skill was loaded.

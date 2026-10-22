@@ -1,0 +1,22 @@
+id: aisbench-pd-benchmark
+category: benchmarking
+summary:
+  zh: 通过 P/D 代理运行 AISBench，构建定长或重复前缀数据，分离预热与正式测量并保留配置和结果。
+  en: Prepare proxy-routed AISBench cases with tokenizer-based datasets, separate warmup and formal runs, and captured configuration and results.
+tags:
+- vLLM Ascend
+- AISBench
+- PD
+execution: npu
+role: task
+source:
+  project: awesome-va-skills
+  path: .agents/skills/aisbench-pd-benchmark/SKILL.md
+  sha256: cf558cd50f3a05089b1dff3482c7a50807e299aa9dd3ec5edb26d290c8ae6cb3
+review:
+  status: definition-reviewed
+  date: '2026-10-19'
+  evidence: evidence/selected-pd-skills-review-2026-10-19.md
+validation:
+  status: not-recorded
+  cases: []

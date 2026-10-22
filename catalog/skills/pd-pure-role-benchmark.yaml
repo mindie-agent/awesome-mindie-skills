@@ -1,0 +1,23 @@
+id: pd-pure-role-benchmark
+category: benchmarking
+summary:
+  zh: 分别验收纯 P、纯 D 容量及端到端稳态 QPS，核对 TTFT、TPOT、缓存命中、角色瓶颈和 MTP 对照。
+  en: Validate pure Prefill and Decode capacity and end-to-end steady QPS with TTFT, TPOT, cache-hit, role-bottleneck and MTP controls.
+tags:
+- vLLM Ascend
+- AISBench
+- PD
+- MTP
+execution: npu
+role: workflow
+source:
+  project: awesome-va-skills
+  path: .agents/skills/pd-pure-role-benchmark/SKILL.md
+  sha256: 10ce3fbfe70d095d2393159a70104501ed0e89f038f8a34419af249bbe450a6b
+review:
+  status: definition-reviewed
+  date: '2026-10-19'
+  evidence: evidence/selected-pd-skills-review-2026-10-19.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,21 @@
+id: machine-management
+category: environment
+summary:
+  zh: 接入、验证和修复远端 NPU 主机
+  en: Add, verify, repair, or remove a managed remote NPU host for this workspace.
+tags:
+- Ascend
+- vLLM Ascend
+execution: depends-on-checks
+role: workflow
+source:
+  project: va-workflows
+  path: .agents/skills/machine-management/SKILL.md
+  sha256: 52afb57d3926f6f9176b185c297eaa4e6ec5b44df72ea6ded0431391869a939e
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,21 @@
+id: modelscope
+category: model-integration
+summary:
+  zh: 下载、续传和校验 ModelScope 权重
+  en: Download, resume, status-check, and SHA256-verify ModelScope model weights.
+tags:
+- Ascend
+- vLLM Ascend
+execution: host
+role: workflow
+source:
+  project: va-workflows
+  path: .agents/skills/modelscope/SKILL.md
+  sha256: b4b5377a496ddf2a95eb758f7563967d024226c58a4598b4e874beb071f74bcb
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

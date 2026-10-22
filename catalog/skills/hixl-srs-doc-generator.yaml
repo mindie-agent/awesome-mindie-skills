@@ -1,0 +1,26 @@
+id: hixl-srs-doc-generator
+category: delivery
+summary:
+  zh: 编写和评审 HIXL 需求规格设计
+  en: '当用户要求为 HIXL 或 ADXL 功能生成、扩展或评审 SRS/需求设计文档时使用，特别涉及 src/hixl 或 src/llm_datadist/adxl
+    目录下的变更。
+
+    触发关键词包括 SRS、设计文档、需求描述、功能要点、技术方案、相关文档、测试方案，或将简短需求转化为完整设计文档的请求。
+
+    .'
+tags:
+- Ascend
+- HIXL
+execution: offline
+role: workflow
+source:
+  project: va-hixl-workflows
+  path: .agents/skills/hixl-srs-doc-generator/SKILL.md
+  sha256: eb0afc9f3c328a7c9fce196bb1842882ef38011dfbd03ae2eff2e371deaeaf78
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

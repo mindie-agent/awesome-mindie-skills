@@ -15,3 +15,23 @@ sources:
     revision: 2844c25cd3f63cd0cd817cce866de827653babf2
     license: CC0-1.0 AND MIT (see package NOTICE)
     maintainer: zouyida2052 and Yuli-yx
+  awesome-va-skills:
+    repository: https://github.com/Yuli-yx/awesome-va-skills
+    revision: 8d9f7ee56d088f15a398181590c4512bfc725d6f
+    license: MIT (the three listed packages only)
+    maintainer: Yuli-yx (adapted collection); wangxiaoteng888 (AISBench origin)
+  va-workflows:
+    repository: https://github.com/Yuli-yx/awesome-va-skills
+    revision: 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
+    license: MIT
+    maintainer: Yuli-yx collection; original authors credited in ATTRIBUTION.md
+  va-hixl-workflows:
+    repository: https://github.com/Yuli-yx/awesome-va-skills
+    revision: 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
+    license: CANN-2.0
+    maintainer: Yuli-yx collection; original authors credited in ATTRIBUTION.md
+  va-apache-workflows:
+    repository: https://github.com/Yuli-yx/awesome-va-skills
+    revision: 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
+    license: Apache-2.0
+    maintainer: Yuli-yx collection; original authors credited in ATTRIBUTION.md

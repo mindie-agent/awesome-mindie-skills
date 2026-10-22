@@ -1,0 +1,23 @@
+id: debugging-vllm-ascend-pd-accuracy
+category: debugging
+summary:
+  zh: 对照 P、D 和代理响应，以单变量实验、KV 指纹及首次输出偏差定位 P/D 复读、乱码和精度异常。
+  en: Diagnose PD repetition and accuracy divergence using P/D/proxy comparisons, single-variable experiments, KV fingerprints and first-divergence evidence.
+tags:
+- vLLM Ascend
+- PD
+- KV transfer
+- Accuracy
+execution: npu
+role: workflow
+source:
+  project: awesome-va-skills
+  path: .agents/skills/debugging-vllm-ascend-pd-accuracy/SKILL.md
+  sha256: becf2759d95780407c744edc0d6e1c69ae828adcbcd349c343583ab7f54ea90e
+review:
+  status: definition-reviewed
+  date: '2026-10-19'
+  evidence: evidence/selected-pd-skills-review-2026-10-19.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,25 @@
+id: hixl-ut-generator
+category: delivery
+summary:
+  zh: 生成与现有风格一致的 HIXL 单元测试方案
+  en: '为 HIXL 仓库中的 C++ 改动生成单元测试（UT）方案与代码草稿。
+
+    支持三种输入源：
+
+    1.'
+tags:
+- Ascend
+- HIXL
+execution: offline
+role: workflow
+source:
+  project: va-hixl-workflows
+  path: .agents/skills/hixl-ut-generator/SKILL.md
+  sha256: 6f20964bd37dd9743af59c89f774ca75785b2d348bc78be6ca3774bd91cefb4f
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []
