@@ -11,7 +11,7 @@ sources:
     license: CANN Open Software License v2.0
     maintainer: CANNBot SIG (cann)
   ascend-pooling-workflows:
-    repository: https://github.com/zouyida2052/awesome-mindie-skills
-    revision: cc87235a79fc2145afecfbd03b59fc772ee41724
-    license: CC0-1.0
-    maintainer: zouyida2052
+    repository: https://github.com/Yuli-yx/awesome-mindie-skills
+    revision: 2844c25cd3f63cd0cd817cce866de827653babf2
+    license: CC0-1.0 AND MIT (see package NOTICE)
+    maintainer: zouyida2052 and Yuli-yx

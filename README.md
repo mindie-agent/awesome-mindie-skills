@@ -71,7 +71,7 @@
 |---|---|---|---|
 | [vllm-ascend-skills](https://github.com/pisceskkk/vllm-ascend-skills) | 17 | pisceskkk | MIT |
 | [cannbot-skills](https://gitcode.com/cann/cannbot-skills) | 36 | CANNBot SIG (cann) | CANN Open Software License v2.0 |
-| [ascend-pooling-workflows](https://github.com/zouyida2052/awesome-mindie-skills) | 1 | zouyida2052 | CC0-1.0 |
+| [ascend-pooling-workflows](https://github.com/Yuli-yx/awesome-mindie-skills) | 1 | zouyida2052 and Yuli-yx | CC0-1.0 AND MIT (see package NOTICE) |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -110,8 +110,8 @@
 
 部署共置或 PD 分离服务，验证拓扑、端点与请求。
 
-- [ascend-memcache-pooling](https://github.com/zouyida2052/awesome-mindie-skills/blob/cc87235a79fc2145afecfbd03b59fc772ee41724/skills/ascend-memcache-pooling/SKILL.md) — 依据 MemCache 与 MemFabric 官方资料部署 A3、A5 UB/UBoE 二级或三级 KV 池化，核对存储进程、配置和回读。
-  `MemCache` `MemFabric` `vLLM Ascend` `SSD` `执行需 NPU` `流程编排` · [条目](catalog/skills/ascend-memcache-pooling.yaml)
+- [ascend-memcache-pooling](https://github.com/Yuli-yx/awesome-mindie-skills/blob/2844c25cd3f63cd0cd817cce866de827653babf2/skills/ascend-memcache-pooling/SKILL.md) — 部署 A3/A5 DRAM/SSD 池化，保留 P/D 传输，核对 Host RoCE，并监控多 DP 的 HBM、池复用与 SSD 回读证据。
+  `MemCache` `MemFabric` `vLLM Ascend` `SSD` `Host RoCE` `Monitoring` `执行需 NPU` `流程编排` · [条目](catalog/skills/ascend-memcache-pooling.yaml)
 - [model-infer-parallel-analysis](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-analysis/SKILL.md) — 根据模型结构与 Atlas A2/A3 规格分析并行策略，输出 parallel_config 候选和定量依据。
   `CANNBot` `PyTorch` `Parallelism` `主机工具` · [条目](catalog/skills/model-infer-parallel-analysis.yaml)
 - [model-infer-parallel-impl](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-impl/SKILL.md) — 按确认的 TP/EP 配置改造并行层、通信组、权重和启动配置，并验证模型运行。

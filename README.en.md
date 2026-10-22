@@ -71,7 +71,7 @@ Definitions reviewed: 54 · Entries with execution reproductions: 0. See each en
 |---|---|---|---|
 | [vllm-ascend-skills](https://github.com/pisceskkk/vllm-ascend-skills) | 17 | pisceskkk | MIT |
 | [cannbot-skills](https://gitcode.com/cann/cannbot-skills) | 36 | CANNBot SIG (cann) | CANN Open Software License v2.0 |
-| [ascend-pooling-workflows](https://github.com/zouyida2052/awesome-mindie-skills) | 1 | zouyida2052 | CC0-1.0 |
+| [ascend-pooling-workflows](https://github.com/Yuli-yx/awesome-mindie-skills) | 1 | zouyida2052 and Yuli-yx | CC0-1.0 AND MIT (see package NOTICE) |
 
 - [Environment and dependencies](#environment)
 - [Model integration and conversion](#model-integration)
@@ -110,8 +110,8 @@ Integrate models, convert weights, and verify configuration and input/output con
 
 Deploy colocated or disaggregated services and verify topology, endpoints, and requests.
 
-- [ascend-memcache-pooling](https://github.com/zouyida2052/awesome-mindie-skills/blob/cc87235a79fc2145afecfbd03b59fc772ee41724/skills/ascend-memcache-pooling/SKILL.md) — Deploy two- or three-tier KV pools on A3 and A5 UB/UBoE using official MemCache and MemFabric guidance, with owner, configuration and readback checks.
-  `MemCache` `MemFabric` `vLLM Ascend` `SSD` `NPU execution` `Workflow` · [Metadata](catalog/skills/ascend-memcache-pooling.yaml)
+- [ascend-memcache-pooling](https://github.com/Yuli-yx/awesome-mindie-skills/blob/2844c25cd3f63cd0cd817cce866de827653babf2/skills/ascend-memcache-pooling/SKILL.md) — Deploy A3/A5 DRAM/SSD pools, preserve P/D transport, inspect Host RoCE and monitor multi-DP HBM, external reuse and SSD readback evidence.
+  `MemCache` `MemFabric` `vLLM Ascend` `SSD` `Host RoCE` `Monitoring` `NPU execution` `Workflow` · [Metadata](catalog/skills/ascend-memcache-pooling.yaml)
 - [model-infer-parallel-analysis](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-analysis/SKILL.md) — Analyze model structure and Atlas A2/A3 specifications to propose parallel_config candidates with quantitative rationale.
   `CANNBot` `PyTorch` `Parallelism` `Host tools` · [Metadata](catalog/skills/model-infer-parallel-analysis.yaml)
 - [model-infer-parallel-impl](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-impl/SKILL.md) — Implement approved TP/EP configurations across parallel layers, communication groups, weights, and launch settings, then validate execution.

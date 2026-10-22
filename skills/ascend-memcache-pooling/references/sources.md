@@ -62,3 +62,10 @@ git -C memfabric-wiki checkout a0534877ef59273fdb6dd40e6524783daa74c8a2
 - The SSD introduction and detailed guide disagree about recovery/force initialization, standalone memory suggestions and one scratch-key spelling. Preserve these conflicts and resolve against the installed implementation as described in [SSD](deployment.md#add-ssd-to-an-established-dram-pool).
 - Current operator installation uses mfcli; the older A5 troubleshooting import workaround has narrower prerequisites. No universal command to disable signature verification, TLS or edit registers is supplied.
 - Version support for model-specific hybrid layouts, layerwise loading and PD multi-connectors belongs to the selected inference framework; the historical v1.1 integration example is not a compatibility promise for every current version.
+
+
+## Integrated contribution provenance (2026-10-21)
+
+- Base guide: [zouyida2052's pooling contribution](https://github.com/zouyida2052/awesome-mindie-skills/tree/f5108884c387175025eecf2e58021828f802a204/skills/ascend-memcache-pooling), CC0-1.0. The official repository pins and document hashes above are inherited from that review; this integration does not claim to have repeated every official-source inspection or hardware case.
+- Host RoCE, P/D configuration and multi-DP monitor: Yuli-yx's workspace-authored `a5-memcache-pooling` guidance and maintained `cache_metrics.py`, consolidated into this package under MIT. The package adds offline tests and explicit validation boundaries. Deployment recipes must still be checked against the exact installed CANN, HDK, MemFabric, MemCache and inference releases.
+- No vendor attachments or kernel binaries were copied. Redistribution permission is not inferred from possession of an attachment. The source snapshot for the final catalogue entry is recorded in `catalog/sources.yaml`; skill-level notices travel with the complete package.

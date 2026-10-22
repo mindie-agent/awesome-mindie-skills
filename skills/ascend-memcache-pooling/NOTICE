@@ -1,0 +1,15 @@
+Ascend MemCache pooling contribution
+
+The original A3/A5 UB/UBoE and SSD workflow and official-source ledger were
+authored by zouyida2052 in awesome-mindie-skills, branch
+feat/memcache-a3-a5-pooling, commit f5108884c387175025eecf2e58021828f802a204,
+under CC0-1.0. Their source attribution is retained in references/sources.md.
+
+Yuli-yx contributes the Host RoCE/P-D integration guidance, monitoring and
+controlled-validation references, cache_metrics.py and its regression tests.
+These additions and modifications are provided under the MIT license in
+LICENSES/MIT.txt. Original CC0 material remains CC0 (LICENSES/CC0-1.0.txt).
+Official projects linked in the source ledger retain their own licenses.
+
+No third-party vendor route scripts, binary kernel installers, private endpoint
+inventories, machine logs or historical benchmark datasets are redistributed.
