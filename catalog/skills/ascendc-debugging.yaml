@@ -1,0 +1,22 @@
+id: ascendc-debugging
+category: debugging
+summary:
+  zh: 诊断编译、运行和数值问题，验证小规模、典型及边界用例。
+  en: Diagnose compile/runtime/numerical failures and verify small, typical, and boundary cases.
+tags:
+- AscendC Agent
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: ascendc-skills
+  path: skills/usability/op-gen/ascendc-debugging/SKILL.md
+  sha256: c7607e0f4dc1dd4656c90b1002bd47ac15c7df9f0aa3742430d1685c895e72be
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

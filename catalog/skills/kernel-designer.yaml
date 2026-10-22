@@ -1,0 +1,22 @@
+id: kernel-designer
+category: operators
+summary:
+  zh: 为 Triton-Ascend 任务设计算法草图和执行策略。
+  en: Design an algorithm sketch and execution strategy for a Triton-Ascend task.
+tags:
+- AscendOpGenAgent
+- Triton
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: opgen
+  path: skills/triton/kernel-designer/SKILL.md
+  sha256: ddeeff287fd9eac76ef7ade73365d8c6312da06a2890c05aa61387f6fd4d1072
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,22 @@
+id: ops-direct-invoke-maintain
+category: delivery
+summary:
+  zh: 维护直调工作流契约、角色定义和回归检查。
+  en: Maintain direct-invocation workflow contracts, role definitions, and regression checks.
+tags:
+- CANNBot
+- Ascend C
+- Review and delivery
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-direct-invoke/skills/ops-direct-invoke-maintain/SKILL.md
+  sha256: cc9d8ef84fa527bd6aa21443d6b76fdbe870de93a527cd48f5158bf30a8e6358
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

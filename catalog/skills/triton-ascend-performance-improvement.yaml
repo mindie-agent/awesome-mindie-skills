@@ -1,0 +1,24 @@
+id: triton-ascend-performance-improvement
+category: operators
+summary:
+  en: Look up Triton-Ascend guidance on measured tile, load, reduction, and pass optimization patterns for the documented
+    platform and compiler scope.
+  zh: 查询 Triton-Ascend 实测 Tile、加载、归约和 Pass 优化模式指南，使用时核对所述平台和编译器范围。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/evolved-improvement/triton-ascend-performance-improvement/SKILL.md
+  sha256: afe73dc7f4eb78909a64d0b633322833866655e50143375e1675a578a90e2e3b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

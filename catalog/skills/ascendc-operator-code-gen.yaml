@@ -1,0 +1,23 @@
+id: ascendc-operator-code-gen
+category: operators
+summary:
+  zh: 生成 AscendC Host/Kernel 代码、注册 PyTorch 并衔接构建测试。
+  en: Generate AscendC host/kernel code, register it in PyTorch, and invoke build/test steps.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: ascend-gitcode-agent-skills
+  path: community/Op/ascendc-operator-code-gen/SKILL.md
+  sha256: 581339f25c621f5ee1ff390916b01a7a347ea2e65fce3d18239752ca68b7926c
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

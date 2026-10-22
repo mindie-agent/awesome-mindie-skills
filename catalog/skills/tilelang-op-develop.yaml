@@ -2,8 +2,8 @@ id: tilelang-op-develop
 category: operators
 summary:
   zh: 根据设备探测结果路由到 Ascend910 或 Ascend950 的 TileLang 实现与精度验证流程。
-  en: Use device evidence to route TileLang implementation and accuracy validation to the Ascend910 or
-    Ascend950 workflow.
+  en: Use device evidence to route TileLang implementation and accuracy validation to the Ascend910 or Ascend950
+    workflow.
 tags:
 - CANNBot
 - TileLang
@@ -15,8 +15,8 @@ source:
   sha256: e485d27737ff7a3e84d139dc92f84ff42415f7d1c6faf87a92df5dd2d6135302
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

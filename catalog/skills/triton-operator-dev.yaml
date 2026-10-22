@@ -1,0 +1,22 @@
+id: triton-operator-dev
+category: operators
+summary:
+  zh: 组织 Triton 环境、设计、编码、检视、精度验证和性能迭代。
+  en: Coordinate Triton environment, design, coding, review, numerical validation, and performance iteration.
+tags:
+- Model Agent
+- Triton
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: model-agent
+  path: skills/optimization/triton-operator-dev/SKILL.md
+  sha256: 402b5d5d75ca7e900b130a13627e50935b1c48a6e8a50fde19cd5d0ccd7071b2
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

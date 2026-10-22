@@ -1,0 +1,22 @@
+id: knowledge-query
+category: operators
+summary:
+  zh: 在算子设计、实现、测试和优化决策前检索匹配平台的知识卡。
+  en: Retrieve platform-aware knowledge cards before operator design, implementation, testing, or optimization decisions.
+tags:
+- CANNBot Knowledge
+- Operator support
+- Knowledge and cases
+execution: host
+role: task
+source:
+  project: cannbot-knowledge
+  path: .agents/skills/knowledge-query/SKILL.md
+  sha256: d5c66b4d3810c8f2fbd6903096a8ec2c284aeb3b86c7ba4fc91b8da27219f1ba
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

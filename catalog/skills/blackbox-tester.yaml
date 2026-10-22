@@ -1,0 +1,22 @@
+id: blackbox-tester
+category: correctness
+summary:
+  zh: 针对已部署候选全量执行 TTK ACLNN 黑盒套件并核对结果数量。
+  en: Run full TTK ACLNN blackbox suites against the deployed candidate and validate result counts.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-registry-invoke/skills/blackbox-tester/SKILL.md
+  sha256: 9b03b9d9e96305e625d2aaffe2c6e2a3d02376e819ea4d3348ef226f26efad04
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

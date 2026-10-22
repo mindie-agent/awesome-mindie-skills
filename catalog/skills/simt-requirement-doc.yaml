@@ -1,0 +1,22 @@
+id: simt-requirement-doc
+category: operators
+summary:
+  zh: 澄清 SIMT 需求并编写实现与验收规格。
+  en: Clarify a SIMT requirement and draft its implementation and acceptance specification.
+tags:
+- AscendC Agent
+- Ascend C
+- Specification and modeling
+execution: host
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/simt-requirement-doc/SKILL.md
+  sha256: 579050a795ea702689f5af01d5760303b162b234e41df334c5a9512324a1ee6d
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,22 @@
+id: triton-operator-doc-gen
+category: delivery
+summary:
+  zh: 生成包含参数、约束和调用样例的 Triton 算子接口文档。
+  en: Generate Triton operator interface documentation with parameter, constraint, and usage examples.
+tags:
+- Model Agent
+- Triton
+- Review and delivery
+execution: host
+role: task
+source:
+  project: model-agent
+  path: skills/documentation/triton-operator-doc-gen/SKILL.md
+  sha256: 9d9b3b57428c5977ff51ad87e7a0dfc9acf02524028a6714974a51edb5348848
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

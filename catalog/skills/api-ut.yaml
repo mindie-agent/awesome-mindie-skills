@@ -1,0 +1,22 @@
+id: api-ut
+category: correctness
+summary:
+  zh: 生成 AscendC API 单测并依据覆盖率报告补齐用例。
+  en: Generate AscendC API unit tests and use coverage reports to fill missing cases.
+tags:
+- AscendC Agent
+- Ascend C
+- Testing and numerical validation
+execution: depends-on-checks
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/api-ut/SKILL.md
+  sha256: de8ba598c00f4482d150840f98f87d62e3fabae1778fc2fdaad4fee2f12af907
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

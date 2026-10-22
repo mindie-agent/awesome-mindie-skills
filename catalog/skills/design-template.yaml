@@ -1,0 +1,22 @@
+id: design-template
+category: operators
+summary:
+  zh: 将已核对算子事实填入指定 ACLNN 设计模板。
+  en: Render a selected ACLNN design template with the caller's verified operator facts.
+tags:
+- CANNBot
+- Ascend C
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-registry-invoke/skills/design-template/SKILL.md
+  sha256: fe656521ba7d39b5954cccbd63697582522db7757e6e2259142da351360714f3
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

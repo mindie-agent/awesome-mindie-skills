@@ -1,0 +1,23 @@
+id: tilelang2ascend-operator-project-init
+category: operators
+summary:
+  zh: 创建 AscendC 算子骨架、可构建文件和后续开发清单。
+  en: Create an AscendC operator scaffold with buildable files and a development checklist.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot-skills
+  path: community/ops/tilelang2ascend-operator-project-init/SKILL.md
+  sha256: cf84b2e30edac10afafda9fedc19a8e1e6f06f075496cc8c1cdb35ebc3c719cf
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

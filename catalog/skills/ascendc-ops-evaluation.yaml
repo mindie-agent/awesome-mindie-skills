@@ -1,0 +1,23 @@
+id: ascendc-ops-evaluation
+category: correctness
+summary:
+  zh: 构建部署 CANN 算子仓实现，对比基线与进化版本的精度和性能。
+  en: Build and deploy operators from CANN operator repositories and compare baseline and evolved implementations.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+- Community
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: community/ops/ascendc-ops-evaluation/SKILL.md
+  sha256: f986122b3baac14a20373bb95a979beb919b9181a05dc53a8747d8ffd5c94b70
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

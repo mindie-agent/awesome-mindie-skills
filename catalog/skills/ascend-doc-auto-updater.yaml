@@ -1,0 +1,22 @@
+id: ascend-doc-auto-updater
+category: operators
+summary:
+  zh: 依据源码和接口变更更新昇腾算子技术文档。
+  en: Update Ascend operator technical documents to match source and interface changes.
+tags:
+- KernelHive
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: hive
+  path: skills/ascend-doc-update/SKILL.md
+  sha256: e0ec0ef75905b5fe427317565d5654c3f76c86acfa0c4238c3ebb1adc8261c35
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

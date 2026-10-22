@@ -1,0 +1,22 @@
+id: npu-op-benchmark
+category: operators
+summary:
+  zh: 检查已有 NPU 环境，按明确 Shape 和计时条件评测算子。
+  en: Check an existing NPU environment and benchmark an operator with declared shapes and timing conditions.
+tags:
+- Awesome Ascend Skills
+- Operator support
+- Implementation and migration
+execution: npu
+role: task
+source:
+  project: awesome
+  path: skills/ops/npu-op-benchmark/SKILL.md
+  sha256: 54d5ad40c4e58851c0635937fbb6d2fda03411e98a2710ea3c6c17d43504f39e
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

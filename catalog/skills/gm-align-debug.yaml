@@ -1,0 +1,22 @@
+id: gm-align-debug
+category: debugging
+summary:
+  zh: 通过内存 Dump 复现 GM/UB 搬运对齐及字节重解释问题。
+  en: Reproduce GM/UB copy alignment and byte-reinterpretation failures using memory dumps.
+tags:
+- AscendC Agent
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/gm-align-debug/SKILL.md
+  sha256: 82edd038a25d02fdbf8fd22d01b36d3e66fb3f82d710c3127107aa6273b22f0d
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

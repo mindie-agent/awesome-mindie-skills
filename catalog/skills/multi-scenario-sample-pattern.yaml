@@ -1,0 +1,22 @@
+id: multi-scenario-sample-pattern
+category: operators
+summary:
+  zh: 将相似 AscendC 样例合并为可选场景的统一工程。
+  en: Combine similar AscendC examples into a selectable multi-scenario sample.
+tags:
+- AscendC Agent
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: ascendc-skills
+  path: skills/sample/multi-scenario-sample-pattern/SKILL.md
+  sha256: d000650082c21f6fbf0c68a5f5ed552c0b610be2d34f9bde103b10ad6e2066d9
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

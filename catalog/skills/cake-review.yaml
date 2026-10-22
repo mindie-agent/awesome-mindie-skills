@@ -1,0 +1,23 @@
+id: cake-review
+category: delivery
+summary:
+  zh: 检视完整 Kernel 生成轨迹并记录流程和实现改进。
+  en: Review the complete kernel-generation trace and record process and implementation improvements.
+tags:
+- CANNBot
+- Ascend C
+- Review and delivery
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/cake-review/SKILL.md
+  sha256: 533a535c14e4f74512ddd096f1c840f29ab5160bf8b45b59f60b74982011e334
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

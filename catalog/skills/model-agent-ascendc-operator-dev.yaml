@@ -1,0 +1,22 @@
+id: model-agent-ascendc-operator-dev
+category: operators
+summary:
+  zh: 组织 AscendC 自定义算子的工程初始化、设计、用例、实现和评估。
+  en: Coordinate an AscendC custom operator from project setup through design, cases, code, and evaluation.
+tags:
+- Model Agent
+- Ascend C
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: model-agent
+  path: skills/optimization/ascendc-operator-dev/SKILL.md
+  sha256: 78e046f093b670d548a3bc1db6f8344bf169ff971deeff18d2e50394758f34c9
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

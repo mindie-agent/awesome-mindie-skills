@@ -2,8 +2,8 @@ id: pypto-op-develop
 category: operators
 summary:
   zh: 根据设计契约逐阶段构建 PyPTO impl 模块，整理最终内核实现和说明。
-  en: Build PyPTO implementation modules in phases from design contracts, then consolidate the final kernel
-    and documentation.
+  en: Build PyPTO implementation modules in phases from design contracts, then consolidate the final kernel and
+    documentation.
 tags:
 - CANNBot
 - PyPTO
@@ -12,11 +12,11 @@ role: task
 source:
   project: cannbot-skills
   path: ops/pypto-op-develop/SKILL.md
-  sha256: b9389a2fef6ee79e4a8ddc156c418850fa2dccdfea8b11ddc289666231af14ec
+  sha256: 4ae27e25d4d23c98906a4a90b8d84b7ec3441e4353793a273b1f055624120ea3
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

@@ -1,0 +1,22 @@
+id: triton-precision-debug
+category: debugging
+summary:
+  zh: 定位 Triton-Ascend 数值异常并验证针对性修复。
+  en: Diagnose Triton-Ascend numerical failures and validate a targeted repair.
+tags:
+- CANNBot
+- Triton
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: ops/triton-precision-debug/SKILL.md
+  sha256: 284ad8add175bd6274a45a9fdcec4258d48ae48b10819c1b9fbde84299b17ad0
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

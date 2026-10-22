@@ -1,0 +1,22 @@
+id: triton-op-designer
+category: operators
+summary:
+  zh: 依据算子规格和历史反馈设计感知架构的算法草图。
+  en: Design an architecture-aware algorithm sketch from an operator specification and historical feedback.
+tags:
+- CANNBot
+- Triton
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/triton-op-designer/SKILL.md
+  sha256: d3c9ba7d92896dc00f6ef229ad016637fdb57d883856e5958576a3d0993ffaa2
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

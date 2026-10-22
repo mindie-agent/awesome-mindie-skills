@@ -1,0 +1,23 @@
+id: tilelang2ascend-trace-recorder
+category: operators
+summary:
+  zh: 记录算子开发轨迹并提炼带来源的 Runbook，供后续检索复用。
+  en: Record an operator-development trace and extract sourced runbooks for later retrieval.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Community
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: community/ops/tilelang2ascend-trace-recorder/SKILL.md
+  sha256: 614fc9ef8048651f10b9ba86d0a4ef8a20b27ca7d40aa304565aebdeee6407ac
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

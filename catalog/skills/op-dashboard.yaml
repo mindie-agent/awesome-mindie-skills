@@ -1,0 +1,23 @@
+id: op-dashboard
+category: delivery
+summary:
+  zh: 生成展示算法流、UB 切分、精度和性能的算子交互面板。
+  en: Generate an interactive operator dashboard for algorithm flow, UB tiling, precision, and performance.
+tags:
+- CANNBot
+- Ascend C
+- Review and delivery
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/op-dashboard/SKILL.md
+  sha256: 417f2ad41c8faa1d330bf5d2acb04efc1839321e81d61191be5dc023f761ff1d
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

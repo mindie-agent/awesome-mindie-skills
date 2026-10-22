@@ -1,0 +1,23 @@
+id: functional-conversion
+category: operators
+summary:
+  zh: 将 nn.Module 标杆转为输入显式的无状态函数式 API。
+  en: Convert an nn.Module reference to a stateless functional API with explicit inputs.
+tags:
+- CANNBot
+- Ascend C
+- Specification and modeling
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/functional-conversion/SKILL.md
+  sha256: 770b42098f93a3785333433d16d0f42cf04fa44530c8e186eaac3e742bd5a78a
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

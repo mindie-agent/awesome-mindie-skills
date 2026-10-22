@@ -1,0 +1,24 @@
+id: triton-ascend-case-reduction-amin-large
+category: operators
+summary:
+  en: Consult a Triton-Ascend optimization case for large amin reductions, including its scoped design and measurement
+    observations.
+  zh: 参考 Triton-Ascend 大规模 amin 归约优化案例及其限定场景下的设计、测量观察。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Optimization case
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/cases/triton-ascend-case-reduction-amin-large/SKILL.md
+  sha256: a362b601e2ea801e16d5d27d684afca713247da28276afae5b21356dabedc80e
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,23 @@
+id: tilelang2ascend-precision-tuning
+category: correctness
+summary:
+  zh: 通过 DumpTensor 和分段对比定位修复 AscendC 精度问题。
+  en: Use DumpTensor and staged comparisons to locate and repair AscendC precision failures.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+- Community
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: community/ops/tilelang2ascend-precision-tuning/SKILL.md
+  sha256: 4964a743c65a58f4deeeae3426821de8c15748b57501eea055435df4788c1f90
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,22 @@
+id: repo-op-templates
+category: operators
+summary:
+  zh: 从 CANN Bench 参考工程和模板创建直调代码。
+  en: Create direct-invocation code from the CANN Bench reference project and operator templates.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-direct-invoke/skills/repo-op-templates/SKILL.md
+  sha256: 9865a810efe50434c9c434f717ccd96030debe48a57409a8fe916731670ba798
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

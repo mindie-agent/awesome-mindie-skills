@@ -1,0 +1,22 @@
+id: ascendc-operator-a5-migration
+category: operators
+summary:
+  zh: 分基础适配、RegBase 和 SIMT 阶段将 AscendC 算子迁移到 A5。
+  en: Adapt an AscendC operator from A2/A3 to A5 through baseline, RegBase, and SIMT stages.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: ascend-gitcode-agent-skills
+  path: official/Common/ascendc-operator-A5-migration/SKILL.md
+  sha256: 268c1099df857a274393a11feac0ab7aa5162a1c7effb097ac1ae65c3d609e81
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

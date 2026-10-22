@@ -1,12 +1,12 @@
 id: ascendc-env-check
 category: environment
 summary:
-  zh: 查询 NPU 状态、CANN 配置和开发依赖，输出设备架构与环境检查结果。
-  en: Check NPU status, CANN configuration, and development dependencies, and report device architecture
-    and environment findings.
+  zh: 检查 NPU 设备、CANN 配置、工具链依赖和实际架构。
+  en: Inspect NPU devices, CANN configuration, toolchain dependencies, and the detected architecture.
 tags:
 - CANNBot
-- CANN
+- Ascend C
+- Implementation and migration
 execution: npu
 role: task
 source:
@@ -15,8 +15,8 @@ source:
   sha256: c50e4af38997b7c7bbd715601a9f81d0c1dab4078dbade58084cbd2fa5fd172b
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

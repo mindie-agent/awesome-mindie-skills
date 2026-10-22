@@ -7,7 +7,7 @@ sources:
     maintainer: pisceskkk
   cannbot-skills:
     repository: https://gitcode.com/cann/cannbot-skills
-    revision: 393564ae43f304426db2c206e361cd43b2811413
+    revision: 5891c39619a56716b6f73a335ed7709560bb2da8
     license: CANN Open Software License v2.0
     maintainer: CANNBot SIG (cann)
   ascend-pooling-workflows:
@@ -60,3 +60,61 @@ sources:
     revision: 2852c18ac977783f336f8c8864ca84dfee3f5cc6
     license: MIT
     maintainer: nwpu-zxr
+  cannbot:
+    repository: https://gitcode.com/cann/cannbot
+    revision: 88637debe061dccc41cd6808f871f446f9c46c7a
+    license: CANN Open Software License v2.0; CAKE plugin also includes Apache-2.0
+    maintainer: CANNBot SIG (cann)
+  cannbot-knowledge:
+    repository: https://gitcode.com/cann/cannbot-knowledge
+    revision: fd3dd23d19d4bab3da27951cd9f8d6b1a3b8644e
+    license: CANN Open Software License v2.0
+    maintainer: CANNBot SIG (cann)
+  ascendc-skills:
+    repository: https://gitcode.com/ascendc-agent/ascendc-skills
+    revision: 0a46bf1d4fd373c3a8cc136aa6a4a958e9f4f236
+    license: Not declared in the pinned repository root
+    maintainer: ascendc-agent
+  akg:
+    repository: https://github.com/mindspore-ai/akg
+    revision: 5aa15f3fe4d856eb60cd3b27447e04f5f1fb4dff
+    license: Apache-2.0
+    maintainer: MindSpore AKG maintainers
+  hive:
+    repository: https://github.com/KernelHive/ascendc-skill
+    revision: c78f267d0423d59a51a02070e5bb845fde2dbd69
+    license: Not declared in the pinned repository root; bundled references retain
+      their terms
+    maintainer: KernelHive
+  model-agent:
+    repository: https://gitcode.com/Ascend/model-agent
+    revision: b355135ad6e4e67861a83305ba115af8928cfb83
+    license: BSD-3-Clause; incorporated skills retain their upstream terms
+    maintainer: Ascend community
+  opgen:
+    repository: https://github.com/Just-it/AscendOpGenAgent
+    revision: 595ce700122e1fea46d5bdc0949578b130ba404f
+    license: Apache-2.0
+    maintainer: Just-it
+  awesome:
+    repository: https://github.com/ascend-ai-coding/awesome-ascend-skills
+    revision: 75ec89ce9d401be8ac95980e1c3f42f8d4315057
+    license: Not declared in the pinned repository root; synchronized sources retain
+      their terms
+    maintainer: ascend-ai-coding
+  mindiesd:
+    repository: https://github.com/Ascend/MindIE-SD
+    revision: d6f5ca90a882c73b25ace504ae9da254976f53c6
+    license: MulanPSL-2.0
+    maintainer: Ascend MindIE-SD maintainers
+  asc-devkit:
+    repository: https://gitcode.com/cann/asc-devkit
+    revision: cd10a15efc6d2221814f6167e5055c7e640ccc7c
+    license: CANN Open Software License v2.0
+    maintainer: CANN AscendC maintainers
+  ascend-gitcode-agent-skills:
+    repository: https://gitcode.com/Ascend/agent-skills
+    revision: a4011846f6d79fcee3e7b90fafe588d8a51fbc91
+    license: Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated
+      sources retain their terms
+    maintainer: Ascend community

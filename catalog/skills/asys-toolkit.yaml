@@ -2,8 +2,8 @@ id: asys-toolkit
 category: debugging
 summary:
   zh: 在 Ascend EP 环境使用 asys 收集故障信息、检查设备健康并解析诊断产物。
-  en: Use asys in Ascend EP environments to collect failure information, inspect device health, and parse
-    diagnostic artifacts.
+  en: Use asys in Ascend EP environments to collect failure information, inspect device health, and parse diagnostic
+    artifacts.
 tags:
 - CANNBot
 - CANN
@@ -16,8 +16,8 @@ source:
   sha256: e02f63ece64a6cd0b62f8ce503299b9fb9713dc0675c7797a8303a4412dc1651
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

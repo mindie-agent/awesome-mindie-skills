@@ -1,0 +1,22 @@
+id: ascendc-sync-audit
+category: delivery
+summary:
+  zh: 检查流水、核间信号和生产消费 Buffer 一致性，并提出修复。
+  en: Audit pipeline and intercore signals and producer/consumer buffer consistency, then propose repairs.
+tags:
+- CANNBot
+- Ascend C
+- Review and delivery
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-sync-audit/SKILL.md
+  sha256: 9eb2ca31246dbe40065c88dae5b070ade4456e0d43c90bf3fe55cb60e5026f98
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

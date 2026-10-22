@@ -1,0 +1,22 @@
+id: asc-testcase-doc-gen
+category: delivery
+summary:
+  zh: 将需求文档转为结构化测试用例文档。
+  en: Turn a supplied requirement document into a structured test-case document.
+tags:
+- AscendC Agent
+- Operator support
+- Review and delivery
+execution: host
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/asc-testcase-doc-gen/SKILL.md
+  sha256: 2288d8ce7845dcce3e174fca7823a37194749640b91da13a2c8dd0ddb281483c
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

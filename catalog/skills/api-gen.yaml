@@ -1,0 +1,22 @@
+id: api-gen
+category: operators
+summary:
+  zh: 依据设计文档实现 AscendC API 并验证代码变更。
+  en: Implement AscendC APIs from a supplied design document and verify repository changes.
+tags:
+- AscendC Agent
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/api-gen/SKILL.md
+  sha256: 6658e3397437bbad8b528a2b2ba691017d13397b5958d86f9460b0068e0a872b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

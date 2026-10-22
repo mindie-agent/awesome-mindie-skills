@@ -1,0 +1,22 @@
+id: single-api-test
+category: correctness
+summary:
+  zh: 生成执行单个 DAV_3510 API 验证用例。
+  en: Generate and execute a single DAV_3510 API validation case.
+tags:
+- AscendC Agent
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: ascendc-skills
+  path: skills/docs/skill_3510_single_api_test/SKILL.md
+  sha256: bb8af784dd6d8556425bb079655ec7770ac7473c92f45d51f4eeb23465b37c6b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

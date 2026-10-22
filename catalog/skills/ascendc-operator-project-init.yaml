@@ -1,0 +1,23 @@
+id: ascendc-operator-project-init
+category: operators
+summary:
+  zh: 创建可构建的 AscendC 自定义算子工程并列出注册检查点。
+  en: Create an AscendC custom-op project with buildable scaffolds and registration checkpoints.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: ascend-gitcode-agent-skills
+  path: community/Op/ascendc-operator-project-init/SKILL.md
+  sha256: 40d9e3e30cc3b294fff48f14f944b661b509f59a098efa379bec3ba0a29fea07
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

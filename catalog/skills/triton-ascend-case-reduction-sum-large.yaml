@@ -1,0 +1,24 @@
+id: triton-ascend-case-reduction-sum-large
+category: operators
+summary:
+  en: Consult a Triton-Ascend optimization case for large sum reductions, including its scoped design and measurement
+    observations.
+  zh: 参考 Triton-Ascend 大规模 sum 归约优化案例及其限定场景下的设计、测量观察。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Optimization case
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/cases/triton-ascend-case-reduction-sum-large/SKILL.md
+  sha256: a60d19090d99d70cb278e5480d592a2c6686e449ec20f645c2d4ec128b17bd43
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

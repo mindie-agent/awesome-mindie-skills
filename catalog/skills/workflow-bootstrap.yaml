@@ -1,0 +1,22 @@
+id: workflow-bootstrap
+category: operators
+summary:
+  zh: 检测目标架构并选择对应注册算子工作流。
+  en: Detect the target architecture and select the matching registered-operator workflow.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: cannbot
+  path: plugins-official/ops-registry-invoke/skills/workflow-bootstrap/SKILL.md
+  sha256: 245bc937010f894dd70213427d4e0b4a857f33b7802ebe7f537ca404c0e1f0dd
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

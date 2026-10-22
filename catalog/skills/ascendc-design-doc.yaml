@@ -1,0 +1,22 @@
+id: ascendc-design-doc
+category: operators
+summary:
+  zh: 结合源码和 API 约束编写 AscendC 详设及测试计划。
+  en: Write detailed AscendC design and test plans grounded in source and API constraints.
+tags:
+- AscendC Agent
+- Ascend C
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/ascendc-design-doc/SKILL.md
+  sha256: f8a1d000796eac5a873101a9068c52abbe46389f17be2b30b9512c401e94e087
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

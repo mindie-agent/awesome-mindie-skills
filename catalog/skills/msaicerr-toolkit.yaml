@@ -2,8 +2,8 @@ id: msaicerr-toolkit
 category: debugging
 summary:
   zh: 在日志产生环境使用 msaicerr 分析 AI Core Error、解析 Dump 并检查环境约束。
-  en: Use msaicerr in the originating runtime environment to analyze AI Core errors, parse dumps, and
-    check environment constraints.
+  en: Use msaicerr in the originating runtime environment to analyze AI Core errors, parse dumps, and check environment
+    constraints.
 tags:
 - CANNBot
 - CANN
@@ -16,8 +16,8 @@ source:
   sha256: c3263e16b11404cc9255280fdba6e99eea2d69894a0545b1b90daa7e4542ff38
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

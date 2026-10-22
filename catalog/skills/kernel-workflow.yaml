@@ -1,0 +1,22 @@
+id: kernel-workflow
+category: operators
+summary:
+  zh: 组织 AKG 任务构建、草图设计、生成、验证和迭代优化。
+  en: Coordinate AKG task construction, sketch design, generation, verification, and iterative optimization.
+tags:
+- AKG
+- Operator support
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/kernel-workflow/SKILL.md
+  sha256: 0f19eb30150ba0c0ff641b132a56c6dd24ff8e5d42206ea59d0660a3c754b432
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

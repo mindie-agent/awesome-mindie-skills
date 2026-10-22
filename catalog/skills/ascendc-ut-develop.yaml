@@ -1,0 +1,22 @@
+id: ascendc-ut-develop
+category: operators
+summary:
+  zh: 生成补充 op_host、op_api、op_kernel 单测并补齐覆盖缺口。
+  en: Generate or extend op_host, op_api, and op_kernel unit tests and close coverage gaps.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-ut-develop/SKILL.md
+  sha256: 9dcac584766596538e712cb81c84b6b92dedd423694c5b54950f4a7761ffdaee
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

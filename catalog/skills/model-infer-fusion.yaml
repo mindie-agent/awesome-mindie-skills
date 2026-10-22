@@ -2,8 +2,8 @@ id: model-infer-fusion
 category: optimization
 summary:
   zh: 匹配 PyTorch 模型中的计算模式与 torch_npu 融合算子，实施替换并验证。
-  en: Match PyTorch model computation patterns to torch_npu fused operators, implement replacements, and
-    validate them.
+  en: Match PyTorch model computation patterns to torch_npu fused operators, implement replacements, and validate
+    them.
 tags:
 - CANNBot
 - PyTorch
@@ -16,8 +16,8 @@ source:
   sha256: ed42ca817a91702155346db0f6cda73c5981778eb3b9aa859089184f897ee15a
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

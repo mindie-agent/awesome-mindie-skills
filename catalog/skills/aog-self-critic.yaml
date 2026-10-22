@@ -1,0 +1,23 @@
+id: aog-self-critic
+category: delivery
+summary:
+  zh: 检查当前算子开发会话的重复流程问题并提出修正。
+  en: Audit the current operator-development session for recurring process failures and corrective actions.
+tags:
+- CANNBot
+- Ascend C
+- Review and delivery
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/ascendc-port-orchestrator/skills/aog-self-critic/SKILL.md
+  sha256: 1fa80531416f2f6f41ca2f789933309136a3f60103e463a3863ec46f6459d173
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

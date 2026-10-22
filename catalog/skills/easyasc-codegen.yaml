@@ -1,0 +1,23 @@
+id: easyasc-codegen
+category: operators
+summary:
+  zh: 从 easyasc DSL 生成构建 AscendC，并提供编译算子产物。
+  en: Generate and build AscendC from easyasc DSL and expose the compiled operator artifact.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/easyasc-codegen/SKILL.md
+  sha256: ffb3dd2c02442cbd333c93546fd3093a645c5f32f0e77ba21a600263835556f1
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,23 @@
+id: ascendc-evolution-world-model
+category: operators
+summary:
+  zh: 维护基于证据的决策树，选择和验证 AscendC 优化实验。
+  en: Manage an evidence-driven decision tree for selecting and validating AscendC optimization experiments.
+tags:
+- CANNBot
+- Ascend C
+- Profiling and optimization
+- Community
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: community/ops/ascendc-evolution-world-model/SKILL.md
+  sha256: 37f218ac385ee1aec85cc50cb820d32888a88f080d1008ee0011c460320faf55
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

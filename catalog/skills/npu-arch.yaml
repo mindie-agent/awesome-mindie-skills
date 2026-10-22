@@ -1,0 +1,23 @@
+id: npu-arch
+category: operators
+summary:
+  zh: 确认芯片、架构、SocVersion、特性支持与条件编译边界。
+  en: Resolve chip, architecture, SocVersion, feature support, and conditional-compilation boundaries.
+tags:
+- CANNBot
+- Operator support
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/npu-arch/SKILL.md
+  sha256: 112c588afddb889e53b4c10a82c664bfeb2507a42b10770ad65546f79db30d34
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

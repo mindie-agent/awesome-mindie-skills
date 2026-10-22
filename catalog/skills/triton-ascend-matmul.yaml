@@ -1,0 +1,23 @@
+id: triton-ascend-matmul
+category: operators
+summary:
+  en: Look up Triton-Ascend guidance on matrix-multiplication kernels for the documented platform and compiler scope.
+  zh: 查询 Triton-Ascend 矩阵乘算子指南，使用时核对所述平台和编译器范围。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/guides/triton-ascend-matmul/SKILL.md
+  sha256: 4b90502e8803b96fef8bdd1b9b41e76242153667d9731da45c9bb5a957ea789c
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

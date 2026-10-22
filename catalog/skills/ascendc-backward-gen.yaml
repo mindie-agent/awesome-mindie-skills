@@ -1,0 +1,23 @@
+id: ascendc-backward-gen
+category: operators
+summary:
+  zh: 从可微 PyTorch 正向标杆生成 AscendC 反向算子并上板验证。
+  en: Generate an AscendC backward operator from a differentiable PyTorch forward reference and verify it on NPU.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: npu
+role: workflow
+source:
+  project: cannbot
+  path: plugins-community/ascendc-port-orchestrator/skills/ascendc-backward-gen/SKILL.md
+  sha256: c59e6ee0ba2b155ea41f52ef226e14cafac42931b1e7b97e424f4617a3e99db7
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

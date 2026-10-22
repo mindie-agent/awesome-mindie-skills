@@ -1,0 +1,22 @@
+id: ops-direct-invoke
+category: operators
+summary:
+  zh: 组织直调算子的需求、环境、分工执行、验收和交付。
+  en: Coordinate direct-invocation requirements, environment, delegated work, acceptance, and delivery.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: cannbot
+  path: plugins-official/ops-direct-invoke/skills/ops-direct-invoke/SKILL.md
+  sha256: 5c392ba4b3347d9a983781c472d3501ee02f98b045d899d6df9e6c092d73c880
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

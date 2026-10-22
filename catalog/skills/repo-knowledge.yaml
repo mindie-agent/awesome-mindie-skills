@@ -1,0 +1,23 @@
+id: repo-knowledge
+category: operators
+summary:
+  zh: 查询 CANN Bench 提交、任务、精度和评分契约。
+  en: Look up CANN Bench submission, task, numerical, and scoring contracts.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-direct-invoke/skills/repo-knowledge/SKILL.md
+  sha256: d2e7bbe2d72d955eea1d54c9ea23ce474369ccfcf821761ca5aa60518d514551
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

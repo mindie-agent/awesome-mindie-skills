@@ -1,11 +1,12 @@
 id: cann-env-setup
 category: environment
 summary:
-  zh: 指导 CANN 安装、环境变量配置及驱动和 Python 接口验证。
-  en: Guide CANN installation, environment configuration, and driver and Python interface checks.
+  zh: 准备昇腾算子开发所需的 CANN 安装和环境配置。
+  en: Prepare CANN installation and environment configuration for Ascend operator development.
 tags:
 - CANNBot
-- CANN
+- Operator support
+- Implementation and migration
 execution: npu
 role: task
 source:
@@ -14,8 +15,8 @@ source:
   sha256: 3605f3376c1e70266eac81b063c0fc03fb6186375e8245a0c4a1514835f69b68
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

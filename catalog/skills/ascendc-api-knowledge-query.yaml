@@ -1,0 +1,22 @@
+id: ascendc-api-knowledge-query
+category: operators
+summary:
+  zh: 检索匹配平台的 AscendC API 知识卡并追溯源码和头文件。
+  en: Retrieve platform-matched AscendC API cards and follow verified source/header references.
+tags:
+- CANNBot Knowledge
+- Ascend C
+- Knowledge and cases
+execution: host
+role: task
+source:
+  project: cannbot-knowledge
+  path: .agents/skills/ascendc-api-knowledge-query/SKILL.md
+  sha256: 4f2342f45debd508e25383ca1f9372086753d1b02956647a4e1b37451504af56
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

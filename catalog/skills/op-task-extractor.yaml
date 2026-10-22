@@ -1,0 +1,22 @@
+id: op-task-extractor
+category: operators
+summary:
+  zh: 从需求或源码提取独立可评测的算子任务。
+  en: Extract a self-contained operator benchmark task from user requirements or source.
+tags:
+- AscendOpGenAgent
+- Triton
+- Specification and modeling
+execution: host
+role: task
+source:
+  project: opgen
+  path: skills/triton/op-task-extractor/SKILL.md
+  sha256: b2cb5f5eab428617ee2028f6a05ab7f751ef00fd5bae5cae5d5a3824b118e8f4
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

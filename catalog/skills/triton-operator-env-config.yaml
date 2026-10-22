@@ -1,0 +1,22 @@
+id: triton-operator-env-config
+category: environment
+summary:
+  zh: 验证 CANN、Python、PyTorch、torch_npu 和 Triton-Ascend 开发环境。
+  en: Verify the CANN, Python, PyTorch, torch_npu, and Triton-Ascend development environment.
+tags:
+- Model Agent
+- Triton
+- Implementation and migration
+execution: npu
+role: task
+source:
+  project: model-agent
+  path: skills/optimization/triton-operator-env-config/SKILL.md
+  sha256: cc342787201a77d9896d7c2325675884ccdb67eb2c2ca030ae60dca1358ec02c
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

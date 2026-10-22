@@ -1,0 +1,23 @@
+id: ascendc-api-best-practices
+category: operators
+summary:
+  zh: 查询 AscendC 计算、归约、搬运、Buffer、转换和通信 API 的正确用法。
+  en: Look up correct AscendC arithmetic, reduction, data-copy, buffer, conversion, and communication API usage.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-api-best-practices/SKILL.md
+  sha256: aff5a115055a88a66a8709eb8c1417202b44875fa1cc115f50da89ae8381b135
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

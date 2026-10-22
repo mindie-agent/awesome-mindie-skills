@@ -1,0 +1,23 @@
+id: task-progress
+category: delivery
+summary:
+  zh: 维护算子工作流进度、状态变化和待办任务。
+  en: Maintain operator-workflow progress, state transitions, and unresolved tasks.
+tags:
+- CANNBot
+- Ascend C
+- Review and delivery
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/task-progress/SKILL.md
+  sha256: 4e5da3eea5450345c5d7c934e0740de4dc1edf3508187e0e8ecda04aa437c9c9
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

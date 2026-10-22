@@ -1,0 +1,24 @@
+id: triton-ascend-optimization
+category: operators
+summary:
+  en: Look up Triton-Ascend guidance on tiling, grid selection, alignment, and backend optimization for the documented
+    platform and compiler scope.
+  zh: 查询 Triton-Ascend Tiling、Grid 选择、对齐和后端优化指南，使用时核对所述平台和编译器范围。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/fundamentals/triton-ascend-optimization/SKILL.md
+  sha256: 021f73e200376cd2ba3587ca12506d8760cfca5956b5c1c9c6a46197bcdfbab4
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

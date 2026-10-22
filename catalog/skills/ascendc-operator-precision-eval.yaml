@@ -1,0 +1,23 @@
+id: ascendc-operator-precision-eval
+category: correctness
+summary:
+  zh: 生成 Shape、dtype 和边界精度用例并输出数值对比报告。
+  en: Generate a shape/dtype/boundary precision suite and produce numerical comparison reports.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Testing and numerical validation
+- Community
+execution: npu
+role: task
+source:
+  project: ascend-gitcode-agent-skills
+  path: community/Op/ascendc-operator-precision-eval/SKILL.md
+  sha256: 94e80d676c3635d06f664106d28a2bc2928f1a876b1c7756fb7e6ebdfa7dd212
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

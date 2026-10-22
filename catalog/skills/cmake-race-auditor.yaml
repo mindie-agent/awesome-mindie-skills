@@ -1,0 +1,22 @@
+id: cmake-race-auditor
+category: delivery
+summary:
+  zh: 检查 CMake 生成文件依赖缺口和并行构建竞态。
+  en: Find generated-file dependency gaps and parallel build races in CMake projects.
+tags:
+- AscendC Agent
+- Operator support
+- Review and delivery
+execution: host
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/cmake_auditor/SKILL.md
+  sha256: 3ae20a1f27a40541264b63f8422c22dc48ec3efaf2935ac0b9c401b92f01de01
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

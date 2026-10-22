@@ -1,0 +1,23 @@
+id: cake-evo
+category: operators
+summary:
+  zh: 以不同策略生成隔离的 AscendC 变体，依据实测选择候选。
+  en: Generate isolated AscendC variants with different optimization strategies and select measured winners.
+tags:
+- CANNBot
+- Ascend C
+- Profiling and optimization
+- Community
+execution: npu
+role: workflow
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/cake-evo/SKILL.md
+  sha256: 86caad5c941b61b3b889729062932221fddfdd8b5e1c793fb2667bab3ae3d3ec
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

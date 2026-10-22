@@ -1,0 +1,23 @@
+id: dsl-lowering
+category: operators
+summary:
+  zh: 通过多级 Pass 将算子 DSL 降为 AscendC，并定位编译失败。
+  en: Lower operator DSL code to AscendC through multiple passes and diagnose compilation failures.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/dsl-lowering/SKILL.md
+  sha256: 23f37a5be19b320ddbf2fcf89ca4395784bebb335ca99dda23539b90655dd24a
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

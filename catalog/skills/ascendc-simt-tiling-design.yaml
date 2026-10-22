@@ -1,0 +1,22 @@
+id: ascendc-simt-tiling-design
+category: operators
+summary:
+  zh: 设计 SIMT 核与线程切分、内存分配、TilingKey 和 Workspace 契约。
+  en: Design SIMT core/thread partitioning, memory allocation, tiling keys, and workspace contracts.
+tags:
+- CANNBot
+- Ascend C
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-simt-tiling-design/SKILL.md
+  sha256: 0b69b08d89b3a2ccae70dce461c453263f0d0dfa015b9cb02f95be4d4e2e971b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -15,8 +15,8 @@ source:
   sha256: eabd0a51cd06bf2f1a73fb78582dda11c635f78cf13f063a48563c3096e635a1
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

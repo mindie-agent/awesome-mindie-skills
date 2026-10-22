@@ -1,0 +1,23 @@
+id: triton-ascend-example-relu
+category: operators
+summary:
+  en: Use the Triton-Ascend implementation example for ReLU as a code-structure reference.
+  zh: 参考 Triton-Ascend ReLU实现示例及代码结构。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Implementation example
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/examples/triton-ascend-example-relu/SKILL.md
+  sha256: bf9dc71bded67e94963cc58f1e020e24253d94c8481a1c0d9ae59795d0f1bc64
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

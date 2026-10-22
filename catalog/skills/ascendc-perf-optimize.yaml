@@ -1,22 +1,22 @@
 id: ascendc-perf-optimize
 category: operators
 summary:
-  zh: 结合 Tiling 模型、仿真与 profiling，制定卡间、核间和核内流水优化策略。
-  en: Combine tiling models, simulation, and profiling to plan inter-device, inter-core, and intra-core
-    pipeline optimizations.
+  zh: 结合 Tiling 模型和 Profiling 配平卡间、核间及核内流水。
+  en: Use tiling models and profiling to balance interdevice, intercore, and intracore pipelines.
 tags:
 - CANNBot
 - Ascend C
-execution: depends-on-checks
+- Profiling and optimization
+execution: npu
 role: task
 source:
   project: cannbot-skills
   path: ops/ascendc-perf-optimize/SKILL.md
-  sha256: 1bd7f028a2d51d23e47bbfb6ea0dc4f076229001950c7b7919cac0096d2bde4a
+  sha256: b140809028981bdfa09d7ba3f66deacbd03afd65215f4eb68d650251c54a1afd
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

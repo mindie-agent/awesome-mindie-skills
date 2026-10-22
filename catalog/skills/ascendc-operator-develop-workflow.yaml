@@ -1,0 +1,22 @@
+id: ascendc-operator-develop-workflow
+category: operators
+summary:
+  zh: 组织 AscendC 设计、实现、构建测试、问题修复、总结和文档。
+  en: Coordinate AscendC design, implementation, build/test, repair, results, and documentation.
+tags:
+- AscendC Agent
+- Ascend C
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: ascendc-skills
+  path: skills/usability/op-gen/ascendc-operator-develop-workflow/SKILL.md
+  sha256: debff93827f2e94c03b3e84e2749fe394c073ac6fb33c68261c352db63f83a2b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

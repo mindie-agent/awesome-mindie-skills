@@ -1,0 +1,23 @@
+id: dsl-optimization
+category: operators
+summary:
+  zh: 依据验证过的性能反馈调优 DSL 切分、向量化和流水结构。
+  en: Tune DSL tiling, vectorization, and pipeline structure using verified performance feedback.
+tags:
+- CANNBot
+- Ascend C
+- Profiling and optimization
+- Community
+execution: npu
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/dsl-optimization/SKILL.md
+  sha256: a4e6cf7915e326c2a30e0e661a594f2564fb5c7ac8d71aae82fc608fcfbe5287
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

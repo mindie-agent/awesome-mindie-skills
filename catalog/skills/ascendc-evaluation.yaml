@@ -1,0 +1,23 @@
+id: ascendc-evaluation
+category: correctness
+summary:
+  zh: 验证 AscendC 多用例数值正确性并采集性能证据。
+  en: Evaluate multi-case AscendC numerical correctness and collect operator performance evidence.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+- Community
+execution: npu
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/ascendc-evaluation/SKILL.md
+  sha256: 20c3376fa26629da1adfd6de4ff187be244345201123d758b89021e377e2b521
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

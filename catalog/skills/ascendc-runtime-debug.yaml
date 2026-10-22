@@ -1,0 +1,22 @@
+id: ascendc-runtime-debug
+category: debugging
+summary:
+  zh: 结合错误码和 plog 定位 AscendC 调用、Tiling 和运行时故障。
+  en: Interpret AscendC runtime error codes and plog evidence to locate invocation and tiling failures.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-runtime-debug/SKILL.md
+  sha256: de493e35b4db7689969f130d805d2261691fa62836947031bd675304f46091d9
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

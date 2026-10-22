@@ -1,0 +1,22 @@
+id: st-verifier
+category: correctness
+summary:
+  zh: 独立检查 ST 覆盖、设计一致性、框架集成和执行证据。
+  en: Independently check ST coverage, design consistency, framework integration, and execution evidence.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-registry-invoke/skills/st-verifier/SKILL.md
+  sha256: 6fc230c3e928bbd4510833419e3920cfaa4dd1a67a77c7f927400fc35b70822e
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,21 +1,22 @@
 id: ascendc-code-review
 category: delivery
 summary:
-  zh: 按文件、PR 或定向问题路由 Ascend C 代码检视，检查规范与设计一致性。
-  en: Route Ascend C reviews by file, PR, or targeted question to check coding rules and design consistency.
+  zh: 基于可检验假设审查 AscendC 源码或 PR 的规范和设计一致性。
+  en: Review AscendC source or PRs for applicable rules and design consistency using testable hypotheses.
 tags:
 - CANNBot
 - Ascend C
+- Review and delivery
 execution: host
 role: task
 source:
   project: cannbot-skills
   path: ops/ascendc-code-review/SKILL.md
-  sha256: cdc04697a773e84526d5811a9bb2548b5035072399a87478ddc8421e5f451625
+  sha256: 10b7bfadee326b8333d1359cc12567bd95b1558afb8a44a1746f36a5d79ee0c3
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

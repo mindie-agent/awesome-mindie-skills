@@ -1,0 +1,23 @@
+id: aog-input-gen-builder
+category: correctness
+summary:
+  zh: 从 AscendC 源包或可微标杆生成常规与边界输入数据。
+  en: Generate normal and edge-case input datasets from an AscendC source package or differentiable reference.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+- Community
+execution: npu
+role: task
+source:
+  project: cannbot
+  path: plugins-community/ascendc-port-orchestrator/skills/aog-input-gen-builder/SKILL.md
+  sha256: 337973809182a700f0d4870afea4e70a7f76260102e9785335fcb702b931890d
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

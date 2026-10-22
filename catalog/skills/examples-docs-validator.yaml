@@ -1,0 +1,22 @@
+id: examples-docs-validator
+category: delivery
+summary:
+  zh: 检查样例 README、注释规范及文档与代码的一致性。
+  en: Check example README/comment rules and consistency between documentation and source.
+tags:
+- AscendC Agent
+- Ascend C
+- Review and delivery
+execution: host
+role: task
+source:
+  project: ascendc-skills
+  path: skills/sample/examples-docs-validator/SKILL.md
+  sha256: 491e2a352e435fc51e106e660cf4458f1b39dc6f9d6bd0f2f5a7d2fa9609249f
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

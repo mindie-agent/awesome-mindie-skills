@@ -1,22 +1,22 @@
 id: ascendc-precision-debug
 category: debugging
 summary:
-  zh: 从最小复现定位 Ascend C 精度异常，检查数值稳定性、同步和数据搬运。
-  en: Reduce Ascend C accuracy failures to minimal reproducers and inspect numerical stability, synchronization,
-    and data movement.
+  zh: 将数值异常收敛为可复现单算子用例，定位根因并验证修复。
+  en: Reduce numerical failures to a reproducible operator case, locate the cause, and verify the repair.
 tags:
 - CANNBot
 - Ascend C
-execution: depends-on-checks
+- Testing and numerical validation
+execution: npu
 role: task
 source:
   project: cannbot-skills
   path: ops/ascendc-precision-debug/SKILL.md
-  sha256: e62456bd7dabd8369a8ed5dba04032f4ca337b15fdf31da65c5f97162ebf1b44
+  sha256: d50b95191182693f25e9cd134293b61687d5d28949b438136a3045a789985eac
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

@@ -2,8 +2,8 @@ id: model-infer-runtime-debug
 category: debugging
 summary:
   zh: 逐阶段缩小模型加载和推理运行异常，诊断 HCCL、OOM、超时与卡死并验证修复。
-  en: Narrow model loading and inference failures to diagnose HCCL errors, OOM, timeouts, and hangs, then
-    verify fixes.
+  en: Narrow model loading and inference failures to diagnose HCCL errors, OOM, timeouts, and hangs, then verify
+    fixes.
 tags:
 - CANNBot
 - PyTorch
@@ -16,8 +16,8 @@ source:
   sha256: 72d18ebeb59e51c9e64bb67f2fdbc4dbdc6b6bd236429ef71cba94d88668089a
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

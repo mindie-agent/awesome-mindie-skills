@@ -1,0 +1,23 @@
+id: ascend-call-generation
+category: operators
+summary:
+  zh: 从函数式 PyTorch 生成 AscendC 工程、Host、pybind 和 Kernel 骨架。
+  en: Generate an AscendC project, host code, pybind wrapper, and kernel scaffold from functional PyTorch.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/ascend-call-generation/SKILL.md
+  sha256: d11ac12698c6be31690adf6c6f0859d8ca698606f81794e62f85139c58893d19
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

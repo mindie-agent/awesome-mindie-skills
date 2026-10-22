@@ -1,0 +1,22 @@
+id: ascendc-crash-debug
+category: debugging
+summary:
+  zh: 诊断 AscendC 卡死、崩溃、内存和 Buffer/同步问题。
+  en: Diagnose AscendC hangs, crashes, memory errors, and buffer or synchronization failures.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-crash-debug/SKILL.md
+  sha256: ee6e9913df923357029a4ea1b3ac1258b7bd4218fd0794f9da2a294d82294fde
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

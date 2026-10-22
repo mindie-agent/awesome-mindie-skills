@@ -1,0 +1,22 @@
+id: ops-registry-invoke
+category: operators
+summary:
+  zh: 启动 ACLNN 注册调用算子开发工作流。
+  en: Start the ACLNN registered-operator development workflow.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: cannbot
+  path: plugins-official/ops-registry-invoke/skills/ops-registry-invoke/SKILL.md
+  sha256: ea2cacb6bf1b1a5f8e7777b37a7a703fc6205b28af26d2180dfd785f1583d888
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

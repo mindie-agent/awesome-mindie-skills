@@ -1,0 +1,24 @@
+id: ascendc-evolution-strategies
+category: operators
+summary:
+  zh: 按瓶颈和算子族检索 AscendC 优化策略并检查组合兼容性。
+  en: Retrieve AscendC optimization strategies by bottleneck and operator family and check their compatibility.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Knowledge reference
+- Community
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: community/ops/ascendc-evolution-strategies/SKILL.md
+  sha256: 186bec51d8dba27533d808ecc1ca45bee67a07814a8bd040bb1ee5b4d854aa8b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

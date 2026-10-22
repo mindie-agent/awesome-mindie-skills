@@ -1,0 +1,22 @@
+id: tiling-ut-harness
+category: correctness
+summary:
+  zh: 使用指定平台 Mock 和已安装 Host 库构建运行 TilingFunc gtest。
+  en: Build and run host-side TilingFunc gtests with the declared platform mocks and installed host library.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-registry-invoke/skills/tiling-ut-harness/SKILL.md
+  sha256: 3564dd74ffb3e2da13560b418a9897d1cfb04893b821f0d65e42d1bad2124eeb
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,22 @@
+id: ascendc-blaze-best-practice
+category: operators
+summary:
+  zh: 为 Ascend950 DAV_3510 选择 Blaze/Tensor API 模板并实现 MatMul 系列算子。
+  en: Select Blaze/Tensor API templates and implement MatMul-family kernels for Ascend950 DAV_3510.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-blaze-best-practice/SKILL.md
+  sha256: 7e6f93acdbfc39167e3f4257b7ad97136de27b3aa87db135ccf92d35007bb96f
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

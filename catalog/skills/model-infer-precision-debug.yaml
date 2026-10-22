@@ -2,8 +2,7 @@ id: model-infer-precision-debug
 category: debugging
 summary:
   zh: 定位 KVCache 与 FlashAttention 相关的 Prefill/Decode 精度差异、缓存更新和映射问题。
-  en: Diagnose KVCache and FlashAttention prefill/decode accuracy differences, cache updates, and mapping
-    errors.
+  en: Diagnose KVCache and FlashAttention prefill/decode accuracy differences, cache updates, and mapping errors.
 tags:
 - CANNBot
 - PyTorch
@@ -16,8 +15,8 @@ source:
   sha256: d42e41795e0f39a09e9a0886c309f11e6dfe3c18092dd365564475b2599aaec9
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

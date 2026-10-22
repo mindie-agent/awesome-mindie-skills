@@ -1,0 +1,23 @@
+id: ascendc-cross-gen-port
+category: operators
+summary:
+  zh: 按明确源、目标架构迁移 AscendC 算子并对照标杆验证。
+  en: Port AscendC operators between declared source and target architectures with reference validation.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: npu
+role: workflow
+source:
+  project: cannbot
+  path: plugins-community/ascendc-port-orchestrator/skills/ascendc-cross-gen-port/SKILL.md
+  sha256: 0688b77302178d5d0c0ba4af1813207d3eeb8b4a8e49ef8ff5f8d8564754ac89
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

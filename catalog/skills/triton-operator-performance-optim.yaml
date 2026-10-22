@@ -1,0 +1,22 @@
+id: triton-operator-performance-optim
+category: operators
+summary:
+  zh: 调优 Triton-Ascend Tiling 和内存使用，并复核精度与性能。
+  en: Tune Triton-Ascend tiling and memory use while rechecking correctness and performance.
+tags:
+- Model Agent
+- Triton
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: model-agent
+  path: skills/optimization/triton-operator-performance-optim/SKILL.md
+  sha256: 5f61eac775b578c00c28772d8518189c2a2781f61e20a15e6a5d32a9daaa9647
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

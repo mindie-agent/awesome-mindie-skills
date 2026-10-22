@@ -1,23 +1,22 @@
 id: ops-profiling
 category: profiling
 summary:
-  zh: 用 msprof 采集算子性能，对比候选与标杆并生成瓶颈分析和测量报告。
-  en: Collect operator performance with msprof, compare candidates against references, and report bottlenecks
-    and measurements.
+  zh: 采集可比较的算子时延和硬件指标，输出逐 Kernel 瓶颈分析。
+  en: Collect comparable operator latency and hardware metrics and report per-kernel bottlenecks.
 tags:
 - CANNBot
-- CANN
-- msprof
+- Operator support
+- Profiling and optimization
 execution: npu
 role: task
 source:
   project: cannbot-skills
   path: ops/ops-profiling/SKILL.md
-  sha256: 99233a65e7aff8464f6dade896af1ad333b27e5a34fbe91565be78ade6490d0e
+  sha256: 42204da485e79848723f5aee8c9eb3ac2742000e8c72e6473872ab64093230df
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

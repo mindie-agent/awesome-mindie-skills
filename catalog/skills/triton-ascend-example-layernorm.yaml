@@ -1,0 +1,23 @@
+id: triton-ascend-example-layernorm
+category: operators
+summary:
+  en: Use the Triton-Ascend implementation example for LayerNorm as a code-structure reference.
+  zh: 参考 Triton-Ascend LayerNorm实现示例及代码结构。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Implementation example
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/examples/triton-ascend-example-layernorm/SKILL.md
+  sha256: 4371f05b5800717e5d55d7539f20b969633a2b892aa269a7897f86f9c434d6c6
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

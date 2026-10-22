@@ -1,0 +1,22 @@
+id: example-sim-support
+category: operators
+summary:
+  zh: 使 AscendC 样例支持 NPU、CPU 调试和仿真三种构建模式。
+  en: Adapt an AscendC example to selectable NPU, CPU-debug, and simulator build modes.
+tags:
+- AscendC Agent
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: ascendc-skills
+  path: skills/sample/example-sim-support/SKILL.md
+  sha256: 937a1bd47efb0a166fa1a98b1c9841df7724e7f70280fd74d633b9795888ef20
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,23 @@
+id: aog-a3-author
+category: operators
+summary:
+  zh: 为跨代迁移生成源架构标杆运行器和输入清单。
+  en: Generate source-architecture reference runners and input manifests for cross-generation migration.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot
+  path: plugins-community/ascendc-port-orchestrator/skills/aog-a3-author/SKILL.md
+  sha256: f08b2db740a1304afc9ed730dcd8a9adf1f6cffcf130c7227feb559b52a983be
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

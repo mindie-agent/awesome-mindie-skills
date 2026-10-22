@@ -2,8 +2,8 @@ id: model-infer-perf-breakdown
 category: profiling
 summary:
   zh: 将 kernel_details.csv 与 trace 按模型组件拆解，生成耗时、空隙和异常层 HTML 报告。
-  en: Break down kernel_details.csv and traces by model component and generate an HTML report of timing,
-    gaps, and anomalous layers.
+  en: Break down kernel_details.csv and traces by model component and generate an HTML report of timing, gaps, and
+    anomalous layers.
 tags:
 - CANNBot
 - Ascend
@@ -16,8 +16,8 @@ source:
   sha256: 3c23d1a7a1893f705c16e3ecc89e40e7eda1460a478d9527acf8309fb7ffcaf9
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

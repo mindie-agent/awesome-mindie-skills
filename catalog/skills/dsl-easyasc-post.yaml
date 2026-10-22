@@ -1,0 +1,23 @@
+id: dsl-easyasc-post
+category: operators
+summary:
+  zh: 将 easyasc 原生生成结果适配到 CAKE 算子工程布局。
+  en: Adapt native easyasc code-generation output to the CAKE operator project layout.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/dsl-easyasc-post/SKILL.md
+  sha256: 90193066bb46a3e0bd7a94a2e3abb41dadc9eabcbb1eaf4bcd895b8b18c96754
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

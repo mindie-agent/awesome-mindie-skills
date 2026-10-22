@@ -2,8 +2,7 @@ id: torch-npugraph-ex-dfx-triage
 category: debugging
 summary:
   zh: 收集分层日志并将 npugraph_ex 问题路由到编译、运行时、精度或性能诊断。
-  en: Collect layered logs and route npugraph_ex issues to compilation, runtime, accuracy, or performance
-    diagnosis.
+  en: Collect layered logs and route npugraph_ex issues to compilation, runtime, accuracy, or performance diagnosis.
 tags:
 - CANNBot
 - PyTorch
@@ -16,8 +15,8 @@ source:
   sha256: 1af3cb6c1ba18e011ee1e06952d49c071b4db7fb0985928bbd518ed84ce71a80
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

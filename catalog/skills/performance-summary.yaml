@@ -1,0 +1,22 @@
+id: performance-summary
+category: profiling
+summary:
+  zh: 汇总不同用例的 Kernel 评测结果和优化观察。
+  en: Summarize kernel benchmark results and optimization observations across cases.
+tags:
+- AKG
+- Operator support
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/performance-summary/SKILL.md
+  sha256: b3ed6da209411f1352d1308bca4982675843a09a0c3db7250e06015702bc04f6
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

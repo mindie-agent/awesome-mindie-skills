@@ -1,0 +1,24 @@
+id: triton-ascend-case-reduction-sum-fused
+category: operators
+summary:
+  en: Consult a Triton-Ascend optimization case for fused elementwise/sum, including its scoped design and measurement
+    observations.
+  zh: 参考 Triton-Ascend 逐元素与 sum 融合优化案例及其限定场景下的设计、测量观察。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Optimization case
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/cases/triton-ascend-case-reduction-sum-fused/SKILL.md
+  sha256: cfdf0724aab830ab77d823b4206a5e32ffeecef97cd9ea138af9af80a82e228d
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

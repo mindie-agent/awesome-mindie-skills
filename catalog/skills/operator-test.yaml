@@ -1,0 +1,22 @@
+id: operator-test
+category: correctness
+summary:
+  zh: 以 optest 计划描述 AscendC 用例，执行数据生成、调用与校验。
+  en: Describe AscendC cases in an optest plan and execute data generation, invocation, and validation.
+tags:
+- AscendC Agent
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/ut-gen/SKILL.md
+  sha256: 15f6d3de65c298544fabea1c1137d8a62e864d8855e16b60f466f892f77a2300
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,23 @@
+id: remote-cann-development
+category: operators
+summary:
+  zh: 在指定远程 NPU 后端同步、执行和测试算子工程。
+  en: Synchronize, execute, and test an operator project on declared remote NPU backends.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/remote-cann-development/SKILL.md
+  sha256: 107dbfac6116af55a21b4a16b00892401968a99c1215d850e286142734e9e781
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

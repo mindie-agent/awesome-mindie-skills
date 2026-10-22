@@ -1,0 +1,22 @@
+id: triton-latency-optimizer
+category: operators
+summary:
+  zh: 每轮修改一个优化点，配对验证 Triton-Ascend 正确性与时延。
+  en: Optimize Triton-Ascend kernels one change at a time with paired correctness and latency checks.
+tags:
+- CANNBot
+- Triton
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: ops/triton-latency-optimizer/SKILL.md
+  sha256: 2a0d552bc88181dcd00a88a62281e9d8bfba1e77d960fca027b4e6bc036547d8
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

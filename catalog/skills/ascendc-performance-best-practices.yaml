@@ -1,0 +1,23 @@
+id: ascendc-performance-best-practices
+category: operators
+summary:
+  zh: 按算子族检索优化方法、参考代码和平台流水约束。
+  en: Retrieve operator-family optimization methods, reference code, and platform-specific pipeline constraints.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-performance-best-practices/SKILL.md
+  sha256: 5011a9207765c5b2b9ec660e95ee835e617cc51a3cd599e16d280ef500bebf8d
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

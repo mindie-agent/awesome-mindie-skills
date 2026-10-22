@@ -1,0 +1,22 @@
+id: ascendc-docs-gen
+category: delivery
+summary:
+  zh: 基于标准模板编写算子需求、详设、API 文档和 README。
+  en: Write operator requirements, detailed design, API documentation, and README files from standard templates.
+tags:
+- CANNBot
+- Ascend C
+- Review and delivery
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-docs-gen/SKILL.md
+  sha256: ad0d55932cdb1024415c3ecb471212b6c7217b58840a7ad738ed7dd32cbc7ad8
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

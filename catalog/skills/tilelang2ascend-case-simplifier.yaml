@@ -1,0 +1,23 @@
+id: tilelang2ascend-case-simplifier
+category: operators
+summary:
+  zh: 在保留声明覆盖维度的前提下精简算子用例集。
+  en: Reduce an operator case set while preserving its declared coverage dimensions.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot-skills
+  path: community/ops/tilelang2ascend-case-simplifier/SKILL.md
+  sha256: cede61149e9d328bf922c0d63a1e2d36f0d23430a75a753af50d63082c255a94
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

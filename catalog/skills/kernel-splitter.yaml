@@ -1,0 +1,22 @@
+id: kernel-splitter
+category: operators
+summary:
+  zh: 按中间数据和执行契约将算子拆分为合适的 Triton Kernel。
+  en: Split an operator into suitable Triton kernels with intermediate-data and execution contracts.
+tags:
+- AscendOpGenAgent
+- Triton
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: opgen
+  path: skills/triton/kernel-splitter/SKILL.md
+  sha256: 0eecc419fea739465d6ff576f90bb0413b241b4e7e3ac813d411c8c2e2ee0bcf
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

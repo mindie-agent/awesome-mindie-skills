@@ -1,0 +1,23 @@
+id: ascend-operator-guide
+category: operators
+summary:
+  zh: 按 AscendC 算子类别导航到所需概念、文档和优化方法。
+  en: Route AscendC operator families to required concepts, documentation, and optimization methods.
+tags:
+- AscendC Agent
+- Ascend C
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: ascendc-skills
+  path: skills/usability/op-gen/ascend-operator-guide/SKILL.md
+  sha256: 96ba2a7f98741c2a27ae19864a016bba5bb9329dad7fa5956c7f0d9d56854ea6
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

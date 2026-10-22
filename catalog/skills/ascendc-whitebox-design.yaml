@@ -1,0 +1,22 @@
+id: ascendc-whitebox-design
+category: correctness
+summary:
+  zh: 提取 Tiling/Kernel 路径并生成带覆盖检查的可执行白盒用例矩阵。
+  en: Extract tiling/kernel paths and generate executable whitebox case matrices with coverage checks.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-whitebox-design/SKILL.md
+  sha256: 29cd688825f7a52f8106f52f2b8829bbe03e186e1635f4c586266aa80b1f7e4b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

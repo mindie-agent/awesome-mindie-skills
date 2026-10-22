@@ -1,0 +1,22 @@
+id: ops-knowledge-vv-ingest
+category: operators
+summary:
+  zh: 提取非 Cube 算子路径及内存、Workspace、同步和生命周期契约。
+  en: Extract non-Cube operator routes and their memory, workspace, synchronization, and lifecycle contracts.
+tags:
+- CANNBot Knowledge
+- Operator support
+- Knowledge and cases
+execution: host
+role: task
+source:
+  project: cannbot-knowledge
+  path: .agents/skills/ops-knowledge-vv-ingest/SKILL.md
+  sha256: 80ac742c6a9d1108b85a2c53c0eecfcea38ce94ed7f14ff05ffeb2bf98fe22ab
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -2,8 +2,8 @@ id: model-infer-parallel-impl
 category: serving
 summary:
   zh: 按确认的 TP/EP 配置改造并行层、通信组、权重和启动配置，并验证模型运行。
-  en: Implement approved TP/EP configurations across parallel layers, communication groups, weights, and
-    launch settings, then validate execution.
+  en: Implement approved TP/EP configurations across parallel layers, communication groups, weights, and launch
+    settings, then validate execution.
 tags:
 - CANNBot
 - PyTorch
@@ -16,8 +16,8 @@ source:
   sha256: e4c1b934f7698ac54e677977eb9cf93cc27c5e3ff40e551fa34f4196b718e07f
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

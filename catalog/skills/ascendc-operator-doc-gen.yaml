@@ -1,0 +1,23 @@
+id: ascendc-operator-doc-gen
+category: delivery
+summary:
+  zh: 依据实现源码生成 PyTorch 风格算子接口文档。
+  en: Generate PyTorch-style operator interface documentation from implemented source.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Review and delivery
+- Community
+execution: host
+role: task
+source:
+  project: ascend-gitcode-agent-skills
+  path: community/Op/ascendc-operator-doc-gen/SKILL.md
+  sha256: 32714d75ab289d4d6e89af4919a0ef2e0d42cedaca76008af84cb6af18db3202
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

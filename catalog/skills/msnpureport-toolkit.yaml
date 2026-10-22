@@ -2,8 +2,8 @@ id: msnpureport-toolkit
 category: debugging
 summary:
   zh: 在受支持的 Ascend EP 环境导出 Device 日志，并按权限查询或设置维测配置。
-  en: Export device logs and query or set diagnostic configuration with the required permissions in supported
-    Ascend EP environments.
+  en: Export device logs and query or set diagnostic configuration with the required permissions in supported Ascend
+    EP environments.
 tags:
 - CANNBot
 - CANN
@@ -16,8 +16,8 @@ source:
   sha256: fc5bfddb016497b2fff1754f1da8a4b6d840e0b25138312104531b3896de580a
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

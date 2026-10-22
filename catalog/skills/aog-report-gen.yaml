@@ -1,0 +1,23 @@
+id: aog-report-gen
+category: delivery
+summary:
+  zh: 为跨代迁移或反向算子生成输出项目报告。
+  en: Generate a project report for cross-generation migration or backward-operator generation.
+tags:
+- CANNBot
+- Ascend C
+- Review and delivery
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/ascendc-port-orchestrator/skills/aog-report-gen/SKILL.md
+  sha256: ba38db8e4a14cd24d0b16eab68a8c61382c2b2ee6d4a23514949682b55f38fcd
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

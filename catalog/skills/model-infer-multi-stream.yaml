@@ -2,8 +2,8 @@ id: model-infer-multi-stream
 category: optimization
 summary:
   zh: 提供模型 DAG 拆解、多流 API 选择、同步与控核规则，用于方案设计和重叠验证。
-  en: Provide model DAG analysis, multistream API selection, synchronization, and core-allocation guidance
-    for planning and overlap validation.
+  en: Provide model DAG analysis, multistream API selection, synchronization, and core-allocation guidance for planning
+    and overlap validation.
 tags:
 - CANNBot
 - PyTorch
@@ -16,8 +16,8 @@ source:
   sha256: 4b1ef07a0d42a4c592e3116a26d2f8355ddc5e3ca6cdd380c73a83136e40116d
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

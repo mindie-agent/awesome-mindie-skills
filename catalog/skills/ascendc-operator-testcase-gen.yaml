@@ -1,0 +1,23 @@
+id: ascendc-operator-testcase-gen
+category: correctness
+summary:
+  zh: 生成供精度和性能评估复用的算子用例规格及 Golden 契约。
+  en: Generate a shared operator case specification and golden contract for precision and performance evaluation.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Testing and numerical validation
+- Community
+execution: npu
+role: task
+source:
+  project: ascend-gitcode-agent-skills
+  path: community/Op/ascendc-operator-testcase-gen/SKILL.md
+  sha256: 73cf4e4ff0afbf57c72eb08f0fe5df25f4a65a00382b7d28aeb752d232ea7554
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

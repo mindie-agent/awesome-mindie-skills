@@ -1,0 +1,23 @@
+id: aog-knowledge-maintain
+category: operators
+summary:
+  zh: 将运行发现与知识库去重并准备带来源的知识摄入。
+  en: Deduplicate runtime findings against the knowledge base and stage sourced knowledge intake.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/ascendc-port-orchestrator/skills/aog-knowledge-maintain/SKILL.md
+  sha256: 36abcc3b30ab578b00a2450a657d8092c8c35757e8e09a9fabf23875030ce2bc
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

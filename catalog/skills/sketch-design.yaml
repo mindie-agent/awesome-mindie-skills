@@ -1,0 +1,22 @@
+id: sketch-design
+category: operators
+summary:
+  zh: 描述感知硬件的算法草图和代码生成所需优化决策。
+  en: Describe hardware-aware algorithm sketches and optimization decisions for kernel generation.
+tags:
+- AKG
+- Operator support
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/designer/sketch-design/SKILL.md
+  sha256: b61721a6a410e7adacee1f459590d4d97ae37c5a4f828e89e67f651838ba880b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

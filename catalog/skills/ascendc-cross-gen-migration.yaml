@@ -1,0 +1,22 @@
+id: ascendc-cross-gen-migration
+category: operators
+summary:
+  zh: 完成 AscendC 算子 A2/A3 到 A5 的架构改造及精度、性能验证。
+  en: Migrate AscendC operators from A2/A3 to A5 with architecture adaptation and precision/performance checks.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: cannbot-skills
+  path: ops/ascendc-cross-gen-migration/SKILL.md
+  sha256: 83fa6ffe8fc3c0d444a19581d547c2f86374dab26ac6d5798dde317a122c83e6
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

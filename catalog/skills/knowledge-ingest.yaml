@@ -1,0 +1,22 @@
+id: knowledge-ingest
+category: operators
+summary:
+  zh: 将登记文档或固定版本源码转为受治理、可追溯的候选知识。
+  en: Convert registered documents or fixed source revisions into governed, traceable knowledge candidates.
+tags:
+- CANNBot Knowledge
+- Operator support
+- Knowledge and cases
+execution: host
+role: task
+source:
+  project: cannbot-knowledge
+  path: .agents/skills/knowledge-ingest/SKILL.md
+  sha256: a912d8e017852ea703fd31cf6cc25b77e0e6a096ad4a5f8bff4c94643c9f8953
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

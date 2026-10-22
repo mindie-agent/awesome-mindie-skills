@@ -1,0 +1,23 @@
+id: vector-triton-ascend-ops-optimizer
+category: operators
+summary:
+  zh: 通过 UB 预算、批处理和流水优化 Vector Triton，并进行实测对比。
+  en: Optimize Vector Triton kernels using UB budgeting, batching, pipelines, and measured comparisons.
+tags:
+- Ascend Agent Skills
+- Triton
+- Profiling and optimization
+- Community
+execution: npu
+role: task
+source:
+  project: ascend-gitcode-agent-skills
+  path: community/Op/vector-triton-ascend-ops-optimizer/SKILL.md
+  sha256: 5dfd5710d9c49cd45ff8cf5f584529b2b3af5939d6dd13cd8ff24ca8c0b67226
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,22 @@
+id: triton-operator-precision-eval
+category: correctness
+summary:
+  zh: 对比 Triton 与 PyTorch 实现并生成数值误差报告。
+  en: Compare a Triton implementation with PyTorch and generate numerical error reports.
+tags:
+- Model Agent
+- Triton
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: model-agent
+  path: skills/optimization/triton-operator-precision-eval/SKILL.md
+  sha256: 4ee50d54df9a18f267b9904748c05d5da58bc2a1e3e625b32d5f89bac140e0a5
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

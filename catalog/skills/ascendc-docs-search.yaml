@@ -1,0 +1,22 @@
+id: ascendc-docs-search
+category: operators
+summary:
+  zh: 通过本地索引和在线来源查找 AscendC API、样例及兼容性资料。
+  en: Find AscendC API documentation, examples, and compatibility references using local indexes and online sources.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-docs-search/SKILL.md
+  sha256: b6562c0b9dbe5acdf79f9f97301727fedf8187d7ee64a33284c4fa1a5d3dd3dd
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []
