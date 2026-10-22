@@ -63,9 +63,9 @@ Each entry's metadata links to its review scope, reproduction cases, and evidenc
 
 <!-- CATALOG:START -->
 
-84 skills · 10 categories
+85 skills · 10 categories
 
-Definitions reviewed: 84 · Entries with execution reproductions: 0. See each entry's metadata for scope.
+Definitions reviewed: 85 · Entries with execution reproductions: 0. See each entry's metadata for scope.
 
 | Upstream Source | Listed | Maintainer | License |
 |---|---|---|---|
@@ -77,7 +77,7 @@ Definitions reviewed: 84 · Entries with execution reproductions: 0. See each en
 | [va-hixl-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 5 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | CANN-2.0 |
 | [va-apache-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 4 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | Apache-2.0 |
 | [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
-| [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 1 | Henry-Avery | MIT |
+| [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 2 | Henry-Avery | MIT |
 
 - [Environment and dependencies](#environment)
 - [Model integration and conversion](#model-integration)
@@ -146,6 +146,8 @@ Deploy colocated or disaggregated services and verify topology, endpoints, and r
   `CANNBot` `PyTorch` `Parallelism` `Host tools` · [Metadata](catalog/skills/model-infer-parallel-analysis.yaml)
 - [model-infer-parallel-impl](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-impl/SKILL.md) — Implement approved TP/EP configurations across parallel layers, communication groups, weights, and launch settings, then validate execution.
   `CANNBot` `PyTorch` `HCCL` `NPU execution` · [Metadata](catalog/skills/model-infer-parallel-impl.yaml)
+- [platform-agent-launch-config](https://github.com/Henry-Avery/ascend-agent-skills/blob/c95957444543f136fa30ba054d1afd5cf3900622/skills/platform-agent-launch-config/SKILL.md) — Trace an inference platform launch path and reuse existing configuration to prepare field guidance, agent scripts, differences, and gaps for a human or agent handoff.
+  `vLLM Ascend` `AiClusterHub` `PD` `Host tools` · [Metadata](catalog/skills/platform-agent-launch-config.yaml)
 - [vllm-ascend-pd-serving](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-pd-serving/SKILL.md) — Plan and review prefill/decode vLLM Ascend serving with explicit roles, connectors, ordering and KV transfer evidence.
   `vLLM Ascend` `PD` `NPU execution` · [Metadata](catalog/skills/vllm-ascend-pd-serving.yaml)
 - [vllm-ascend-serving](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-serving/SKILL.md) — Plan and review one colocated vLLM Ascend service lifecycle, including source pairing, device selection, launch, health, and cleanup.
@@ -338,7 +340,7 @@ Map changes to build, correctness, and performance checks and record coverage.
   `Ascend` `vLLM Ascend` `Offline analysis` `Workflow` · [Metadata](catalog/skills/vllm-ascend-release-note-writer.yaml)
 - [vllm-ascend-release](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-release/SKILL.md) — End-to-end release management skill for vLLM Ascend.
   `Ascend` `vLLM Ascend` `Offline analysis` `Workflow` · [Metadata](catalog/skills/vllm-ascend-release.yaml)
-- [vllm-dev-chat-organization](https://github.com/Henry-Avery/ascend-agent-skills/blob/0d34abd7e3b2e599d8bc5d2bbded76d732fa1e4a/skills/vllm-dev-chat-organization/SKILL.md) — Name vLLM development chats by their actual goal, organize a specified scope, and prepare or perform authorized archival.
+- [vllm-dev-chat-organization](https://github.com/Henry-Avery/ascend-agent-skills/blob/c95957444543f136fa30ba054d1afd5cf3900622/skills/vllm-dev-chat-organization/SKILL.md) — Name vLLM development chats by their actual goal, organize a specified scope, and prepare or perform authorized archival.
   `vLLM` `vLLM Ascend` `Host tools` · [Metadata](catalog/skills/vllm-dev-chat-organization.yaml)
 
 <!-- CATALOG:END -->

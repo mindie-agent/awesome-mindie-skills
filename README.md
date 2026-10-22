@@ -63,9 +63,9 @@
 
 <!-- CATALOG:START -->
 
-84 个技能 · 10 个分类
+85 个技能 · 10 个分类
 
-定义已审阅：84 · 已有运行复现记录：0。具体范围见各条目记录。
+定义已审阅：85 · 已有运行复现记录：0。具体范围见各条目记录。
 
 | 来源项目 | 已收录 | 维护者 | 许可证 |
 |---|---|---|---|
@@ -77,7 +77,7 @@
 | [va-hixl-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 5 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | CANN-2.0 |
 | [va-apache-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 4 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | Apache-2.0 |
 | [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
-| [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 1 | Henry-Avery | MIT |
+| [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 2 | Henry-Avery | MIT |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -146,6 +146,8 @@
   `CANNBot` `PyTorch` `Parallelism` `主机工具` · [条目](catalog/skills/model-infer-parallel-analysis.yaml)
 - [model-infer-parallel-impl](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-impl/SKILL.md) — 按确认的 TP/EP 配置改造并行层、通信组、权重和启动配置，并验证模型运行。
   `CANNBot` `PyTorch` `HCCL` `执行需 NPU` · [条目](catalog/skills/model-infer-parallel-impl.yaml)
+- [platform-agent-launch-config](https://github.com/Henry-Avery/ascend-agent-skills/blob/c95957444543f136fa30ba054d1afd5cf3900622/skills/platform-agent-launch-config/SKILL.md) — 梳理推理平台启动链，复用已有配置，整理填写说明、Agent 脚本、差异与缺项，供人工或 Agent 接续。
+  `vLLM Ascend` `AiClusterHub` `PD` `主机工具` · [条目](catalog/skills/platform-agent-launch-config.yaml)
 - [vllm-ascend-pd-serving](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-pd-serving/SKILL.md) — 部署 Prefill/Decode 分离服务，验证连接器、角色启动顺序与 KV 传输。
   `vLLM Ascend` `PD` `执行需 NPU` · [条目](catalog/skills/vllm-ascend-pd-serving.yaml)
 - [vllm-ascend-serving](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-serving/SKILL.md) — 完成共置服务的版本配对、设备选择、启动、健康检查与清理。
@@ -325,7 +327,7 @@
   `Ascend` `vLLM Ascend` `离线分析` `流程编排` · [条目](catalog/skills/vllm-ascend-release-note-writer.yaml)
 - [vllm-ascend-release](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-release/SKILL.md) — 组织 vLLM Ascend 发布检查和交付
   `Ascend` `vLLM Ascend` `离线分析` `流程编排` · [条目](catalog/skills/vllm-ascend-release.yaml)
-- [vllm-dev-chat-organization](https://github.com/Henry-Avery/ascend-agent-skills/blob/0d34abd7e3b2e599d8bc5d2bbded76d732fa1e4a/skills/vllm-dev-chat-organization/SKILL.md) — 按实际工作目标命名 vLLM 开发会话，整理指定范围，并在授权后准备或执行归档。
+- [vllm-dev-chat-organization](https://github.com/Henry-Avery/ascend-agent-skills/blob/c95957444543f136fa30ba054d1afd5cf3900622/skills/vllm-dev-chat-organization/SKILL.md) — 按实际工作目标命名 vLLM 开发会话，整理指定范围，并在授权后准备或执行归档。
   `vLLM` `vLLM Ascend` `主机工具` · [条目](catalog/skills/vllm-dev-chat-organization.yaml)
 
 <!-- CATALOG:END -->

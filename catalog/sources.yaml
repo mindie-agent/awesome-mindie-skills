@@ -42,6 +42,6 @@ sources:
     maintainer: xuchi-0808
   ascend-agent-skills:
     repository: https://github.com/Henry-Avery/ascend-agent-skills
-    revision: 0d34abd7e3b2e599d8bc5d2bbded76d732fa1e4a
+    revision: c95957444543f136fa30ba054d1afd5cf3900622
     license: MIT
     maintainer: Henry-Avery
