@@ -1,0 +1,22 @@
+id: asc-ar-dev
+category: operators
+summary:
+  zh: 分析 AscendC 需求、核对 API、实现评审代码并规划构建、仿真与上板验证。
+  en: Analyze AscendC requirements, verify API facts, implement/review code, and plan build/simulation/device validation.
+tags:
+- Ascend DevKit
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: asc-devkit
+  path: .agent/skills/asc-ar-dev/SKILL.md
+  sha256: ab8b9752b8034f87a91cd855df73ee21c4361c32ac8efcf1a2aa191150cb94d6
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

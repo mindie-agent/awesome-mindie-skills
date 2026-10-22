@@ -1,0 +1,23 @@
+id: ascendc-mssanitizer
+category: debugging
+summary:
+  zh: 运行解释 mssanitizer，检测非法访问、泄漏和 UB 越界。
+  en: Run and interpret mssanitizer checks for illegal memory accesses, leaks, and UB bounds.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Testing and numerical validation
+- Community
+execution: npu
+role: task
+source:
+  project: ascend-agent-skills
+  path: community/Op/ascendc-operator-mssanitizer/SKILL.md
+  sha256: c9c80afeede2c79e2abe3e150e14341321cf3c3225249d1afa9c6d7c13ea40a4
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

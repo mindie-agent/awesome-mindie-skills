@@ -1,0 +1,22 @@
+id: ops-knowledge-trace-ingest
+category: operators
+summary:
+  zh: 将算子开发轨迹提炼为带来源的诊断 Runbook 和修复模式。
+  en: Distill operator-development traces into sourced diagnostic runbooks and reusable repair patterns.
+tags:
+- CANNBot Knowledge
+- Operator support
+- Knowledge and cases
+execution: host
+role: task
+source:
+  project: cannbot-knowledge
+  path: .agents/skills/ops-knowledge-trace-ingest/SKILL.md
+  sha256: 9bc31c2a0f9ea434b0f819a0cc9b6d2fa5a319db8267699aa19af8f00a7feae4
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

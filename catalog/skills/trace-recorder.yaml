@@ -1,0 +1,22 @@
+id: trace-recorder
+category: operators
+summary:
+  zh: 记录算子实现、验证和优化决策，形成执行轨迹。
+  en: Record implementation, verification, and optimization decisions in an operator execution trace.
+tags:
+- AscendOpGenAgent
+- Ascend C
+- Knowledge and cases
+execution: host
+role: task
+source:
+  project: opgen
+  path: skills/ascendc/trace-recorder/SKILL.md
+  sha256: 5e4fe2fc1d470c849824b73963a9aef81ad7076e68ddd347ebbe1aa5f3cf990c
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,23 @@
+id: triton-ascend-case-elemwise-concat
+category: operators
+summary:
+  en: Consult a Triton-Ascend optimization case for concatenation, including its scoped design and measurement observations.
+  zh: 参考 Triton-Ascend 拼接优化案例及其限定场景下的设计、测量观察。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Optimization case
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/cases/triton-ascend-case-elemwise-concat/SKILL.md
+  sha256: 763157736a1c3de44c8aed4b0c6e9c803225908a41b83848be3ae1c110bfcc74
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

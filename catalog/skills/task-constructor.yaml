@@ -1,0 +1,22 @@
+id: task-constructor
+category: operators
+summary:
+  zh: 构建包含标杆和可复现输入函数的独立 Kernel 生成任务。
+  en: Build a self-contained kernel-generation task with a reference and reproducible input functions.
+tags:
+- AKG
+- Operator support
+- Specification and modeling
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/task-constructor/SKILL.md
+  sha256: 950ac0e1defe3970ecc39cb7a86193d7a5a59788adf7cd1283fa72f95354d8f1
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

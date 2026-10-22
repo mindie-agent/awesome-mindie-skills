@@ -1,0 +1,22 @@
+id: performance-analyzer
+category: profiling
+summary:
+  zh: 采集对比 AscendC Kernel 性能并定位优化方向。
+  en: Collect and compare AscendC kernel performance and identify optimization directions.
+tags:
+- AscendOpGenAgent
+- Ascend C
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: opgen
+  path: skills/ascendc/performance-analyzer/SKILL.md
+  sha256: 5002538e8feee9003e5a8b1cb4c2369d0d8b8c3ca957af4b36309d8934be059c
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

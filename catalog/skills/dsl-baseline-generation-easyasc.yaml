@@ -1,0 +1,23 @@
+id: dsl-baseline-generation-easyasc
+category: operators
+summary:
+  zh: 从函数式 PyTorch 生成 easyasc DSL 初版，供 AscendC 代码生成。
+  en: Generate an initial easyasc DSL implementation from functional PyTorch for AscendC code generation.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/dsl-baseline-generation-easyasc/SKILL.md
+  sha256: 9776263cc0a2d5d0ac7faf8e206748d27aa97eac78c1976729e0c5450eb41820
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

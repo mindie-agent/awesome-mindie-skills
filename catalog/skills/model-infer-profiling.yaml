@@ -2,8 +2,8 @@ id: model-infer-profiling
 category: profiling
 summary:
   zh: 通过框架内置或注入式 torch_npu.profiler 采集模型性能数据，并检查输出完整性。
-  en: Collect model profiling data through built-in or injected torch_npu.profiler instrumentation and
-    verify output completeness.
+  en: Collect model profiling data through built-in or injected torch_npu.profiler instrumentation and verify output
+    completeness.
 tags:
 - CANNBot
 - PyTorch
@@ -16,8 +16,8 @@ source:
   sha256: 226d8b4d0b2889afde1e31ded6f8fe35c1be9b4664a7aebeaf327f4b557238fb
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

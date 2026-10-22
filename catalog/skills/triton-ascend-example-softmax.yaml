@@ -1,0 +1,23 @@
+id: triton-ascend-example-softmax
+category: operators
+summary:
+  en: Use the Triton-Ascend implementation example for Softmax as a code-structure reference.
+  zh: 参考 Triton-Ascend Softmax实现示例及代码结构。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Implementation example
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/examples/triton-ascend-example-softmax/SKILL.md
+  sha256: 21037dc1fb5a3840a31492d6bdffdd33c24c1586248a0bfc48204992f1702999
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

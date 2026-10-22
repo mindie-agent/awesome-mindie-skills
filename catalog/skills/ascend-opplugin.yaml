@@ -1,0 +1,22 @@
+id: ascend-opplugin
+category: operators
+summary:
+  zh: 按分发和算子契约实现测试昇腾 PyTorch op-plugin 绑定。
+  en: Implement and test Ascend PyTorch op-plugin bindings with matched dispatch and operator contracts.
+tags:
+- Awesome Ascend Skills
+- Operator support
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: awesome
+  path: skills/ops/ascend-opplugin/SKILL.md
+  sha256: adcd85403d5a2da31121037768a3f3245f63158b6cad4eac89d2dc1fa8373c02
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

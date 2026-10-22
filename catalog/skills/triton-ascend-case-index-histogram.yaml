@@ -1,0 +1,24 @@
+id: triton-ascend-case-index-histogram
+category: operators
+summary:
+  en: Consult a Triton-Ascend optimization case for histogram indexing, including its scoped design and measurement
+    observations.
+  zh: 参考 Triton-Ascend 直方图索引优化案例及其限定场景下的设计、测量观察。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Optimization case
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/cases/triton-ascend-case-index-histogram/SKILL.md
+  sha256: be1e094a293da8fb4db2cfb348ea29e063a338585b5ad6b2e619f3524f68d5a3
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

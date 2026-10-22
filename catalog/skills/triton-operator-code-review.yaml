@@ -1,0 +1,22 @@
+id: triton-operator-code-review
+category: delivery
+summary:
+  zh: 静态检查 Triton Host/Device 正确性、API 误用和性能隐患。
+  en: Statically inspect Triton host/device code for correctness, API misuse, and performance hazards.
+tags:
+- Model Agent
+- Triton
+- Review and delivery
+execution: host
+role: task
+source:
+  project: model-agent
+  path: skills/optimization/triton-operator-code-review/SKILL.md
+  sha256: e2be329865bf8b14481ba6b70194962a995fef8c2a231051a81dc116f106b35d
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

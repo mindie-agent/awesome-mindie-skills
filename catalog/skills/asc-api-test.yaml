@@ -1,0 +1,22 @@
+id: asc-api-test
+category: correctness
+summary:
+  zh: 生成 AscendC API 测试样例及数据、校验资产。
+  en: Generate AscendC API test examples and their data/checking assets.
+tags:
+- AscendC Agent
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: ascendc-skills
+  path: skills/docs/asc-api-test/SKILL.md
+  sha256: 32528632f8edf14bf782e1089050c016c4d545379a43bf4a8a009b6de8821175
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

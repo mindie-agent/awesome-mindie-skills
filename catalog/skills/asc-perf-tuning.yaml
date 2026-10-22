@@ -1,0 +1,22 @@
+id: asc-perf-tuning
+category: operators
+summary:
+  zh: 在支持架构上完成 AscendC 采集、诊断、优化、精度验证和性能对比。
+  en: Profile, diagnose, optimize, precision-check, and compare AscendC kernels on supported architectures.
+tags:
+- AscendC Agent
+- Ascend C
+- Profiling and optimization
+execution: npu
+role: workflow
+source:
+  project: ascendc-skills
+  path: skills/sample/asc-perf-tuning/SKILL.md
+  sha256: cebee6914af7b8886678f88adea9310d62ecb65fd3d8ec923a1718c4994e203d
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

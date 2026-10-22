@@ -1,0 +1,23 @@
+id: skill-trace
+category: operators
+summary:
+  zh: 记录算子生成中技能的输入、耗时和结果。
+  en: Record skill inputs, durations, and outcomes during operator generation.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/skill-trace/SKILL.md
+  sha256: 99466c6d9f4e10606c7afe164ec5ee1aa67eba7b32b2ca6b4c0598a96313cd57
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

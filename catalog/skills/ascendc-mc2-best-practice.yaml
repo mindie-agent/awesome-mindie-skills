@@ -1,0 +1,23 @@
+id: ascendc-mc2-best-practice
+category: operators
+summary:
+  zh: 设计调试多卡 AscendC 通算融合及其内存、同步契约。
+  en: Design and debug multidevice AscendC communication-computation fusion and its memory/synchronization contracts.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-mc2-best-practice/SKILL.md
+  sha256: fa4e323daa1498e804aed298bc23b27394eceedd40b69136d0c22666ffb9ae21
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

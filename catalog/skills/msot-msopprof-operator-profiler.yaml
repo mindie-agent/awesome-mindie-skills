@@ -1,0 +1,22 @@
+id: msot-msopprof-operator-profiler
+category: profiling
+summary:
+  zh: 选择上板或仿真采集方式，解释 msOpProf 指标、时间线和瓶颈。
+  en: Select device/simulator profiling modes and interpret msOpProf metrics, timelines, and bottlenecks.
+tags:
+- Ascend Agent Skills
+- Operator support
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: ascend-agent-skills
+  path: official/MindStudio/skills/msot-msopprof-operator-profiler/SKILL.md
+  sha256: b2c251ceb5e224961dc2c5c7a85b397044da746be07e69193f60a1fbb1889d47
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

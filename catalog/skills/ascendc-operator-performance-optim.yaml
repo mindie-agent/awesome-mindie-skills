@@ -1,0 +1,23 @@
+id: ascendc-operator-performance-optim
+category: operators
+summary:
+  zh: 依据实测瓶颈修改 AscendC 代码，并复核精度及相对基线性能。
+  en: Modify AscendC code from measured bottlenecks and recheck precision and baseline-relative performance.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Profiling and optimization
+- Community
+execution: npu
+role: task
+source:
+  project: ascend-agent-skills
+  path: community/Op/ascendc-operator-performance-optim/SKILL.md
+  sha256: 557b54fc6ded521070f8cbc040237bf4c7910816e4316c3552112bf425ff4672
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

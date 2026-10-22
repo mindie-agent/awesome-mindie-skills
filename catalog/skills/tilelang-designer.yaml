@@ -1,0 +1,22 @@
+id: tilelang-designer
+category: operators
+summary:
+  zh: 以块级和 Tile 级表达算子，为 AscendC 生成提供设计输入。
+  en: Express an operator at block and tile levels as the design input for AscendC generation.
+tags:
+- AscendOpGenAgent
+- Ascend C
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: opgen
+  path: skills/ascendc/tilelang-designer/SKILL.md
+  sha256: 5758593871e40002a4935ade3a54ecdc43d007848e4c0b281af5aad0550a6ab5
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

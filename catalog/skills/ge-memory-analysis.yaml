@@ -2,8 +2,7 @@ id: ge-memory-analysis
 category: profiling
 summary:
   zh: 分诊 GE Device 显存、Host 泄漏及算子地址问题，结合日志和报告进行内存归因。
-  en: Triage GE device memory, host leaks, and operator addresses, and attribute memory use from logs
-    and reports.
+  en: Triage GE device memory, host leaks, and operator addresses, and attribute memory use from logs and reports.
 tags:
 - CANNBot
 - GE
@@ -16,8 +15,8 @@ source:
   sha256: 46102b3b47b7491fed74fd306f3161c1f7bb84076aac2f2f6b218d3378136005
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

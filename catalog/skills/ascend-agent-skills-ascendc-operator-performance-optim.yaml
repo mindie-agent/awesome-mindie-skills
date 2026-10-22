@@ -1,0 +1,22 @@
+id: ascend-agent-skills-ascendc-operator-performance-optim
+category: operators
+summary:
+  zh: 使用 msprof op 构建采集 AscendC 算子，修改代码并重新采集对比。
+  en: Build and profile an AscendC operator with msprof op, change the code, and compare recollected results.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: ascend-agent-skills
+  path: official/MindStudio/skills/ascendc-operator-performance-optim/SKILL.md
+  sha256: 91cfed248a9f85482b7b4efc28ea49032a0824cb530fa820d6afd0af868fc1f4
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

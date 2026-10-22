@@ -1,0 +1,22 @@
+id: merge-incompatible-samples
+category: operators
+summary:
+  zh: 通过明确的编译期分支合并跨架构不兼容 AscendC 样例。
+  en: Combine incompatible architecture-specific AscendC samples with explicit compile-time branches.
+tags:
+- AscendC Agent
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: ascendc-skills
+  path: skills/sample/merge-incompatible-samples/SKILL.md
+  sha256: f65a6f132b4af950fd5916712ed8266e8a98bf65e5d717d744e7610b43567986
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

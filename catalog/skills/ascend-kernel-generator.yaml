@@ -1,0 +1,22 @@
+id: ascend-kernel-generator
+category: operators
+summary:
+  zh: 生成 AscendC Kernel，验证编译、精度、性能并归档通过实现。
+  en: Generate AscendC kernels, verify compilation/accuracy/performance, and save passing implementations.
+tags:
+- KernelHive
+- Ascend C
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: hive
+  path: skills/ascend-kernel-generator/SKILL.md
+  sha256: c7406abaa26f3aa4a5f69eb3d50a8a64c867f3935d022f7e039255606588ff82
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

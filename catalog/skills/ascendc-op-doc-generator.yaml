@@ -1,0 +1,23 @@
+id: ascendc-op-doc-generator
+category: delivery
+summary:
+  zh: 提取源码契约并生成 ACLNN API 文档和算子 README。
+  en: Extract source contracts to generate ACLNN API documentation and an operator README.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Review and delivery
+- Community
+execution: host
+role: task
+source:
+  project: ascend-agent-skills
+  path: community/Op/ascendc-op-doc-generator/SKILL.md
+  sha256: fb18dee5bcc11e0d2bd95e357cb102d87b45164529a1e824a476e58074ea3673
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

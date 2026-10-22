@@ -1,0 +1,23 @@
+id: aog-op-classify
+category: operators
+summary:
+  zh: 分类源算子，输出结构化结果和相关知识建议。
+  en: Classify source operators and emit a structured classification with relevant knowledge recommendations.
+tags:
+- CANNBot
+- Ascend C
+- Specification and modeling
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/ascendc-port-orchestrator/skills/aog-op-classify/SKILL.md
+  sha256: c1610526699505e720d6d383f781af11f802f2fc0d16c8bdfe5ad9d327c256cc
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

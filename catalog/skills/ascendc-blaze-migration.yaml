@@ -1,0 +1,22 @@
+id: ascendc-blaze-migration
+category: operators
+summary:
+  zh: 按固定契约将 Ascend950 Kernel 分支迁移到 Blaze/Tensor API，并配对验证。
+  en: Migrate an Ascend950 kernel branch to Blaze/Tensor API with frozen contracts and paired validation.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: cannbot-skills
+  path: ops/ascendc-blaze-migration/SKILL.md
+  sha256: c7f46123cccccd507bfa65317ffbb71f033583aee2818fe9dd3928a2766c0e3f
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,23 @@
+id: tilelang2ascend-tilelang-designer
+category: operators
+summary:
+  zh: 组织块级和 Tile 级设计，为 AscendC 转译准备 TileLang 设计表达。
+  en: Coordinate block- and tile-level design to prepare a TileLang description for AscendC translation.
+tags:
+- CANNBot
+- Ascend C
+- Design and pipelines
+- Community
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: community/ops/tilelang2ascend-tilelang-designer/SKILL.md
+  sha256: 52870c0bd7c6b94e34f0a1d4c68d5775bb5b4bef6b19f33b38e51a1c480c56ca
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

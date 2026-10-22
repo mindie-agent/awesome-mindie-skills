@@ -1,0 +1,22 @@
+id: asc-search
+category: operators
+summary:
+  zh: 建立查询 AscendC C API 文档索引，按需求定位资料。
+  en: Build and query an index of AscendC C API documentation for requirement-driven lookup.
+tags:
+- Ascend DevKit
+- Ascend C
+- Knowledge and cases
+execution: host
+role: task
+source:
+  project: asc-devkit
+  path: .agent/skills/asc-search/SKILL.md
+  sha256: 29b4424bfdf0ccef67f2a5fc529d6f8ab8982d2e98856797bfff06967134c1af
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

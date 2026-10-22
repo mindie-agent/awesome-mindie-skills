@@ -1,0 +1,23 @@
+id: ascendc-simt-best-practices
+category: operators
+summary:
+  zh: 查询 AscendC SIMT 线程排布、索引、搬运、同步和调试 API。
+  en: Look up AscendC SIMT thread layouts, indexing, data movement, synchronization, and debugging APIs.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ascendc-simt-best-practices/SKILL.md
+  sha256: 587bf91a8fb4193979aa6ad82439691ec459a5697fe70c58c32fa44e758b45de
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

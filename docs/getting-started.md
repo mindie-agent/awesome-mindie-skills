@@ -25,7 +25,7 @@ Read the source README for dependencies. Its entrypoints are under `skills/<name
 
 ```bash
 git clone https://gitcode.com/cann/cannbot-skills.git
-git -C cannbot-skills checkout --detach 393564ae43f304426db2c206e361cd43b2811413
+git -C cannbot-skills checkout --detach 5891c39619a56716b6f73a335ed7709560bb2da8
 ```
 
 CANNBot entrypoints use paths such as `model/<name>/SKILL.md`, `ops/<name>/SKILL.md`, `graph/<name>/SKILL.md`, and `tools/<name>/SKILL.md`. Entrypoints can route to sibling skills, platform-specific instructions, or plugin agents. The upstream installation guide describes plugin discovery and setup.

@@ -1,0 +1,24 @@
+id: triton-ascend-case-elemwise-cast
+category: operators
+summary:
+  en: Consult a Triton-Ascend optimization case for dtype conversion, including its scoped design and measurement
+    observations.
+  zh: 参考 Triton-Ascend 数据类型转换优化案例及其限定场景下的设计、测量观察。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Optimization case
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/cases/triton-ascend-case-elemwise-cast/SKILL.md
+  sha256: 48b16dc72d3502ec2af35ad55d0d4f79347a3658299d3d25742eacc9d1ae1319
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

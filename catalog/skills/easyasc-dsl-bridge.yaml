@@ -1,0 +1,23 @@
+id: easyasc-dsl-bridge
+category: operators
+summary:
+  zh: 为 easyasc 生成的 AscendC Kernel 构建 torch_npu 绑定和 ModelNew 封装。
+  en: Generate torch_npu bindings and ModelNew wrappers for easyasc-generated AscendC kernels.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/easyasc-dsl-bridge/SKILL.md
+  sha256: c614a76cccdbc1006fa18671f7caa1f5430cfd867b65db2c190a96e3fae92e02
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

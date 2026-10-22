@@ -1,0 +1,23 @@
+id: ascendc-operator-compile-debug
+category: debugging
+summary:
+  zh: 构建安装 AscendC 扩展，运行精度测试并修复失败。
+  en: Build an AscendC extension, install its package, run precision tests, and repair failures.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Testing and numerical validation
+- Community
+execution: npu
+role: task
+source:
+  project: ascend-agent-skills
+  path: community/Op/ascendc-operator-compile-debug/SKILL.md
+  sha256: 6a0f7d428fc9094f2f9840f743dad42b8a0c18367169c5658cd5bc7262395bd5
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

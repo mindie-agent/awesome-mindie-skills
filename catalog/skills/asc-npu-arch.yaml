@@ -1,0 +1,23 @@
+id: asc-npu-arch
+category: operators
+summary:
+  zh: 确认 DevKit 芯片名、架构宏、SocVersion、dtype 和 API 支持事实。
+  en: Resolve DevKit chip names, architecture macros, SocVersion, dtype, and API support facts.
+tags:
+- Ascend DevKit
+- Ascend C
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: asc-devkit
+  path: .agent/skills/asc-npu-arch/SKILL.md
+  sha256: 9569a92ba3e624ab8ff42167392c64ff8f36f79a1029b70c58d29740f8cd3dfd
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

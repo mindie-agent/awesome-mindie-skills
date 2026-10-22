@@ -1,0 +1,22 @@
+id: cann-review
+category: delivery
+summary:
+  zh: 按精确版本检查 GitCode PR 和跨仓契约，并进行反证检验。
+  en: Review exact GitCode PR revisions and cross-repository contracts with counterexample checks.
+tags:
+- AscendC Agent
+- Operator support
+- Review and delivery
+execution: host
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/code-review/cann-review/SKILL.md
+  sha256: 26456b0d6d3acd4a401f30a1691b333c3baab59646b37a69a7f94d51c0ce7b06
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

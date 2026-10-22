@@ -1,0 +1,22 @@
+id: hint-mode
+category: operators
+summary:
+  zh: 定义约束参数和搜索空间，指导算法草图优化。
+  en: Define a constrained parameter/search space to guide algorithm-sketch optimization.
+tags:
+- AKG
+- Operator support
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/designer/hint-mode/SKILL.md
+  sha256: 79f9b5a1162527207d75392a2b86ab41c4cb117772bc487aa5664d5f96bb2052
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

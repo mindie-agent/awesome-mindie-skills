@@ -1,0 +1,22 @@
+id: triton-op-verifier
+category: correctness
+summary:
+  zh: 检查 Triton 实现真实性、执行 Golden 比对并采集性能结果。
+  en: Check Triton implementation authenticity, execute golden comparisons, and collect benchmark results.
+tags:
+- CANNBot
+- Triton
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: ops/triton-op-verifier/SKILL.md
+  sha256: 4ff35a02d9558e8720bc2fc45bab43d7061bda82b1217ed969010c68730ea24c
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

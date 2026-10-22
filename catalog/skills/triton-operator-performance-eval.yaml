@@ -1,0 +1,22 @@
+id: triton-operator-performance-eval
+category: benchmarking
+summary:
+  zh: 使用 msprof 测量 Triton-Ascend 时延和利用率并报告瓶颈。
+  en: Measure Triton-Ascend latency and hardware utilization with msprof and report bottlenecks.
+tags:
+- Model Agent
+- Triton
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: model-agent
+  path: skills/optimization/triton-operator-performance-eval/SKILL.md
+  sha256: 5077b8cddf5e16d3af0099ce6a12207d0750275cdfdb47b2c2b748eb9ae42c0d
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

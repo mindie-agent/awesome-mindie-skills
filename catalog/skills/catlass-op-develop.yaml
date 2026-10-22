@@ -2,8 +2,7 @@ id: catlass-op-develop
 category: operators
 summary:
   zh: 依据设计和 CATLASS 参考工程生成 Kernel、Device 调用、Params 与 Epilogue 实现。
-  en: Generate CATLASS kernels, device invocation, parameters, and epilogues from a design and reference
-    project.
+  en: Generate CATLASS kernels, device invocation, parameters, and epilogues from a design and reference project.
 tags:
 - CANNBot
 - CATLASS
@@ -15,8 +14,8 @@ source:
   sha256: fb8f545f893b2f58b2a988c50b6497d580da1e000ae5fdba4a20ba9e227f6879
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

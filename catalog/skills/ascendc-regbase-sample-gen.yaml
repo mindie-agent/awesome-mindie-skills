@@ -1,0 +1,22 @@
+id: ascendc-regbase-sample-gen
+category: operators
+summary:
+  zh: 按 DevKit 样例结构生成面向指定平台的 AscendC RegBase 工程。
+  en: Generate a platform-specific AscendC RegBase sample in the DevKit example structure.
+tags:
+- AscendC Agent
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: ascendc-skills
+  path: skills/sample/ascendc-regbase-sample-gen/SKILL.md
+  sha256: 258dc714064834aab1557a6ef7d5f7b9fbb563da31e991844ec11185b243d4c9
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

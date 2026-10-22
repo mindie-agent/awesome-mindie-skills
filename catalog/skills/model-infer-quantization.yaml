@@ -2,8 +2,8 @@ id: model-infer-quantization
 category: optimization
 summary:
   zh: 接入已有 compressed-tensors 量化权重，检查产物契约、运行时映射、真实生效与收益。
-  en: Integrate existing compressed-tensors quantized weights and verify artifact contracts, runtime mapping,
-    activation, and gains.
+  en: Integrate existing compressed-tensors quantized weights and verify artifact contracts, runtime mapping, activation,
+    and gains.
 tags:
 - CANNBot
 - PyTorch
@@ -16,8 +16,8 @@ source:
   sha256: 661c95a4fa72e27243ed0f614b91476b240c223ae2092e410f93fbea6acb6ebe
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

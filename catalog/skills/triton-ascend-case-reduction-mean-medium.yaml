@@ -1,0 +1,24 @@
+id: triton-ascend-case-reduction-mean-medium
+category: operators
+summary:
+  en: Consult a Triton-Ascend optimization case for medium mean reductions, including its scoped design and measurement
+    observations.
+  zh: 参考 Triton-Ascend 中等规模 mean 归约优化案例及其限定场景下的设计、测量观察。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Optimization case
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/cases/triton-ascend-case-reduction-mean-medium/SKILL.md
+  sha256: c2a87b6a4bac6fe3318d1b3c9653ddee29e06a60bd4a95fba2ad67e160114081
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

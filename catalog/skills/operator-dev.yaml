@@ -1,0 +1,22 @@
+id: operator-dev
+category: operators
+summary:
+  zh: 路由到 CANNBot 算子技能，并叠加 MindIE-SD 集成、部署和模型验证约束。
+  en: Route operator work to CANNBot and apply MindIE-SD integration, deployment, and model-validation constraints.
+tags:
+- MindIE-SD
+- Operator support
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: mindiesd
+  path: .agents/skills/operator-dev/SKILL.md
+  sha256: 747d1489067e7d888c9c344a8535d6518e846d82a2bbbcd5264585158e1de186
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

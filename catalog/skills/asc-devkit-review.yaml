@@ -1,0 +1,22 @@
+id: asc-devkit-review
+category: delivery
+summary:
+  zh: 审查 Ascend DevKit PR 并形成基于源码的检视意见。
+  en: Review Ascend DevKit pull requests and produce source-grounded findings.
+tags:
+- AscendC Agent
+- Ascend C
+- Review and delivery
+execution: host
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/code-review/asc-devkit-review/SKILL.md
+  sha256: 48257c6004350878025de406c37263310e6fa8fb83a6ba55ffe6196ecba0eca4
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

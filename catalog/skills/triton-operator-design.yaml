@@ -1,0 +1,22 @@
+id: triton-operator-design
+category: operators
+summary:
+  zh: 定义 Triton 算子语义、接口、Tiling 和 Kernel 实现策略。
+  en: Specify Triton operator semantics, interface, tiling, and kernel implementation strategy.
+tags:
+- Model Agent
+- Triton
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: model-agent
+  path: skills/optimization/triton-operator-design/SKILL.md
+  sha256: 27f25abdfb754d8231c79d1d56f9188cad3e65befcae82672ac1fff179d5fd42
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

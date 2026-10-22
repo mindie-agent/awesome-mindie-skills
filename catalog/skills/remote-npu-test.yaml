@@ -1,0 +1,22 @@
+id: remote-npu-test
+category: correctness
+summary:
+  zh: 通过仓内远程执行器运行独立测试并回收结构化证据。
+  en: Run standalone tests through the repository remote runner and collect structured execution evidence.
+tags:
+- AscendC Agent
+- Operator support
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/remote-npu-test/SKILL.md
+  sha256: c107a7d9d92fc6a8b4b5262de82088620de8e72407098b723faddbc5bf3449c8
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

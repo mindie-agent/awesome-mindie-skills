@@ -1,0 +1,23 @@
+id: cake-docs-search
+category: operators
+summary:
+  zh: 为 CAKE 生成流程查找 AscendC API、样例和兼容性资料。
+  en: Find AscendC API, example, and compatibility resources for the CAKE generation pipeline.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/cake-docs-search/SKILL.md
+  sha256: 102a53dfce2f1142c72d14b1498112007b01aac0e65e958cfd2906cfd76b34e1
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

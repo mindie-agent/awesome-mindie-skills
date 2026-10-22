@@ -1,0 +1,23 @@
+id: git-version-management
+category: delivery
+summary:
+  zh: 通过 Git worktree 隔离算子变体并记录阶段提交和来源。
+  en: Isolate operator variants with Git worktrees and record stage commits and provenance.
+tags:
+- CANNBot
+- Ascend C
+- Review and delivery
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/git-version-management/SKILL.md
+  sha256: 139fc81fad3c1b90ba6cb9a3e2ad5f065b29bd5228284ff0caba0f435e1d962e
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,23 @@
+id: ascendc-operator-precision-debug
+category: debugging
+summary:
+  zh: 分析数值误差形态、隔离异常计算并验证 AscendC 修复。
+  en: Analyze numerical error patterns, isolate the faulty computation, and validate targeted AscendC repairs.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Testing and numerical validation
+- Community
+execution: npu
+role: task
+source:
+  project: ascend-agent-skills
+  path: community/Op/ascendc-operator-precision-debug/SKILL.md
+  sha256: 10a9bc17b7b44743ef2bf7df3472341f35510cdc64fd083d7868a8ce2299c79b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

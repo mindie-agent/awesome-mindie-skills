@@ -1,0 +1,23 @@
+id: code-performance-advisor
+category: operators
+summary:
+  zh: 结合专家规则和源码上下文诊断 AscendC 性能瓶颈。
+  en: Diagnose AscendC profiling bottlenecks using expert rules and source context.
+tags:
+- CANNBot
+- Ascend C
+- Profiling and optimization
+- Community
+execution: offline
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/code-performance-advisor/SKILL.md
+  sha256: f00e8b753e1cf05bfb93004df662aba140c6c2e60969611c8002a0a53c56d00d
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,23 @@
+id: tilelang2ascend-translator
+category: operators
+summary:
+  zh: 将 TileLang 设计转译为 AscendC Kernel 及 Python 调用封装。
+  en: Translate a TileLang design into an AscendC kernel and its Python invocation wrapper.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot-skills
+  path: community/ops/tilelang2ascend-translator/SKILL.md
+  sha256: d846188b43cdfeab5107184479ea6df734072f55f776117ebc444633caa4d655
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

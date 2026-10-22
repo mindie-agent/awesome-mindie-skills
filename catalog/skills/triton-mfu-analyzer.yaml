@@ -1,0 +1,22 @@
+id: triton-mfu-analyzer
+category: profiling
+summary:
+  zh: 按 dtype 校准峰值，测量算子利用率并拆解逐 Kernel 时延。
+  en: Measure operator utilization and decompose per-kernel latency with dtype-aware peak accounting.
+tags:
+- CANNBot
+- Triton
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: ops/triton-mfu-analyzer/SKILL.md
+  sha256: 82090890a245ce8dd12f27328013ab40b2dd4cf5410af6d371099833e4ea59ee
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

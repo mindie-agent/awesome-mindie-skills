@@ -1,0 +1,23 @@
+id: ascendc
+category: operators
+summary:
+  zh: 在 ascend-kernel 工程中组织设计、生成、构建、精度评估、采集与优化。
+  en: Coordinate design, generation, build, numerical evaluation, profiling, and optimization in an ascend-kernel
+    project.
+tags:
+- Awesome Ascend Skills
+- Ascend C
+- Implementation and migration
+execution: npu
+role: workflow
+source:
+  project: awesome
+  path: skills/ops/ascendc/SKILL.md
+  sha256: aff9c1f242d31e5d45a5cbe6dab2097ccf23ff4136dbd071c8cfeab7c94594b8
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

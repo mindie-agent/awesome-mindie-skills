@@ -1,0 +1,22 @@
+id: triton-task-extractor
+category: operators
+summary:
+  zh: 从用户代码或需求构建独立算子任务和输入用例。
+  en: Construct a self-contained operator task and case inputs from user code or requirements.
+tags:
+- CANNBot
+- Triton
+- Specification and modeling
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/triton-task-extractor/SKILL.md
+  sha256: 9cc8aeb23ee38caf1c9ee6dd7fce188337e57f58a51138f8c8600a93ae5de99c
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

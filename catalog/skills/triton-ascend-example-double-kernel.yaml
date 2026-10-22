@@ -1,0 +1,23 @@
+id: triton-ascend-example-double-kernel
+category: operators
+summary:
+  en: Use the Triton-Ascend implementation example for staged two-kernel execution as a code-structure reference.
+  zh: 参考 Triton-Ascend 分阶段双 Kernel 执行实现示例及代码结构。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Implementation example
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/examples/triton-ascend-example-double-kernel/SKILL.md
+  sha256: db68ab98c014af7738cd79a36c841942c808b08cbac07c7473deb88611adcb92
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

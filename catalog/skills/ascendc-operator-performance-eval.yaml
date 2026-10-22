@@ -1,0 +1,23 @@
+id: ascendc-operator-performance-eval
+category: benchmarking
+summary:
+  zh: 使用 Profiler 用例和对比报告评估 AscendC 实现与标杆性能。
+  en: Benchmark an AscendC implementation against its reference using profiler cases and comparison reports.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Profiling and optimization
+- Community
+execution: npu
+role: task
+source:
+  project: ascend-agent-skills
+  path: community/Op/ascendc-operator-performance-eval/SKILL.md
+  sha256: a064fec3ec258e8b4d0d5466a1d83ce717855375b8f7093b65600e0e53017637
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

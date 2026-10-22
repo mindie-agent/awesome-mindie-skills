@@ -1,0 +1,23 @@
+id: triton-ascend-case-elemwise-broadcast-3d
+category: operators
+summary:
+  en: Consult a Triton-Ascend optimization case for 3D broadcast, including its scoped design and measurement observations.
+  zh: 参考 Triton-Ascend 三维广播优化案例及其限定场景下的设计、测量观察。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Optimization case
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/cases/triton-ascend-case-elemwise-broadcast-3d/SKILL.md
+  sha256: 08080ca50969201b57f089f77392d226222e04098c9745ac12d80a3d6045ecc6
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

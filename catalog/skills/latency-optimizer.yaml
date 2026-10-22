@@ -1,0 +1,22 @@
+id: latency-optimizer
+category: operators
+summary:
+  zh: 依据测量反馈迭代优化 Triton-Ascend 时延，并回归精度。
+  en: Iteratively optimize Triton-Ascend latency with measured feedback and numerical regression checks.
+tags:
+- AscendOpGenAgent
+- Triton
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: opgen
+  path: skills/triton/latency-optimizer/SKILL.md
+  sha256: fac739ae2a456c7a1130d716f9b5848363016ef0b1bdba0d4848848dca37f3d0
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

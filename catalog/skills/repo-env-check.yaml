@@ -1,0 +1,22 @@
+id: repo-env-check
+category: environment
+summary:
+  zh: 检查选定 Python/CANN 环境并记录对应环境证据。
+  en: Inspect selected Python/CANN environment candidates and record scoped environment evidence.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+execution: npu
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-direct-invoke/skills/repo-env-check/SKILL.md
+  sha256: ca419ee6876ac07e4b3b491dae6715ee5e95adeb19142c7e76120193319bd1b4
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,23 @@
+id: ascendc-operator-doc-writer
+category: delivery
+summary:
+  zh: 结合本地源码和已有模板编写算子技术文档。
+  en: Write operator technical documentation from local source and an existing template.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Review and delivery
+- Community
+execution: host
+role: task
+source:
+  project: ascend-agent-skills
+  path: community/Op/ascendc-operator-doc-writer/SKILL.md
+  sha256: 513c18662f0a6d005276b8ad47242206f4d6be59a23bc10d903791282b65b4a1
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

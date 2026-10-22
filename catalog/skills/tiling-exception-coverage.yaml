@@ -1,0 +1,22 @@
+id: tiling-exception-coverage
+category: correctness
+summary:
+  zh: 为 Tiling UT 设计带明确失败或降级断言的负向用例。
+  en: Design negative Tiling UTs with explicit failure/degradation assertions.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-registry-invoke/skills/tiling-exception-coverage/SKILL.md
+  sha256: 9be33ccd02d20f2e923a25affd0afc3ac3ee8ac44b4884c7f9d04d798da91f9f
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

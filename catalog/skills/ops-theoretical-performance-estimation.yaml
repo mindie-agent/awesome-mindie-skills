@@ -1,0 +1,22 @@
+id: ops-theoretical-performance-estimation
+category: operators
+summary:
+  zh: 估算 Ascend950 RegBase 纯 Vector 算子的设计期时延下界。
+  en: Estimate design-time latency bounds for Ascend950 RegBase pure-Vector operators.
+tags:
+- CANNBot
+- Ascend C
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ops-theoretical-performance-estimation/SKILL.md
+  sha256: 1234f454b3595e69d27703f38bf2db7e18bfb54c72976a81161327a2ca739118
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

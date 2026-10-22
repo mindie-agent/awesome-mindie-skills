@@ -1,0 +1,22 @@
+id: ascendkerneloptimization
+category: operators
+summary:
+  zh: 结合评测反馈分析并迭代优化 AscendC Kernel。
+  en: Analyze and iteratively optimize an AscendC kernel with benchmark feedback.
+tags:
+- KernelHive
+- Ascend C
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: hive
+  path: skills/ascend-kernel-optimization/SKILL.md
+  sha256: d0d6708b3cf38b5694d0e17fd2528ec6c997a80a2b826ad5ed13954528eaed20
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

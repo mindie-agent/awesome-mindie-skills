@@ -1,0 +1,22 @@
+id: ascendc-performance-optimization
+category: operators
+summary:
+  zh: 依据实测瓶颈选择 Tiling、双缓冲、内存和计算优化方案。
+  en: Select tiling, double-buffering, memory, and compute optimizations from measured bottlenecks.
+tags:
+- AscendC Agent
+- Ascend C
+- Profiling and optimization
+execution: npu
+role: workflow
+source:
+  project: ascendc-skills
+  path: skills/usability/op-gen/ascendc-performance-optimization/SKILL.md
+  sha256: 608118d42637e1d2363ceb9ea35b32180102161c7415530827a83e89afc116c4
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,22 @@
+id: ascendc-planning
+category: operators
+summary:
+  zh: 规划 AscendC 语义、精度、Tiling、Buffer 和流水实现方案。
+  en: Plan AscendC semantics, numerical requirements, tiling, buffering, and pipeline implementation.
+tags:
+- AscendC Agent
+- Ascend C
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/design-gen/SKILL.md
+  sha256: 3586f1adc6c7d70ca9b969417a6b92bf9017b1f69f6f1c731f15f340fbcfe6b4
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

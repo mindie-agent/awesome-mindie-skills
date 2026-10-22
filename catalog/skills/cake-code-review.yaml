@@ -1,0 +1,23 @@
+id: cake-code-review
+category: delivery
+summary:
+  zh: 在评测前检查生成 AscendC 的结构和算法正确性。
+  en: Review generated AscendC structure and algorithm correctness before evaluation.
+tags:
+- CANNBot
+- Ascend C
+- Review and delivery
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/cake-code-review/SKILL.md
+  sha256: 19e5fe560571d5267ee07eee4dacda3fae560f3baf7fc22b1fd57fb68e4da84d
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

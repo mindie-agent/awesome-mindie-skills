@@ -1,0 +1,23 @@
+id: dsl-easyasc-codegen
+category: operators
+summary:
+  zh: 编写仿真 easyasc 算子，再生成原生 AscendC 代码。
+  en: Author and simulate an easyasc operator before generating native AscendC code.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/dsl-easyasc-codegen/SKILL.md
+  sha256: ae2e1c2de065c29445c7fdceb588d1eea2a5fad3476afa4b492983c1a471e37f
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

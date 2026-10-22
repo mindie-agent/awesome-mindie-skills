@@ -1,0 +1,23 @@
+id: repo-coding-rules
+category: operators
+summary:
+  zh: 应用 CANN Bench 实现真实性、包装、接口和 AscendC 代码规范。
+  en: Apply CANN Bench authenticity, wrapper, interface, and AscendC code-quality rules.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-direct-invoke/skills/repo-coding-rules/SKILL.md
+  sha256: 3feb8f35dc87b6052d312bd1831312b06991199af8395397da53aa588509ab02
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

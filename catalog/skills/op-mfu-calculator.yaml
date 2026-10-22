@@ -1,0 +1,22 @@
+id: op-mfu-calculator
+category: profiling
+summary:
+  zh: 依据 Shape、耗时、dtype 和硬件峰值计算算子利用率。
+  en: Calculate operator FLOPs utilization from shape, duration, dtype, and the declared hardware peak.
+tags:
+- Ascend Agent Skills
+- Operator support
+- Profiling and optimization
+execution: offline
+role: task
+source:
+  project: ascend-agent-skills
+  path: official/MindStudio/skills/op-mfu-calculator/SKILL.md
+  sha256: 02648a79ed3b87d7b0ada226af1446fbf86784fdb10cc50133c91b583b1303a6
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

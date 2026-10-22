@@ -1,0 +1,24 @@
+id: triton-ascend-error-fix
+category: operators
+summary:
+  en: Look up Triton-Ascend guidance on compiler, indexing, memory, and numerical failures for the documented platform
+    and compiler scope.
+  zh: 查询 Triton-Ascend 编译、索引、内存和数值问题指南，使用时核对所述平台和编译器范围。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/evolved-fix/triton-ascend-error-fix/SKILL.md
+  sha256: ff500f9a4e892fb706970744a5779e2f08933ec00885001e78a384ae0db28333
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

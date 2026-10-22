@@ -25,7 +25,7 @@ git -C vllm-ascend-skills checkout --detach 4e7417c3d88847a17ba6d61d6a9b748ad8e0
 
 ```bash
 git clone https://gitcode.com/cann/cannbot-skills.git
-git -C cannbot-skills checkout --detach 393564ae43f304426db2c206e361cd43b2811413
+git -C cannbot-skills checkout --detach 5891c39619a56716b6f73a335ed7709560bb2da8
 ```
 
 CANNBot 的技能入口分布在 `model/<name>/SKILL.md`、`ops/<name>/SKILL.md`、`graph/<name>/SKILL.md` 和 `tools/<name>/SKILL.md` 等路径下。入口可根据任务进一步路由至同级子技能、芯片架构专用说明或插件代理。插件发现与配置方式见上游安装指南。

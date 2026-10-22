@@ -1,0 +1,22 @@
+id: repo-test-develop
+category: correctness
+summary:
+  zh: 组织 proto、Golden、用例资产，以 CANN Bench 执行黑盒、白盒和回归评测。
+  en: Create proto/golden/cases assets and run blackbox, whitebox, and regression evaluation with CANN Bench.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-direct-invoke/skills/repo-test-develop/SKILL.md
+  sha256: ae2b4cee81c4a96922f6ca9d879d58bd1551a9449c222302b32b8fc3b8b27fa0
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

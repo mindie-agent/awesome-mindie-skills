@@ -1,0 +1,23 @@
+id: reference-generation
+category: operators
+summary:
+  zh: 生成保持语义的 PyTorch Golden 及可复现输入构造器。
+  en: Generate a faithful PyTorch golden implementation and reproducible input constructors.
+tags:
+- CANNBot
+- Ascend C
+- Specification and modeling
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/reference-generation/SKILL.md
+  sha256: 7c22179e851a293f6960b3cd3598b3752ed89b33f6a01709b615d7295e3c30ed
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

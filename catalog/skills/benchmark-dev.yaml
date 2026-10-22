@@ -1,0 +1,22 @@
+id: benchmark-dev
+category: operators
+summary:
+  zh: 开发使用 MindIE-SD 微基准，对比真实算子实现并检测性能漂移。
+  en: Develop and use MindIE-SD microbenchmarks to compare real operator implementations and detect drift.
+tags:
+- MindIE-SD
+- Operator support
+- Implementation and migration
+execution: npu
+role: task
+source:
+  project: mindiesd
+  path: .agents/skills/benchmark-dev/SKILL.md
+  sha256: 70f06bdbfa030e26d87ed37b913d4eacde4a6728adad9c2dec8b6a5e0f64a60a
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

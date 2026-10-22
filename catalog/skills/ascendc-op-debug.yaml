@@ -1,0 +1,23 @@
+id: ascendc-op-debug
+category: debugging
+summary:
+  zh: 基于假设检验诊断精度、崩溃、卡死和多核不一致。
+  en: Use a hypothesis-driven procedure to diagnose numerical errors, crashes, hangs, and multicore inconsistency.
+tags:
+- CANNBot
+- Ascend C
+- Testing and numerical validation
+- Community
+execution: npu
+role: task
+source:
+  project: cannbot
+  path: plugins-community/collaborative-agent-kernel-evolution/skills/ascendc-op-debug/SKILL.md
+  sha256: 601c22140dd04e4bd905c73293faf108543afc26cb9b809c5a8a0bb1b407b365
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

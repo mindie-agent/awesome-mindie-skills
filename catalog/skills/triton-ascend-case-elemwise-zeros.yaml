@@ -1,0 +1,24 @@
+id: triton-ascend-case-elemwise-zeros
+category: operators
+summary:
+  en: Consult a Triton-Ascend optimization case for zero initialization, including its scoped design and measurement
+    observations.
+  zh: 参考 Triton-Ascend 零初始化优化案例及其限定场景下的设计、测量观察。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Optimization case
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/cases/triton-ascend-case-elemwise-zeros/SKILL.md
+  sha256: fddc8cc71cdab815349131a64aa19e976a4eaca119721aebfada4a357bdc33d4
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

@@ -2,8 +2,8 @@ id: model-infer-migrator
 category: model-integration
 summary:
   zh: 将 HF 模型或本地代码适配到 cann-recipes-infer 或独立 Runner，建立 eager 推理基线。
-  en: Adapt HF models or local code to cann-recipes-infer or a standalone runner and establish an eager
-    inference baseline.
+  en: Adapt HF models or local code to cann-recipes-infer or a standalone runner and establish an eager inference
+    baseline.
 tags:
 - CANNBot
 - PyTorch
@@ -16,8 +16,8 @@ source:
   sha256: 6791bede4dc3939bebb20a6da8fea21cad5196e445fafe363523e8b0f572615d
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

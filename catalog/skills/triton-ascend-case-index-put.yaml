@@ -1,0 +1,24 @@
+id: triton-ascend-case-index-put
+category: operators
+summary:
+  en: Consult a Triton-Ascend optimization case for indexed updates, including its scoped design and measurement
+    observations.
+  zh: 参考 Triton-Ascend 索引更新优化案例及其限定场景下的设计、测量观察。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Optimization case
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/cases/triton-ascend-case-index-put/SKILL.md
+  sha256: ad962172062c7e70e65419bb832ed96f50cd450d478ffb6da9065d84d7e4729e
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

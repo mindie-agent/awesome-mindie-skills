@@ -1,0 +1,22 @@
+id: aiss-tiling-solver
+category: operators
+summary:
+  zh: 构造 AISS-TilingSolver 输入、求解 Tiling 参数并解释结果。
+  en: Prepare inputs for AISS-TilingSolver, solve tiling parameters, and interpret the result.
+tags:
+- CANNBot
+- Ascend C
+- Design and pipelines
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/aiss-tiling-solver/SKILL.md
+  sha256: 4add50f6a8c1f30ca3b59fe1926ed98c7b67186be0394174eb210668fa3dc73c
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

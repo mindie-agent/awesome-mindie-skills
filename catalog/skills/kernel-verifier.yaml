@@ -1,0 +1,22 @@
+id: kernel-verifier
+category: correctness
+summary:
+  zh: 检查 Triton 实现结构、执行 Golden 比对并测量通过候选。
+  en: Check Triton implementation structure, run golden comparisons, and benchmark valid candidates.
+tags:
+- AscendOpGenAgent
+- Triton
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: opgen
+  path: skills/triton/kernel-verifier/SKILL.md
+  sha256: d3cf7bbc09599cadfca46cbbcd3c912b20c041eddf223d8fd220fc5c35f46777
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

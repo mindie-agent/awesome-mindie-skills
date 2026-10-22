@@ -1,0 +1,23 @@
+id: ascendc-operator-st-gen
+category: correctness
+summary:
+  zh: 创建修复 CANN 算子的 ATK ST 双标杆精度验证工程。
+  en: Create or repair ATK ST dual-reference numerical validation for CANN operators.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Testing and numerical validation
+- Community
+execution: npu
+role: task
+source:
+  project: ascend-agent-skills
+  path: community/Op/ascendc-operator-st-gen/SKILL.md
+  sha256: 13708684ae3e15c019ede46b9a63dc7849b2e5b7ab4a3e61b0fc1a0235c8186a
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

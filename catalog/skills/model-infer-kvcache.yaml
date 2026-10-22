@@ -2,8 +2,8 @@ id: model-infer-kvcache
 category: optimization
 summary:
   zh: 选择并改造连续缓存、Paged Attention、MLA 或滑窗 KV cache，衔接 FA 算子并验证。
-  en: Select and implement contiguous, paged, MLA, or sliding-window KV caches, integrate attention operators,
-    and validate behavior.
+  en: Select and implement contiguous, paged, MLA, or sliding-window KV caches, integrate attention operators, and
+    validate behavior.
 tags:
 - CANNBot
 - PyTorch
@@ -16,8 +16,8 @@ source:
   sha256: 2678e4032732c8c91599d89b4ff256323b813983cfa0bb96b68b9f78cea4608e
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

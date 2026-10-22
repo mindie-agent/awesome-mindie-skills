@@ -1,0 +1,23 @@
+id: kernel-agent-overview
+category: operators
+summary:
+  zh: 说明 AKG 算子 Agent 角色、工具及生成与验证交互。
+  en: Explain AKG kernel-agent roles, tools, and generation/verification interaction.
+tags:
+- AKG
+- Operator support
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/kernel-agent/kernel-agent-overview/SKILL.md
+  sha256: 53bb83a092a73521d58c141cb0a4632a00bde038d66fe569708a3683b958b03e
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

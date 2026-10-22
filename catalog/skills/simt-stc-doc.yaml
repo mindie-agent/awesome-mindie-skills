@@ -1,0 +1,22 @@
+id: simt-stc-doc
+category: correctness
+summary:
+  zh: 依据已确认需求创建 SIMT 测试用例和缺陷记录模板。
+  en: Create a SIMT test-case and defect-record template from a confirmed requirement.
+tags:
+- AscendC Agent
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/simt-stc-doc/SKILL.md
+  sha256: cddb8ac619aed994141d80f2380a7f552984843a684b0dac68f702faec9cfdee
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

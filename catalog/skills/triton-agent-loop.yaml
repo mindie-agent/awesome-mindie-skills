@@ -1,0 +1,23 @@
+id: triton-agent-loop
+category: operators
+summary:
+  zh: 组织独立 Triton 优化轮次，保留逐轮产物与评测结果。
+  en: Coordinate independent Triton optimization rounds and retain per-round artifacts and evaluation results.
+tags:
+- CANNBot
+- Triton
+- Profiling and optimization
+- Community
+execution: npu
+role: workflow
+source:
+  project: cannbot
+  path: plugins-community/triton-auto-evolve/skills/triton-agent-loop/SKILL.md
+  sha256: 3dfe0023b0016bdafa230a9507e03b4d51876ba70eb31aac72e330d0cc89c13b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

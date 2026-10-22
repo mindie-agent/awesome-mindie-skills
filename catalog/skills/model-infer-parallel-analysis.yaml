@@ -2,8 +2,8 @@ id: model-infer-parallel-analysis
 category: serving
 summary:
   zh: 根据模型结构与 Atlas A2/A3 规格分析并行策略，输出 parallel_config 候选和定量依据。
-  en: Analyze model structure and Atlas A2/A3 specifications to propose parallel_config candidates with
-    quantitative rationale.
+  en: Analyze model structure and Atlas A2/A3 specifications to propose parallel_config candidates with quantitative
+    rationale.
 tags:
 - CANNBot
 - PyTorch
@@ -16,8 +16,8 @@ source:
   sha256: e8d1c8af698eb1115a1c0989e760b37bc54e4bedc914c852413ad05fa9dc262c
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

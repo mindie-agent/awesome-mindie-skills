@@ -2,8 +2,8 @@ id: ge-fusion-pass-skill
 category: optimization
 summary:
   zh: 串联 GE 自定义融合 pass 的需求分析、实现与功能验证，交付阶段证据。
-  en: Coordinate requirements, implementation, and functional validation for GE custom fusion passes with
-    stage evidence.
+  en: Coordinate requirements, implementation, and functional validation for GE custom fusion passes with stage
+    evidence.
 tags:
 - CANNBot
 - GE
@@ -16,8 +16,8 @@ source:
   sha256: eed1a22b656cc313fe1cfcc5f8d391e15f56e3eaf866bfc2657873804690823a
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

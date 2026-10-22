@@ -1,0 +1,22 @@
+id: triton-operator-code-gen
+category: operators
+summary:
+  zh: 从设计或功能需求生成昇腾 Triton Kernel 和冒烟测试。
+  en: Generate an Ascend Triton kernel and smoke test from a design or functional requirement.
+tags:
+- Model Agent
+- Triton
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: model-agent
+  path: skills/optimization/triton-operator-code-gen/SKILL.md
+  sha256: ce6fc8cdd3735c3b94566036299c22befaee868cea223bdab7eca689907254a9
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

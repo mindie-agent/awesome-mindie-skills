@@ -1,0 +1,23 @@
+id: ascendc-operator-code-review
+category: delivery
+summary:
+  zh: 检查 AscendC 代码正确性和工程规范问题。
+  en: Review AscendC source for correctness and engineering-rule violations.
+tags:
+- Ascend Agent Skills
+- Ascend C
+- Review and delivery
+- Community
+execution: host
+role: task
+source:
+  project: ascend-agent-skills
+  path: community/Op/ascendc-operator-code-review/SKILL.md
+  sha256: a2885c00c91656f0a1b1a2c581e999b4268853767acf160b1c31c7a2b233fc5f
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

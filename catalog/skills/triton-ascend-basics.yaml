@@ -1,0 +1,24 @@
+id: triton-ascend-basics
+category: operators
+summary:
+  en: Look up Triton-Ascend guidance on program IDs, grids, kernel structure, and launch syntax for the documented
+    platform and compiler scope.
+  zh: 查询 Triton-Ascend Program ID、Grid、Kernel 结构和启动语法指南，使用时核对所述平台和编译器范围。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/fundamentals/triton-ascend-basics/SKILL.md
+  sha256: af849fedde4ae13dbb47f04acb1050a0fb47ccde57ba1e07f684f5ef24275762
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

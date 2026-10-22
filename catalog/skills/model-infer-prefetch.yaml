@@ -2,8 +2,7 @@ id: model-infer-prefetch
 category: optimization
 summary:
   zh: 针对已确认的 memory-bound 热点设计权重预取窗口，接入 npu_prefetch 并测量收益。
-  en: Design weight-prefetch windows for confirmed memory-bound hotspots, integrate npu_prefetch, and
-    measure gains.
+  en: Design weight-prefetch windows for confirmed memory-bound hotspots, integrate npu_prefetch, and measure gains.
 tags:
 - CANNBot
 - torch_npu
@@ -16,8 +15,8 @@ source:
   sha256: 1e30ba58ef3073b6370198f6ae5dfcbbfe3163596afa12593cf4ccd8f34628fa
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

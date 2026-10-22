@@ -1,0 +1,22 @@
+id: triton-simulator-optimizer
+category: profiling
+summary:
+  zh: 采集仿真指令和流水证据，将瓶颈映射到优化动作。
+  en: Collect simulator instruction/pipe evidence and map bottlenecks to optimization actions.
+tags:
+- CANNBot
+- Triton
+- Profiling and optimization
+execution: npu
+role: task
+source:
+  project: cannbot-skills
+  path: ops/triton-simulator-optimizer/SKILL.md
+  sha256: 2390f7f6a99281316694818a6ca45334257cb8e2e23f85070cab54c256b707ec
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

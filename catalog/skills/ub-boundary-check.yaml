@@ -1,0 +1,22 @@
+id: ub-boundary-check
+category: debugging
+summary:
+  zh: 复现 UB 边界、向量读写、Mask 和搬运内存问题。
+  en: Reproduce UB boundary, vector-load/store, mask, and data-copy memory failures.
+tags:
+- AscendC Agent
+- Ascend C
+- Testing and numerical validation
+execution: npu
+role: task
+source:
+  project: ascendc-skills
+  path: skills/common/ub-boundary-check/SKILL.md
+  sha256: 771a68e4171f5365e740c2e036bf941f062ef1c141347660d05723267b09b152
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

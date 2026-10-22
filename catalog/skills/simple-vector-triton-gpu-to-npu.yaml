@@ -1,0 +1,23 @@
+id: simple-vector-triton-gpu-to-npu
+category: operators
+summary:
+  zh: 将简单 Vector Triton Kernel 从 GPU 迁移到昇腾并验证。
+  en: Port simple Vector Triton kernels from GPU to Ascend and verify the adapted implementation.
+tags:
+- Ascend Agent Skills
+- Triton
+- Implementation and migration
+- Community
+execution: depends-on-checks
+role: task
+source:
+  project: ascend-agent-skills
+  path: community/Op/simple-vector-triton-gpu-to-npu/SKILL.md
+  sha256: d0623c86ddd8ffc91b5c7fc67b96b6d9ba13d106b33da5c57431972e126f8a9c
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

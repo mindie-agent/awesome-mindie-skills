@@ -1,0 +1,23 @@
+id: aog-prior-art-verify
+category: operators
+summary:
+  zh: 查找已有目标架构迁移候选，核对来源并构建测量。
+  en: Find, provenance-stage, build, and measure existing target-architecture migration candidates.
+tags:
+- CANNBot
+- Ascend C
+- Design and pipelines
+- Community
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-community/ascendc-port-orchestrator/skills/aog-prior-art-verify/SKILL.md
+  sha256: b612d03b3391b281c430937d1899fd7032fe4b2d2a51ac547abd26adc814a48e
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

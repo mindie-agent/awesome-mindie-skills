@@ -1,0 +1,23 @@
+id: triton-ascend-examples-mindspore
+category: operators
+summary:
+  en: Use the Triton-Ascend implementation example for MindSpore integration as a code-structure reference.
+  zh: 参考 Triton-Ascend MindSpore 集成实现示例及代码结构。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Implementation example
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/examples/triton-ascend-examples-mindspore/SKILL.md
+  sha256: 1a28d1fec28e50bd2a7ec08ba5fe2df856cda4fe48b9b97f0b2b8fab316bca2b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

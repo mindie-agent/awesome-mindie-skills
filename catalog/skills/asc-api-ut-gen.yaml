@@ -1,0 +1,22 @@
+id: asc-api-ut-gen
+category: correctness
+summary:
+  zh: 依据结构化架构约束生成 DevKit API gtest，并按覆盖率补齐用例。
+  en: Generate DevKit API gtests with structured architecture constraints and coverage-driven case backfill.
+tags:
+- Ascend DevKit
+- Ascend C
+- Testing and numerical validation
+execution: depends-on-checks
+role: task
+source:
+  project: asc-devkit
+  path: .agent/skills/asc-api-ut-gen/SKILL.md
+  sha256: d96403b8829e8b0df9c771d8f2f1ad82290848e197e75ef7ba9940c3f205db1f
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

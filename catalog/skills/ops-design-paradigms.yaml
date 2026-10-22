@@ -1,0 +1,23 @@
+id: ops-design-paradigms
+category: operators
+summary:
+  zh: 选择广播、归约和收缩范式，核对资源与实现约束。
+  en: Choose broadcast, reduction, and contraction design paradigms and their resource/implementation constraints.
+tags:
+- CANNBot
+- Ascend C
+- Knowledge and cases
+- Knowledge reference
+execution: host
+role: task
+source:
+  project: cannbot-skills
+  path: ops/ops-design-paradigms/SKILL.md
+  sha256: bdf06d4a8d0ff22da4abf2974abf9deb443123af96917ab81a7fe9ca1277bf48
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

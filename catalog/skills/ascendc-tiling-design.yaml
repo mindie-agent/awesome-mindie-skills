@@ -1,11 +1,12 @@
 id: ascendc-tiling-design
 category: operators
 summary:
-  zh: 按算子类别设计多核和 UB 切分、Buffer 规划与分支覆盖。
+  zh: 按算子族设计多核与 UB 切分、Buffer 分配和分支覆盖。
   en: Design multicore and UB tiling, buffer allocation, and branch coverage by operator family.
 tags:
 - CANNBot
 - Ascend C
+- Design and pipelines
 execution: host
 role: task
 source:
@@ -14,8 +15,8 @@ source:
   sha256: b052bef9e8462a950a274bbefa3bf2d6e3e4dbf1926863299115bc886f87872e
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

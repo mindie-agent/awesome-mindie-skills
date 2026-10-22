@@ -1,0 +1,22 @@
+id: ascendc-build-system
+category: operators
+summary:
+  zh: 检查修复 AscendC Host/Kernel 构建及代码生成链路。
+  en: Inspect and repair the AscendC host/kernel build and code-generation pipeline.
+tags:
+- CANNBot
+- Ascend C
+- Implementation and migration
+execution: depends-on-checks
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-registry-invoke/skills/ascendc-build-system/SKILL.md
+  sha256: 3b2f9906c0cebe2d93bc658bd54c0647a52ae0e41267f98dd77e0c40a92e6368
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

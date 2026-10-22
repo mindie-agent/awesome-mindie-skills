@@ -1,12 +1,12 @@
 id: ascendc-registry-invoke-template
 category: operators
 summary:
-  zh: 基于模板搭建 Ascend C 注册调用工程，参考多架构实现和 UT/ST 样例。
-  en: Build Ascend C registered-operator projects from templates with multi-architecture implementations
-    and UT/ST examples.
+  zh: 创建包含 Host/Kernel 代码和 UT/ST 样例的注册调用工程。
+  en: Create a registered AscendC operator project with host/kernel code and UT/ST examples.
 tags:
 - CANNBot
 - Ascend C
+- Implementation and migration
 execution: depends-on-checks
 role: task
 source:
@@ -15,8 +15,8 @@ source:
   sha256: 76ca7150751aab12a02e70f07c92e87985fa25ecbb9444971c45355c9da2bf94
 review:
   status: definition-reviewed
-  date: '2026-10-15'
-  evidence: evidence/cannbot-definition-review-2026-10-15.md
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
 validation:
   status: not-recorded
   cases: []

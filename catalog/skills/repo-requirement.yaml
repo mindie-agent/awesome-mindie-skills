@@ -1,0 +1,22 @@
+id: repo-requirement
+category: operators
+summary:
+  zh: 记录跨重试复用的算子需求、环境选择和修改范围。
+  en: Record confirmed operator requirements, environment choices, and modification scope across retries.
+tags:
+- CANNBot
+- Ascend C
+- Specification and modeling
+execution: host
+role: task
+source:
+  project: cannbot
+  path: plugins-official/ops-direct-invoke/skills/repo-requirement/SKILL.md
+  sha256: e905a57654a8a97a7e7746ae2be4ca7ffa15470ba5e1b9814034a8455a72d84b
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []

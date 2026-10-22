@@ -1,0 +1,24 @@
+id: triton-ascend-case-reduction-mean-large
+category: operators
+summary:
+  en: Consult a Triton-Ascend optimization case for large mean reductions, including its scoped design and measurement
+    observations.
+  zh: 参考 Triton-Ascend 大规模 mean 归约优化案例及其限定场景下的设计、测量观察。
+tags:
+- AKG
+- Triton
+- Knowledge and cases
+- Optimization case
+execution: host
+role: task
+source:
+  project: akg
+  path: akg_agents/python/akg_agents/op/resources/skills/triton-ascend/cases/triton-ascend-case-reduction-mean-large/SKILL.md
+  sha256: a0ce3a89be1c4425a2e41b4c48e507a5a008f35e19922eafba9b4d8f3feb6b06
+review:
+  status: definition-reviewed
+  date: '2026-10-22'
+  evidence: evidence/operator-definition-review-2026-10-22.md
+validation:
+  status: not-recorded
+  cases: []
