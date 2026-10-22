@@ -1,0 +1,29 @@
+id: vllm-mrv2-kernel-workflow
+category: operators
+summary:
+  zh: 比较 vLLM tag 或 commit 的 MRV2 Triton 新增算子，生成源码约束的用例，可选在 Ascend 上验证源码并执行、测量。
+  en: Review new MRV2 Triton kernels between vLLM tags or commits, generate source-grounded cases, and optionally verify sources and execute and measure them on Ascend.
+tags:
+- vLLM Ascend
+- Triton
+- MRV2
+execution: depends-on-checks
+role: workflow
+source:
+  project: vllm-mrv2-kernel-tools
+  path: skills/vllm-mrv2-kernel-workflow/SKILL.md
+  sha256: 8404e5c1a994411e17e039d79df5995f36b3e666715bfdfeb22581366d313b00
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/vllm-mrv2-definition-review-2026-10-21.md
+validation:
+  status: reproduced
+  cases:
+  - date: '2026-10-21'
+    source_revision: ed71b1b56994e419998e4cd85f5ace013f92447d
+    environment:
+      hardware: macOS controller and one logical Ascend910_9362 NPU selected from 16 visible devices in a remote Docker container; single-device launches, no collectives; other devices had external jobs.
+      software: Python 3.12.13, torch 2.10.0+cpu, torch-npu 2.10.0.post7.dev20260918, Triton 3.6.0, triton-ascend 3.6.0+dev20260920, CANN 9.0.1; kernel-tools 0.2.2 at the pinned revision; generation used gpt-6-sol with medium reasoning.
+    scope: Source review identified two additions from v0.30.0 to v0.31.0 and produced eight structurally valid cases. Reproduction acceptance covers source-lock verification and all eight direct JIT cases exiting successfully with 50 finite nonnegative timing samples after 10 warmups on npu:0. All report correctness=not_checked. Preparation retained needs_review for runtime-validation limitations; no full-pipeline, numerical-correctness, model-coverage or performance-regression claim.
+    evidence: evidence/vllm-mrv2-execution-2026-10-21.md

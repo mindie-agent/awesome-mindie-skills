@@ -63,9 +63,9 @@ Each entry's metadata links to its review scope, reproduction cases, and evidenc
 
 <!-- CATALOG:START -->
 
-85 skills · 10 categories
+86 skills · 10 categories
 
-Definitions reviewed: 85 · Entries with execution reproductions: 0. See each entry's metadata for scope.
+Definitions reviewed: 86 · Entries with execution reproductions: 1. See each entry's metadata for scope.
 
 | Upstream Source | Listed | Maintainer | License |
 |---|---|---|---|
@@ -78,6 +78,7 @@ Definitions reviewed: 85 · Entries with execution reproductions: 0. See each en
 | [va-apache-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 4 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | Apache-2.0 |
 | [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
 | [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 2 | Henry-Avery | MIT |
+| [vllm-mrv2-kernel-tools](https://github.com/Liamup777/vllm-mrv2-kernel-tools) | 1 | Liamup777 | Apache-2.0 |
 
 - [Environment and dependencies](#environment)
 - [Model integration and conversion](#model-integration)
@@ -265,6 +266,8 @@ Connect kernel implementation, case validation, and per-shape optimization.
   `CANNBot` `PyTorch` `npugraph_ex` `Hardware depends on checks` · [Metadata](catalog/skills/torch-custom-ops-guide.yaml)
 - [triton-op-coding](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/triton-op-coding/SKILL.md) — Generate Triton Ascend kernels from task descriptions and iterate on code using error feedback.
   `CANNBot` `Triton` `Hardware depends on checks` · [Metadata](catalog/skills/triton-op-coding.yaml)
+- [vllm-mrv2-kernel-workflow](https://github.com/Liamup777/vllm-mrv2-kernel-tools/blob/ed71b1b56994e419998e4cd85f5ace013f92447d/skills/vllm-mrv2-kernel-workflow/SKILL.md) — Review new MRV2 Triton kernels between vLLM tags or commits, generate source-grounded cases, and optionally verify sources and execute and measure them on Ascend.
+  `vLLM Ascend` `Triton` `MRV2` `Hardware depends on checks` `Workflow` `Reproduction recorded` · [Metadata](catalog/skills/vllm-mrv2-kernel-workflow.yaml) · [Validation record](evidence/vllm-mrv2-execution-2026-10-21.md)
 
 <a id="debugging"></a>
 

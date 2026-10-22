@@ -63,9 +63,9 @@
 
 <!-- CATALOG:START -->
 
-85 个技能 · 10 个分类
+86 个技能 · 10 个分类
 
-定义已审阅：85 · 已有运行复现记录：0。具体范围见各条目记录。
+定义已审阅：86 · 已有运行复现记录：1。具体范围见各条目记录。
 
 | 来源项目 | 已收录 | 维护者 | 许可证 |
 |---|---|---|---|
@@ -78,6 +78,7 @@
 | [va-apache-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 4 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | Apache-2.0 |
 | [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
 | [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 2 | Henry-Avery | MIT |
+| [vllm-mrv2-kernel-tools](https://github.com/Liamup777/vllm-mrv2-kernel-tools) | 1 | Liamup777 | Apache-2.0 |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -265,6 +266,8 @@
   `CANNBot` `PyTorch` `npugraph_ex` `设备取决于检查项` · [条目](catalog/skills/torch-custom-ops-guide.yaml)
 - [triton-op-coding](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/triton-op-coding/SKILL.md) — 根据任务描述生成 Triton Ascend 内核，并结合错误反馈迭代代码。
   `CANNBot` `Triton` `设备取决于检查项` · [条目](catalog/skills/triton-op-coding.yaml)
+- [vllm-mrv2-kernel-workflow](https://github.com/Liamup777/vllm-mrv2-kernel-tools/blob/ed71b1b56994e419998e4cd85f5ace013f92447d/skills/vllm-mrv2-kernel-workflow/SKILL.md) — 比较 vLLM tag 或 commit 的 MRV2 Triton 新增算子，生成源码约束的用例，可选在 Ascend 上验证源码并执行、测量。
+  `vLLM Ascend` `Triton` `MRV2` `设备取决于检查项` `流程编排` `已有复现记录` · [条目](catalog/skills/vllm-mrv2-kernel-workflow.yaml) · [验证记录](evidence/vllm-mrv2-execution-2026-10-21.md)
 
 <a id="debugging"></a>
 

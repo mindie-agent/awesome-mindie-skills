@@ -45,3 +45,8 @@ sources:
     revision: c95957444543f136fa30ba054d1afd5cf3900622
     license: MIT
     maintainer: Henry-Avery
+  vllm-mrv2-kernel-tools:
+    repository: https://github.com/Liamup777/vllm-mrv2-kernel-tools
+    revision: ed71b1b56994e419998e4cd85f5ace013f92447d
+    license: Apache-2.0
+    maintainer: Liamup777
