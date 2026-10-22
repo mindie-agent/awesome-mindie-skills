@@ -63,9 +63,9 @@
 
 <!-- CATALOG:START -->
 
-87 个技能 · 10 个分类
+90 个技能 · 10 个分类
 
-定义已审阅：87 · 已有运行复现记录：1。具体范围见各条目记录。
+定义已审阅：90 · 已有运行复现记录：1。具体范围见各条目记录。
 
 | 来源项目 | 已收录 | 维护者 | 许可证 |
 |---|---|---|---|
@@ -80,6 +80,7 @@
 | [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 2 | Henry-Avery | MIT |
 | [vllm-mrv2-kernel-tools](https://github.com/Liamup777/vllm-mrv2-kernel-tools) | 1 | Liamup777 | Apache-2.0 |
 | [upstream-downstream-analysis](https://github.com/SOMEONEUNSEEN/awesome-mindie-skills) | 1 | SOMEONEUNSEEN | CC0-1.0 |
+| [vllm-ascend-pd-disaggregation-skills](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills) | 3 | nwpu-zxr | MIT |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -131,6 +132,8 @@
   `CANNBot` `PyTorch` `cann-recipes-infer` `执行需 NPU` · [条目](catalog/skills/model-infer-migrator.yaml)
 - [modelscope](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/modelscope/SKILL.md) — 下载、续传和校验 ModelScope 权重
   `Ascend` `vLLM Ascend` `主机工具` `流程编排` · [条目](catalog/skills/modelscope.yaml)
+- [pd-disaggregation-design](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills/blob/2852c18ac977783f336f8c8864ca84dfee3f5cc6/skills/pd-disaggregation-design/SKILL.md) — 设计与审查 PD connector，依据 cache spec、shape、stride 和存储语义评估新 layout 的兼容性与适配缺口。
+  `vLLM` `vLLM Ascend` `PD` `KV Cache` `设备取决于检查项` · [条目](catalog/skills/pd-disaggregation-design.yaml)
 - [vllm-ascend-model-adapter](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-model-adapter/SKILL.md) — 适配与调试 Ascend 上的 vLLM 模型
   `Ascend` `vLLM Ascend` `执行需 NPU` `流程编排` · [条目](catalog/skills/vllm-ascend-model-adapter.yaml)
 
@@ -148,6 +151,8 @@
   `CANNBot` `PyTorch` `Parallelism` `主机工具` · [条目](catalog/skills/model-infer-parallel-analysis.yaml)
 - [model-infer-parallel-impl](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-impl/SKILL.md) — 按确认的 TP/EP 配置改造并行层、通信组、权重和启动配置，并验证模型运行。
   `CANNBot` `PyTorch` `HCCL` `执行需 NPU` · [条目](catalog/skills/model-infer-parallel-impl.yaml)
+- [pd-disaggregation-serving](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills/blob/2852c18ac977783f336f8c8864ca84dfee3f5cc6/skills/pd-disaggregation-serving/SKILL.md) — 准备或部署 P/D/proxy 服务，复用已有生命周期管理工具，验证路由、真实 KV 传输与资源回收。
+  `vLLM` `vLLM Ascend` `PD` `KV Cache` `设备取决于检查项` `流程编排` · [条目](catalog/skills/pd-disaggregation-serving.yaml)
 - [platform-agent-launch-config](https://github.com/Henry-Avery/ascend-agent-skills/blob/c95957444543f136fa30ba054d1afd5cf3900622/skills/platform-agent-launch-config/SKILL.md) — 梳理推理平台启动链，复用已有配置，整理填写说明、Agent 脚本、差异与缺项，供人工或 Agent 接续。
   `vLLM Ascend` `AiClusterHub` `PD` `主机工具` · [条目](catalog/skills/platform-agent-launch-config.yaml)
 - [vllm-ascend-pd-serving](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-pd-serving/SKILL.md) — 部署 Prefill/Decode 分离服务，验证连接器、角色启动顺序与 KV 传输。
@@ -300,6 +305,8 @@
   `CANNBot` `CANN` `msaicerr` `设备取决于检查项` · [条目](catalog/skills/msaicerr-toolkit.yaml)
 - [msnpureport-toolkit](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/tools/msnpureport-toolkit/SKILL.md) — 在受支持的 Ascend EP 环境导出 Device 日志，并按权限查询或设置维测配置。
   `CANNBot` `CANN` `msnpureport` `执行需 NPU` · [条目](catalog/skills/msnpureport-toolkit.yaml)
+- [pd-disaggregation-accuracy-debug](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills/blob/2852c18ac977783f336f8c8864ca84dfee3f5cc6/skills/pd-disaggregation-accuracy-debug/SKILL.md) — 从上而下或从底而上诊断 PD 精度，对齐 P 完成的 KV/state 与 D 首次消费前的内容及位置，定位原因。
+  `vLLM` `vLLM Ascend` `PD` `KV Cache` `设备取决于检查项` `流程编排` · [条目](catalog/skills/pd-disaggregation-accuracy-debug.yaml)
 - [torch-npugraph-ex-dfx-triage](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/graph/torch-npugraph-ex-dfx-triage/SKILL.md) — 收集分层日志并将 npugraph_ex 问题路由到编译、运行时、精度或性能诊断。
   `CANNBot` `PyTorch` `npugraph_ex` `设备取决于检查项` `流程编排` · [条目](catalog/skills/torch-npugraph-ex-dfx-triage.yaml)
 - [vllm-ascend-distributed-debug](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-distributed-debug/SKILL.md) — 根据拓扑和逐 rank 证据定位启动、collective、端点与卡死问题。

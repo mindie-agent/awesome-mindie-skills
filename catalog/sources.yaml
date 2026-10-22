@@ -55,3 +55,8 @@ sources:
     revision: 614d7c22c05f147d96e09044aa1b8e62cc9ec89e
     license: CC0-1.0
     maintainer: SOMEONEUNSEEN
+  vllm-ascend-pd-disaggregation-skills:
+    repository: https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills
+    revision: 2852c18ac977783f336f8c8864ca84dfee3f5cc6
+    license: MIT
+    maintainer: nwpu-zxr

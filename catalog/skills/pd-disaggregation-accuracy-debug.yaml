@@ -1,0 +1,24 @@
+id: pd-disaggregation-accuracy-debug
+category: debugging
+summary:
+  zh: 从上而下或从底而上诊断 PD 精度，对齐 P 完成的 KV/state 与 D 首次消费前的内容及位置，定位原因。
+  en: Diagnose PD accuracy top-down or bottom-up, aligning completed P KV/state with D contents and placement
+    before first consumption to establish the cause.
+tags:
+- vLLM
+- vLLM Ascend
+- PD
+- KV Cache
+execution: depends-on-checks
+role: workflow
+source:
+  project: vllm-ascend-pd-disaggregation-skills
+  path: skills/pd-disaggregation-accuracy-debug/SKILL.md
+  sha256: 188abef5c5f3be7d55fc9608d473a09771202bea2392ac539d6978ad2b87a137
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/pd-disaggregation-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []
