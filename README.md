@@ -63,9 +63,9 @@
 
 <!-- CATALOG:START -->
 
-86 个技能 · 10 个分类
+87 个技能 · 10 个分类
 
-定义已审阅：86 · 已有运行复现记录：1。具体范围见各条目记录。
+定义已审阅：87 · 已有运行复现记录：1。具体范围见各条目记录。
 
 | 来源项目 | 已收录 | 维护者 | 许可证 |
 |---|---|---|---|
@@ -79,6 +79,7 @@
 | [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
 | [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 2 | Henry-Avery | MIT |
 | [vllm-mrv2-kernel-tools](https://github.com/Liamup777/vllm-mrv2-kernel-tools) | 1 | Liamup777 | Apache-2.0 |
+| [upstream-downstream-analysis](https://github.com/SOMEONEUNSEEN/awesome-mindie-skills) | 1 | SOMEONEUNSEEN | CC0-1.0 |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -312,6 +313,8 @@
 
 将变更映射到构建、正确性和性能验证，记录覆盖范围。
 
+- [analyze-upstream-downstream](https://github.com/SOMEONEUNSEEN/awesome-mindie-skills/blob/614d7c22c05f147d96e09044aa1b8e62cc9ec89e/skills/analyze-upstream-downstream/SKILL.md) — 追踪上游框架与下游适配的实际调用和替换边界，区分继承能力、已同步项与迁移缺口，输出脱敏证据和最小迁移计划。
+  `Framework plugins` `Platform adaptations` `主机工具` `流程编排` · [条目](catalog/skills/analyze-upstream-downstream.yaml)
 - [ascendc-code-review](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/ascendc-code-review/SKILL.md) — 按文件、PR 或定向问题路由 Ascend C 代码检视，检查规范与设计一致性。
   `CANNBot` `Ascend C` `主机工具` · [条目](catalog/skills/ascendc-code-review.yaml)
 - [blue-npu-ops](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-npu-ops/SKILL.md) — 单服务器 NPU 运维操作：npu-smi 状态判读、HBM 占用与残留释放、按精确 PID 清理遗留进程、空闲检查、A3 芯片编号与可见设备映射、torch 实测算力。

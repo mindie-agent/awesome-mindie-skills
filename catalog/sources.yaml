@@ -50,3 +50,8 @@ sources:
     revision: ed71b1b56994e419998e4cd85f5ace013f92447d
     license: Apache-2.0
     maintainer: Liamup777
+  upstream-downstream-analysis:
+    repository: https://github.com/SOMEONEUNSEEN/awesome-mindie-skills
+    revision: 614d7c22c05f147d96e09044aa1b8e62cc9ec89e
+    license: CC0-1.0
+    maintainer: SOMEONEUNSEEN

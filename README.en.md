@@ -63,9 +63,9 @@ Each entry's metadata links to its review scope, reproduction cases, and evidenc
 
 <!-- CATALOG:START -->
 
-86 skills · 10 categories
+87 skills · 10 categories
 
-Definitions reviewed: 86 · Entries with execution reproductions: 1. See each entry's metadata for scope.
+Definitions reviewed: 87 · Entries with execution reproductions: 1. See each entry's metadata for scope.
 
 | Upstream Source | Listed | Maintainer | License |
 |---|---|---|---|
@@ -79,6 +79,7 @@ Definitions reviewed: 86 · Entries with execution reproductions: 1. See each en
 | [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
 | [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 2 | Henry-Avery | MIT |
 | [vllm-mrv2-kernel-tools](https://github.com/Liamup777/vllm-mrv2-kernel-tools) | 1 | Liamup777 | Apache-2.0 |
+| [upstream-downstream-analysis](https://github.com/SOMEONEUNSEEN/awesome-mindie-skills) | 1 | SOMEONEUNSEEN | CC0-1.0 |
 
 - [Environment and dependencies](#environment)
 - [Model integration and conversion](#model-integration)
@@ -319,6 +320,8 @@ HIXL、ADXL、HIXL_CS、HixlCSClient、Ascend direct transport 相关报错。
 
 Map changes to build, correctness, and performance checks and record coverage.
 
+- [analyze-upstream-downstream](https://github.com/SOMEONEUNSEEN/awesome-mindie-skills/blob/614d7c22c05f147d96e09044aa1b8e62cc9ec89e/skills/analyze-upstream-downstream/SKILL.md) — Trace actual calls and replacement boundaries between an upstream framework and its downstream adaptation, distinguish inherited behavior, synchronized changes and migration gaps, and produce sanitized evidence with a minimal migration plan.
+  `Framework plugins` `Platform adaptations` `Host tools` `Workflow` · [Metadata](catalog/skills/analyze-upstream-downstream.yaml)
 - [ascendc-code-review](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/ops/ascendc-code-review/SKILL.md) — Route Ascend C reviews by file, PR, or targeted question to check coding rules and design consistency.
   `CANNBot` `Ascend C` `Host tools` · [Metadata](catalog/skills/ascendc-code-review.yaml)
 - [blue-npu-ops](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-npu-ops/SKILL.md) — Operate a single NPU server — npu-smi status reading, HBM usage and orphan release, precise-PID cleanup of leftover processes, idle checks, A3 chip numbering and device visibility mapping, and torch-based FLOPS measurement.
