@@ -1,0 +1,24 @@
+id: ascend-memcache-pooling
+category: serving
+summary:
+  zh: 依据 MemCache 与 MemFabric 官方资料部署 A3、A5 UB/UBoE 二级或三级 KV 池化，核对存储进程、配置和回读。
+  en: Deploy two- or three-tier KV pools on A3 and A5 UB/UBoE using official MemCache
+    and MemFabric guidance, with owner, configuration and readback checks.
+tags:
+- MemCache
+- MemFabric
+- vLLM Ascend
+- SSD
+execution: npu
+role: workflow
+source:
+  project: ascend-pooling-workflows
+  path: skills/ascend-memcache-pooling/SKILL.md
+  sha256: 973dabf78021d590a878690f2b81f490e624a8575eec6687b1c16d15a426c20e
+review:
+  status: definition-reviewed
+  date: '2026-10-19'
+  evidence: evidence/memcache-pooling-definition-review-2026-10-19.md
+validation:
+  status: not-recorded
+  cases: []
