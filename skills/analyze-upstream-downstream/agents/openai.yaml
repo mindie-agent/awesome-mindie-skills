@@ -1,0 +1,4 @@
+interface:
+  display_name: "Upstream and Downstream Analysis"
+  short_description: "Trace inherited behavior, migration gaps, and validation needs"
+  default_prompt: "Use $analyze-upstream-downstream to compare the specified upstream and downstream module, distinguish inherited, synchronized, and missing behavior, and produce sanitized evidence with a minimal migration plan."

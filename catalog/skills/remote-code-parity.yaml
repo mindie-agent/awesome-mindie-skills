@@ -1,0 +1,22 @@
+id: remote-code-parity
+category: environment
+summary:
+  zh: 核对本地与远端执行源码一致性
+  en: Ensure a ready remote runtime runs the exact current local workspace state before
+    any remote smoke, service launch, or benchmark.
+tags:
+- Ascend
+- vLLM Ascend
+execution: host
+role: workflow
+source:
+  project: va-workflows
+  path: .agents/skills/remote-code-parity/SKILL.md
+  sha256: 315aad9e08078f040c46563f1f8207c9c8517b8337c5eb19c54c8ceaaeae1aed
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

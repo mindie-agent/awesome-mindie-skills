@@ -1,0 +1,22 @@
+id: aisbench-accuracy
+category: correctness
+summary:
+  zh: 执行数据集精度评估与采样配置对齐
+  en: Run AISBench dataset accuracy evaluation against a running vLLM service, aligning
+    sampling, prompts and answer postprocessing with the baseline.
+tags:
+- Ascend
+- vLLM Ascend
+execution: npu
+role: workflow
+source:
+  project: va-workflows
+  path: .agents/skills/aisbench-accuracy/SKILL.md
+  sha256: e25235228d1840f838c86ab1f6c36eabea8899208462c7137708cf82898fc224
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

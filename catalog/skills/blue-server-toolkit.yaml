@@ -1,0 +1,25 @@
+id: blue-server-toolkit
+category: delivery
+summary:
+  zh: 在昇腾 NPU 远程开发服务器上执行高频日常操作：SSH 连接检查与稳定性（ControlMaster 常驻复用）、代码同步、UT 运行、模型/镜像下载、日志查看、容器管理与文件传输；也是不确定用哪个姊妹 skill 时的路由入口。
+  en: Perform high-frequency daily operations on remote Ascend NPU development servers — SSH
+    connection checks and stability (persistent ControlMaster multiplexing), code sync,
+    UT execution, model and image download, log viewing, container management, and file
+    transfer; also the routing hub when unsure which sibling skill fits.
+tags:
+- Ascend
+- Docker
+- SSH
+execution: host
+role: task
+source:
+  project: blue-server-toolkit
+  path: skills/blue-server-toolkit/SKILL.md
+  sha256: e81bcf687ce4d87e855c659cd2a28de5d18591b62ee033a721f80fe200b33d68
+review:
+  status: definition-reviewed
+  date: '2026-10-20'
+  evidence: evidence/blue-server-toolkit-definition-review-2026-10-20.md
+validation:
+  status: not-recorded
+  cases: []

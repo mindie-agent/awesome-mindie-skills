@@ -11,7 +11,7 @@ tags:
 execution: npu
 role: task
 source:
-  project: ascend-agent-skills
+  project: ascend-gitcode-agent-skills
   path: community/Op/ascendc-operator-st-gen/SKILL.md
   sha256: 13708684ae3e15c019ede46b9a63dc7849b2e5b7ab4a3e61b0fc1a0235c8186a
 review:

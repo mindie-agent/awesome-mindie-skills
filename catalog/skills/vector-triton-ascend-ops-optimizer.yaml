@@ -11,7 +11,7 @@ tags:
 execution: npu
 role: task
 source:
-  project: ascend-agent-skills
+  project: ascend-gitcode-agent-skills
   path: community/Op/vector-triton-ascend-ops-optimizer/SKILL.md
   sha256: 5dfd5710d9c49cd45ff8cf5f584529b2b3af5939d6dd13cd8ff24ca8c0b67226
 review:

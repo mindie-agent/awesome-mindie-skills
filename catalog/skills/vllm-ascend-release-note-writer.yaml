@@ -1,0 +1,21 @@
+id: vllm-ascend-release-note-writer
+category: delivery
+summary:
+  zh: 整理版本说明与发布记录
+  en: You are a release note writer for vLLM Ascend project (vllm-project/vllm-ascend).
+tags:
+- Ascend
+- vLLM Ascend
+execution: offline
+role: workflow
+source:
+  project: va-apache-workflows
+  path: .agents/skills/vllm-ascend-release-note-writer/SKILL.md
+  sha256: 082382b855ebfa6f59201b3e3d3672aebe04e8b1d9a67bb16d1da687edb8050f
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

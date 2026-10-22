@@ -1,0 +1,25 @@
+id: hixl-pr-review
+category: delivery
+summary:
+  zh: 按 HIXL 规则检视代码变更
+  en: 'HIXL 代码检视技能。用于检视 GitCode 上的 HIXL 项目 PR，当用户要求检视PR，审查PR时调用此skill。
+
+    自动分析代码变更，检查内存泄漏、安全漏洞和可读性，生成结构化报告并发布评论。
+
+    .'
+tags:
+- Ascend
+- HIXL
+execution: offline
+role: workflow
+source:
+  project: va-hixl-workflows
+  path: .agents/skills/hixl-pr-review/SKILL.md
+  sha256: 0fcd9cf33c248ebede257a5c78d7dadb0d0c10ff52cf2c340e66a5413500b395
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

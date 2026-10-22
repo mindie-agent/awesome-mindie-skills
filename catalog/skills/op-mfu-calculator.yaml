@@ -10,7 +10,7 @@ tags:
 execution: offline
 role: task
 source:
-  project: ascend-agent-skills
+  project: ascend-gitcode-agent-skills
   path: official/MindStudio/skills/op-mfu-calculator/SKILL.md
   sha256: 02648a79ed3b87d7b0ada226af1446fbf86784fdb10cc50133c91b583b1303a6
 review:

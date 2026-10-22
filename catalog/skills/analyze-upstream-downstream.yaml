@@ -1,0 +1,21 @@
+id: analyze-upstream-downstream
+category: delivery
+summary:
+  zh: 追踪上游框架与下游适配的实际调用和替换边界，区分继承能力、已同步项与迁移缺口，输出脱敏证据和最小迁移计划。
+  en: Trace actual calls and replacement boundaries between an upstream framework and its downstream adaptation, distinguish inherited behavior, synchronized changes and migration gaps, and produce sanitized evidence with a minimal migration plan.
+tags:
+- Framework plugins
+- Platform adaptations
+execution: host
+role: workflow
+source:
+  project: upstream-downstream-analysis
+  path: skills/analyze-upstream-downstream/SKILL.md
+  sha256: fc3be275595f7d36e419d6f4ac8e15b0a5d256895262f47fd9205e6f9caa86ab
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/upstream-downstream-analysis-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

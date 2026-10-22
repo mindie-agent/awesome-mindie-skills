@@ -1,0 +1,23 @@
+id: blue-npu-ops
+category: delivery
+summary:
+  zh: 单服务器 NPU 运维操作：npu-smi 状态判读、HBM 占用与残留释放、按精确 PID 清理遗留进程、空闲检查、A3 芯片编号与可见设备映射、torch 实测算力。
+  en: Operate a single NPU server — npu-smi status reading, HBM usage and orphan
+    release, precise-PID cleanup of leftover processes, idle checks, A3 chip numbering
+    and device visibility mapping, and torch-based FLOPS measurement.
+tags:
+- Ascend
+- HBM
+execution: npu
+role: task
+source:
+  project: blue-server-toolkit
+  path: skills/blue-npu-ops/SKILL.md
+  sha256: 4ba41876fb26257ebb50f03079042281ba3f62828502673d39d37aac9cf6ff7d
+review:
+  status: definition-reviewed
+  date: '2026-10-20'
+  evidence: evidence/blue-server-toolkit-definition-review-2026-10-20.md
+validation:
+  status: not-recorded
+  cases: []

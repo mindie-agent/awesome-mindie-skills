@@ -1,0 +1,31 @@
+id: driver-peermem-check
+category: debugging
+summary:
+  zh: 检查驱动包的 peer-memory 支持
+  en: '分析 Ascend 驱动 .run 包中是否包含 npu_peermem.ko 及相关源码。适用于：
+
+    - 判断某个驱动版本是否支持 d2d/d2rd RDMA 传输
+
+    - 对比不同平台的驱动包内容差异
+
+    - 检查 npu_peermem 模块的构建依赖是否就绪
+
+    - 用户提到驱动包、npu_peermem、d2d RDMA 失败、peer memory 等问题时
+
+    .'
+tags:
+- Ascend
+- HIXL
+execution: offline
+role: workflow
+source:
+  project: va-hixl-workflows
+  path: .agents/skills/driver-peermem-check/SKILL.md
+  sha256: b0dd43de7922775c26d7b060f8e32fc803987874e964a0643395d4b38e98e8e4
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

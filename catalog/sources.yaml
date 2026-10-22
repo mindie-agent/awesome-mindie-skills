@@ -10,6 +10,56 @@ sources:
     revision: 5891c39619a56716b6f73a335ed7709560bb2da8
     license: CANN Open Software License v2.0
     maintainer: CANNBot SIG (cann)
+  ascend-pooling-workflows:
+    repository: https://github.com/Yuli-yx/awesome-mindie-skills
+    revision: 2844c25cd3f63cd0cd817cce866de827653babf2
+    license: CC0-1.0 AND MIT (see package NOTICE)
+    maintainer: zouyida2052 and Yuli-yx
+  awesome-va-skills:
+    repository: https://github.com/Yuli-yx/awesome-va-skills
+    revision: 8d9f7ee56d088f15a398181590c4512bfc725d6f
+    license: MIT (the three listed packages only)
+    maintainer: Yuli-yx (adapted collection); wangxiaoteng888 (AISBench origin)
+  va-workflows:
+    repository: https://github.com/Yuli-yx/awesome-va-skills
+    revision: 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
+    license: MIT
+    maintainer: Yuli-yx collection; original authors credited in ATTRIBUTION.md
+  va-hixl-workflows:
+    repository: https://github.com/Yuli-yx/awesome-va-skills
+    revision: 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
+    license: CANN-2.0
+    maintainer: Yuli-yx collection; original authors credited in ATTRIBUTION.md
+  va-apache-workflows:
+    repository: https://github.com/Yuli-yx/awesome-va-skills
+    revision: 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
+    license: Apache-2.0
+    maintainer: Yuli-yx collection; original authors credited in ATTRIBUTION.md
+  blue-server-toolkit:
+    repository: https://github.com/xuchi-0808/blue-server-toolkit
+    revision: 5707a86922713f830f1f5fea2bedbb0a0a1cdc3a
+    license: MIT
+    maintainer: xuchi-0808
+  ascend-agent-skills:
+    repository: https://github.com/Henry-Avery/ascend-agent-skills
+    revision: c95957444543f136fa30ba054d1afd5cf3900622
+    license: MIT
+    maintainer: Henry-Avery
+  vllm-mrv2-kernel-tools:
+    repository: https://github.com/Liamup777/vllm-mrv2-kernel-tools
+    revision: ed71b1b56994e419998e4cd85f5ace013f92447d
+    license: Apache-2.0
+    maintainer: Liamup777
+  upstream-downstream-analysis:
+    repository: https://github.com/SOMEONEUNSEEN/awesome-mindie-skills
+    revision: 614d7c22c05f147d96e09044aa1b8e62cc9ec89e
+    license: CC0-1.0
+    maintainer: SOMEONEUNSEEN
+  vllm-ascend-pd-disaggregation-skills:
+    repository: https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills
+    revision: 2852c18ac977783f336f8c8864ca84dfee3f5cc6
+    license: MIT
+    maintainer: nwpu-zxr
   cannbot:
     repository: https://gitcode.com/cann/cannbot
     revision: 88637debe061dccc41cd6808f871f446f9c46c7a
@@ -25,12 +75,6 @@ sources:
     revision: 0a46bf1d4fd373c3a8cc136aa6a4a958e9f4f236
     license: Not declared in the pinned repository root
     maintainer: ascendc-agent
-  ascend-agent-skills:
-    repository: https://gitcode.com/Ascend/agent-skills
-    revision: a4011846f6d79fcee3e7b90fafe588d8a51fbc91
-    license: Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated sources retain their
-      terms
-    maintainer: Ascend community
   akg:
     repository: https://github.com/mindspore-ai/akg
     revision: 5aa15f3fe4d856eb60cd3b27447e04f5f1fb4dff
@@ -39,7 +83,8 @@ sources:
   hive:
     repository: https://github.com/KernelHive/ascendc-skill
     revision: c78f267d0423d59a51a02070e5bb845fde2dbd69
-    license: Not declared in the pinned repository root; bundled references retain their terms
+    license: Not declared in the pinned repository root; bundled references retain
+      their terms
     maintainer: KernelHive
   model-agent:
     repository: https://gitcode.com/Ascend/model-agent
@@ -54,7 +99,8 @@ sources:
   awesome:
     repository: https://github.com/ascend-ai-coding/awesome-ascend-skills
     revision: 75ec89ce9d401be8ac95980e1c3f42f8d4315057
-    license: Not declared in the pinned repository root; synchronized sources retain their terms
+    license: Not declared in the pinned repository root; synchronized sources retain
+      their terms
     maintainer: ascend-ai-coding
   mindiesd:
     repository: https://github.com/Ascend/MindIE-SD
@@ -66,3 +112,9 @@ sources:
     revision: cd10a15efc6d2221814f6167e5055c7e640ccc7c
     license: CANN Open Software License v2.0
     maintainer: CANN AscendC maintainers
+  ascend-gitcode-agent-skills:
+    repository: https://gitcode.com/Ascend/agent-skills
+    revision: a4011846f6d79fcee3e7b90fafe588d8a51fbc91
+    license: Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated
+      sources retain their terms
+    maintainer: Ascend community

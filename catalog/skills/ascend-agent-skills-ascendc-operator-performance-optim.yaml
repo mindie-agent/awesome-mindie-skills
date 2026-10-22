@@ -10,7 +10,7 @@ tags:
 execution: npu
 role: task
 source:
-  project: ascend-agent-skills
+  project: ascend-gitcode-agent-skills
   path: official/MindStudio/skills/ascendc-operator-performance-optim/SKILL.md
   sha256: 91cfed248a9f85482b7b4efc28ea49032a0824cb530fa820d6afd0af868fc1f4
 review:

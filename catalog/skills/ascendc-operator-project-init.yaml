@@ -11,7 +11,7 @@ tags:
 execution: depends-on-checks
 role: task
 source:
-  project: ascend-agent-skills
+  project: ascend-gitcode-agent-skills
   path: community/Op/ascendc-operator-project-init/SKILL.md
   sha256: 40d9e3e30cc3b294fff48f14f944b661b509f59a098efa379bec3ba0a29fea07
 review:

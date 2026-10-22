@@ -1,0 +1,21 @@
+id: vllm-ascend-model-adapter
+category: model-integration
+summary:
+  zh: 适配与调试 Ascend 上的 vLLM 模型
+  en: Adapt and debug existing or new models for vLLM on Ascend NPU.
+tags:
+- Ascend
+- vLLM Ascend
+execution: npu
+role: workflow
+source:
+  project: va-apache-workflows
+  path: .agents/skills/vllm-ascend-model-adapter/SKILL.md
+  sha256: 0ef9f14f2e7d1fe6c6967644158504542248965d1870b1a473fb74173ad1b119
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

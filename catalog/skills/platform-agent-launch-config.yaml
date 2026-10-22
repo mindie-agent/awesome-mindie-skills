@@ -1,0 +1,22 @@
+id: platform-agent-launch-config
+category: serving
+summary:
+  zh: 梳理推理平台启动链，复用已有配置，整理填写说明、Agent 脚本、差异与缺项，供人工或 Agent 接续。
+  en: Trace an inference platform launch path and reuse existing configuration to prepare field guidance, agent scripts, differences, and gaps for a human or agent handoff.
+tags:
+- vLLM Ascend
+- AiClusterHub
+- PD
+execution: host
+role: task
+source:
+  project: ascend-agent-skills
+  path: skills/platform-agent-launch-config/SKILL.md
+  sha256: 1fd113b9e041e9d2699fe57c470acb0d2b85e799a2636ef2b038e824fc68818e
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/platform-agent-launch-config-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

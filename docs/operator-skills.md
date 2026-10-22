@@ -12,7 +12,7 @@ The [JSON manifest](../catalog/topics/operator-skills-2026-10-22.json) contains 
 - Retained packages from these sources: **265**. Add six already-listed vLLM operator tasks for **271 operator-topic package entries** across 13 projects.
 - **264 unique definition byte sequences** appear in these 271 packages. Seven packages share definition bytes with another entry but have different scripts, references, or other directory resources; these remain separate catalogue records.
 - Definition-level split: **187 task definitions + 19 workflow definitions + 58 knowledge/case/example definitions**.
-- The full catalogue now contains **305 entries**, including unrelated pre-existing inference skills. This update adds 252 entries to the previous 53.
+- The full catalogue now contains **342 entries**, including unrelated pre-existing inference skills. This update adds 252 entries to the previous 90.
 
 These are counts of fixed definitions and packages, not counts of independent capabilities or hardware-qualified workflows. Different definitions can overlap. A name match is not a deduplication rule.
 
@@ -51,7 +51,7 @@ Scope and lifecycle are different axes. An AscendC API lookup task is direct Asc
 | cannbot | 53 | 53 | `88637debe061dccc41cd6808f871f446f9c46c7a` |
 | cannbot-knowledge | 7 | 7 | `fd3dd23d19d4bab3da27951cd9f8d6b1a3b8644e` |
 | ascendc-skills | 31 | 31 | `0a46bf1d4fd373c3a8cc136aa6a4a958e9f4f236` |
-| ascend-agent-skills | 23 | 23 | `a4011846f6d79fcee3e7b90fafe588d8a51fbc91` |
+| ascend-gitcode-agent-skills | 23 | 23 | `a4011846f6d79fcee3e7b90fafe588d8a51fbc91` |
 | akg | 49 | 49 | `5aa15f3fe4d856eb60cd3b27447e04f5f1fb4dff` |
 | hive | 4 | 4 | `c78f267d0423d59a51a02070e5bb845fde2dbd69` |
 | model-agent | 22 | 15 | `b355135ad6e4e67861a83305ba115af8928cfb83` |
@@ -90,9 +90,9 @@ Four exact directory associations were collapsed in the catalogue while retainin
 | Associated source path | Canonical source path | Identical directory tree |
 |---|---|---|
 | `ascendc-skills/skills/usability/op-gen/ascendc-planning/SKILL.md` | `ascendc-skills/skills/common/design-gen/SKILL.md` | `b660dcc164fc0b74df156a47857e88b15d236d11` |
-| `model-agent/skills/optimization/ascendc-operator-doc-gen/SKILL.md` | `ascend-agent-skills/community/Op/ascendc-operator-doc-gen/SKILL.md` | `b4c3e7aa0b831b15e305f937c89ed2e8c17773b4` |
-| `model-agent/skills/optimization/ascendc-operator-mssanitizer/SKILL.md` | `ascend-agent-skills/community/Op/ascendc-operator-mssanitizer/SKILL.md` | `3e083459ed77117b28aaea6b950e31b06ccbbdac` |
-| `model-agent/skills/optimization/vector-triton-ascend-ops-optimizer/SKILL.md` | `ascend-agent-skills/community/Op/vector-triton-ascend-ops-optimizer/SKILL.md` | `d8120fdbadd0cead06cd9e1aea26e4cf8cb80128` |
+| `model-agent/skills/optimization/ascendc-operator-doc-gen/SKILL.md` | `ascend-gitcode-agent-skills/community/Op/ascendc-operator-doc-gen/SKILL.md` | `b4c3e7aa0b831b15e305f937c89ed2e8c17773b4` |
+| `model-agent/skills/optimization/ascendc-operator-mssanitizer/SKILL.md` | `ascend-gitcode-agent-skills/community/Op/ascendc-operator-mssanitizer/SKILL.md` | `3e083459ed77117b28aaea6b950e31b06ccbbdac` |
+| `model-agent/skills/optimization/vector-triton-ascend-ops-optimizer/SKILL.md` | `ascend-gitcode-agent-skills/community/Op/vector-triton-ascend-ops-optimizer/SKILL.md` | `d8120fdbadd0cead06cd9e1aea26e4cf8cb80128` |
 
 Seven same-definition packages have different directory trees and remain separate records. Other same-name packages may have both definition and resource differences. The following same-name groups are kept distinct:
 

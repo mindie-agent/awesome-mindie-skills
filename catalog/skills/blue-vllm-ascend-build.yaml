@@ -1,0 +1,23 @@
+id: blue-vllm-ascend-build
+category: environment
+summary:
+  zh: 从源码构建或升级 vllm-ascend：两步 editable 安装、按 vllm-main-verified.commit 配对版本、setuptools≥77、pip 镜像配置、rsync 后 chown 同步、错误关键词 FAQ；纯 CPU 操作。
+  en: Build or upgrade vllm-ascend from source — editable two-step install, version
+    pairing via vllm-main-verified.commit, setuptools 77 or newer, pip mirror setup,
+    rsync-then-chown sync, and an error-keyword FAQ; pure CPU.
+tags:
+- vLLM Ascend
+- CANN
+execution: host
+role: task
+source:
+  project: blue-server-toolkit
+  path: skills/blue-vllm-ascend-build/SKILL.md
+  sha256: b38c873168df6599dbee67fadf22a037f9f3aaaf567551bcfcf09462e4d80137
+review:
+  status: definition-reviewed
+  date: '2026-10-20'
+  evidence: evidence/blue-server-toolkit-definition-review-2026-10-20.md
+validation:
+  status: not-recorded
+  cases: []

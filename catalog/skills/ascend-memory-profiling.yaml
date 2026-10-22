@@ -1,0 +1,21 @@
+id: ascend-memory-profiling
+category: profiling
+summary:
+  zh: 采集和归因推理服务的 HBM 占用
+  en: Profile and attribute HBM memory usage on Ascend NPU for vLLM serving scenarios.
+tags:
+- Ascend
+- vLLM Ascend
+execution: npu
+role: workflow
+source:
+  project: va-workflows
+  path: .agents/skills/ascend-memory-profiling/SKILL.md
+  sha256: b0f7896bedaf9c2efe9337bc4e4f9abd78c9b40c834b87673015d0bf3c05472a
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

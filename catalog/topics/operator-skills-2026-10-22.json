@@ -10,9 +10,9 @@
     "same_definition_resource_variants": 7,
     "existing_vllm_topic_entries": 6,
     "topic_total": 271,
-    "catalog_before": 53,
+    "catalog_before": 90,
     "catalog_added": 252,
-    "catalog_after": 305,
+    "catalog_after": 342,
     "by_scope": {
       "ascendc": 165,
       "shared": 31,
@@ -48,7 +48,7 @@
       "cannbot": 53,
       "cannbot-knowledge": 7,
       "ascendc-skills": 31,
-      "ascend-agent-skills": 23,
+      "ascend-gitcode-agent-skills": 23,
       "akg": 49,
       "hive": 4,
       "model-agent": 22,
@@ -120,7 +120,7 @@
       "awesome": 4,
       "opgen": 11,
       "model-agent": 15,
-      "ascend-agent-skills": 23,
+      "ascend-gitcode-agent-skills": 23,
       "hive": 4,
       "akg": 49,
       "ascendc-skills": 31,
@@ -3113,7 +3113,7 @@
     {
       "id": "ascendc-op-doc-generator",
       "name": "ascendc-op-doc-generator",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-op-doc-generator/SKILL.md",
       "sha256": "fb18dee5bcc11e0d2bd95e357cb102d87b45164529a1e824a476e58074ea3673",
@@ -3133,7 +3133,7 @@
     {
       "id": "ascendc-op-doc-incremental",
       "name": "ascendc-op-doc-incremental",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-op-doc-incremental/SKILL.md",
       "sha256": "7c867c08c6d0d8a9d703687b883e4f7ef5d99e2865a23467028b596d8b5e97fe",
@@ -3153,7 +3153,7 @@
     {
       "id": "ascendc-operator-code-gen",
       "name": "ascendc-operator-code-gen",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-code-gen/SKILL.md",
       "sha256": "581339f25c621f5ee1ff390916b01a7a347ea2e65fce3d18239752ca68b7926c",
@@ -3173,7 +3173,7 @@
     {
       "id": "ascendc-operator-code-review",
       "name": "ascendc-operator-code-review",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-code-review/SKILL.md",
       "sha256": "a2885c00c91656f0a1b1a2c581e999b4268853767acf160b1c31c7a2b233fc5f",
@@ -3193,7 +3193,7 @@
     {
       "id": "ascendc-operator-compile-debug",
       "name": "ascendc-operator-compile-debug",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-compile-debug/SKILL.md",
       "sha256": "6a0f7d428fc9094f2f9840f743dad42b8a0c18367169c5658cd5bc7262395bd5",
@@ -3213,7 +3213,7 @@
     {
       "id": "ascendc-operator-design",
       "name": "ascendc-operator-design",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-design/SKILL.md",
       "sha256": "9d5fc986c5753d6d3e0be8a315a4361c08b76fab8b22eaa2dfaa256ffa68fb23",
@@ -3233,7 +3233,7 @@
     {
       "id": "ascendc-operator-dev",
       "name": "ascendc-operator-dev",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-dev/SKILL.md",
       "sha256": "78e046f093b670d548a3bc1db6f8344bf169ff971deeff18d2e50394758f34c9",
@@ -3253,7 +3253,7 @@
     {
       "id": "ascendc-operator-doc-gen",
       "name": "ascendc-operator-doc-gen",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-doc-gen/SKILL.md",
       "sha256": "32714d75ab289d4d6e89af4919a0ef2e0d42cedaca76008af84cb6af18db3202",
@@ -3273,7 +3273,7 @@
     {
       "id": "ascendc-operator-doc-writer",
       "name": "ascendc-operator-doc-writer",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-doc-writer/SKILL.md",
       "sha256": "513c18662f0a6d005276b8ad47242206f4d6be59a23bc10d903791282b65b4a1",
@@ -3293,7 +3293,7 @@
     {
       "id": "ascendc-mssanitizer",
       "name": "ascendc-mssanitizer",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-mssanitizer/SKILL.md",
       "sha256": "c9c80afeede2c79e2abe3e150e14341321cf3c3225249d1afa9c6d7c13ea40a4",
@@ -3313,7 +3313,7 @@
     {
       "id": "ascendc-operator-performance-eval",
       "name": "ascendc-operator-performance-eval",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-performance-eval/SKILL.md",
       "sha256": "a064fec3ec258e8b4d0d5466a1d83ce717855375b8f7093b65600e0e53017637",
@@ -3333,7 +3333,7 @@
     {
       "id": "ascendc-operator-performance-optim",
       "name": "ascendc-operator-performance-optim",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-performance-optim/SKILL.md",
       "sha256": "557b54fc6ded521070f8cbc040237bf4c7910816e4316c3552112bf425ff4672",
@@ -3353,7 +3353,7 @@
     {
       "id": "ascendc-operator-precision-debug",
       "name": "ascendc-operator-precision-debug",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-precision-debug/SKILL.md",
       "sha256": "10a9bc17b7b44743ef2bf7df3472341f35510cdc64fd083d7868a8ce2299c79b",
@@ -3373,7 +3373,7 @@
     {
       "id": "ascendc-operator-precision-eval",
       "name": "ascendc-operator-precision-eval",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-precision-eval/SKILL.md",
       "sha256": "94e80d676c3635d06f664106d28a2bc2928f1a876b1c7756fb7e6ebdfa7dd212",
@@ -3393,7 +3393,7 @@
     {
       "id": "ascendc-operator-project-init",
       "name": "ascendc-operator-project-init",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-project-init/SKILL.md",
       "sha256": "40d9e3e30cc3b294fff48f14f944b661b509f59a098efa379bec3ba0a29fea07",
@@ -3413,7 +3413,7 @@
     {
       "id": "ascendc-operator-st-gen",
       "name": "ascendc-operator-st-gen",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-st-gen/SKILL.md",
       "sha256": "13708684ae3e15c019ede46b9a63dc7849b2e5b7ab4a3e61b0fc1a0235c8186a",
@@ -3433,7 +3433,7 @@
     {
       "id": "ascendc-operator-testcase-gen",
       "name": "ascendc-operator-testcase-gen",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/ascendc-operator-testcase-gen/SKILL.md",
       "sha256": "73cf4e4ff0afbf57c72eb08f0fe5df25f4a65a00382b7d28aeb752d232ea7554",
@@ -3453,7 +3453,7 @@
     {
       "id": "simple-vector-triton-gpu-to-npu",
       "name": "simple-vector-triton-gpu-to-npu",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/simple-vector-triton-gpu-to-npu/SKILL.md",
       "sha256": "d0623c86ddd8ffc91b5c7fc67b96b6d9ba13d106b33da5c57431972e126f8a9c",
@@ -3473,7 +3473,7 @@
     {
       "id": "vector-triton-ascend-ops-optimizer",
       "name": "vector-triton-ascend-ops-optimizer",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "community/Op/vector-triton-ascend-ops-optimizer/SKILL.md",
       "sha256": "5dfd5710d9c49cd45ff8cf5f584529b2b3af5939d6dd13cd8ff24ca8c0b67226",
@@ -3493,7 +3493,7 @@
     {
       "id": "ascendc-operator-a5-migration",
       "name": "ascendc-operator-A5-migration",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "official/Common/ascendc-operator-A5-migration/SKILL.md",
       "sha256": "268c1099df857a274393a11feac0ab7aa5162a1c7effb097ac1ae65c3d609e81",
@@ -3513,7 +3513,7 @@
     {
       "id": "ascend-agent-skills-ascendc-operator-performance-optim",
       "name": "ascendc-operator-performance-optim",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "official/MindStudio/skills/ascendc-operator-performance-optim/SKILL.md",
       "sha256": "91cfed248a9f85482b7b4efc28ea49032a0824cb530fa820d6afd0af868fc1f4",
@@ -3533,7 +3533,7 @@
     {
       "id": "msot-msopprof-operator-profiler",
       "name": "msot-msopprof-operator-profiler",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "official/MindStudio/skills/msot-msopprof-operator-profiler/SKILL.md",
       "sha256": "b2c251ceb5e224961dc2c5c7a85b397044da746be07e69193f60a1fbb1889d47",
@@ -3553,7 +3553,7 @@
     {
       "id": "op-mfu-calculator",
       "name": "op-mfu-calculator",
-      "project": "ascend-agent-skills",
+      "project": "ascend-gitcode-agent-skills",
       "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
       "path": "official/MindStudio/skills/op-mfu-calculator/SKILL.md",
       "sha256": "02648a79ed3b87d7b0ada226af1446fbf86784fdb10cc50133c91b583b1303a6",
@@ -5640,7 +5640,7 @@
         "directory_tree": "b4c3e7aa0b831b15e305f937c89ed2e8c17773b4"
       },
       "canonical": {
-        "project": "ascend-agent-skills",
+        "project": "ascend-gitcode-agent-skills",
         "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
         "path": "community/Op/ascendc-operator-doc-gen/SKILL.md",
         "name": "ascendc-operator-doc-gen",
@@ -5658,7 +5658,7 @@
         "directory_tree": "3e083459ed77117b28aaea6b950e31b06ccbbdac"
       },
       "canonical": {
-        "project": "ascend-agent-skills",
+        "project": "ascend-gitcode-agent-skills",
         "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
         "path": "community/Op/ascendc-operator-mssanitizer/SKILL.md",
         "name": "ascendc-mssanitizer",
@@ -5676,7 +5676,7 @@
         "directory_tree": "d8120fdbadd0cead06cd9e1aea26e4cf8cb80128"
       },
       "canonical": {
-        "project": "ascend-agent-skills",
+        "project": "ascend-gitcode-agent-skills",
         "revision": "a4011846f6d79fcee3e7b90fafe588d8a51fbc91",
         "path": "community/Op/vector-triton-ascend-ops-optimizer/SKILL.md",
         "name": "vector-triton-ascend-ops-optimizer",

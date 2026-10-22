@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "packages": {
+    "vllm": {
+      "commit": "db9527a46873454610df6dbedf79a36d6bf1a7f6"
+    },
+    "vllm_ascend": {
+      "commit": "5d0665fbaf1270745d04d94907c6e81784dc8584"
+    }
+  },
+  "fingerprint": "dc1e53e673a6beaac310c1683ee5f9ae2e7e7471ae27209d7f6890d63998546f"
+}

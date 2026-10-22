@@ -1,0 +1,396 @@
+[
+  {
+    "name": "smoke_one_request",
+    "kernel": "_prepare_prefill_inputs_kernel",
+    "target": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator:_prepare_prefill_inputs_kernel",
+    "scenario": "单请求、一个有效 token、无拒绝；BLOCK_SIZE=4。",
+    "source": {
+      "operator_id": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator._prepare_prefill_inputs_kernel",
+      "source_lock": "dc1e53e673a6beaac310c1683ee5f9ae2e7e7471ae27209d7f6890d63998546f",
+      "target_commit": "db9527a46873454610df6dbedf79a36d6bf1a7f6"
+    },
+    "grid": [
+      1
+    ],
+    "arguments": {
+      "target_input_ids_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          11
+        ]
+      },
+      "target_positions_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int64",
+        "initializer": "values",
+        "values": [
+          0
+        ]
+      },
+      "last_sampled_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          19
+        ]
+      },
+      "idx_mapping_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          0
+        ]
+      },
+      "out_input_ids_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "out_positions_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int64",
+        "initializer": "zeros"
+      },
+      "last_token_indices_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int64",
+        "initializer": "zeros"
+      },
+      "out_query_start_loc_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "out_seq_lens_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "query_start_loc_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          0,
+          1
+        ]
+      },
+      "seq_lens_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          1
+        ]
+      },
+      "num_rejected_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          0
+        ]
+      },
+      "max_num_reqs": 1,
+      "max_model_len": 16,
+      "BLOCK_SIZE": 4
+    }
+  },
+  {
+    "name": "typical_mixed_rejection_padding",
+    "kernel": "_prepare_prefill_inputs_kernel",
+    "target": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator:_prepare_prefill_inputs_kernel",
+    "scenario": "三个请求、不同 query 长度与拒绝数、非恒等状态映射；输出请求容量为八，覆盖尾部填充。",
+    "source": {
+      "operator_id": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator._prepare_prefill_inputs_kernel",
+      "source_lock": "dc1e53e673a6beaac310c1683ee5f9ae2e7e7471ae27209d7f6890d63998546f",
+      "target_commit": "db9527a46873454610df6dbedf79a36d6bf1a7f6"
+    },
+    "grid": [
+      3
+    ],
+    "arguments": {
+      "target_input_ids_ptr": {
+        "shape": [
+          9
+        ],
+        "dtype": "int32",
+        "initializer": "arange",
+        "start": 100
+      },
+      "target_positions_ptr": {
+        "shape": [
+          9
+        ],
+        "dtype": "int64",
+        "initializer": "values",
+        "values": [
+          7,
+          8,
+          9,
+          3,
+          4,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "last_sampled_ptr": {
+        "shape": [
+          8
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57
+        ]
+      },
+      "idx_mapping_ptr": {
+        "shape": [
+          3
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          4,
+          1,
+          6
+        ]
+      },
+      "out_input_ids_ptr": {
+        "shape": [
+          24
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "out_positions_ptr": {
+        "shape": [
+          24
+        ],
+        "dtype": "int64",
+        "initializer": "zeros"
+      },
+      "last_token_indices_ptr": {
+        "shape": [
+          8
+        ],
+        "dtype": "int64",
+        "initializer": "zeros"
+      },
+      "out_query_start_loc_ptr": {
+        "shape": [
+          9
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "out_seq_lens_ptr": {
+        "shape": [
+          8
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "query_start_loc_ptr": {
+        "shape": [
+          4
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          0,
+          3,
+          5,
+          9
+        ]
+      },
+      "seq_lens_ptr": {
+        "shape": [
+          3
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          10,
+          5,
+          7
+        ]
+      },
+      "num_rejected_ptr": {
+        "shape": [
+          3
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "max_num_reqs": 8,
+      "max_model_len": 32,
+      "BLOCK_SIZE": 8
+    }
+  },
+  {
+    "name": "boundary_512_two_iterations",
+    "kernel": "_prepare_prefill_inputs_kernel",
+    "target": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator:_prepare_prefill_inputs_kernel",
+    "scenario": "query 长度 512、一个拒绝槽；扩展长度 513，使 BLOCK_SIZE=512 的循环执行两轮，并覆盖位置与序列长度上限。",
+    "source": {
+      "operator_id": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator._prepare_prefill_inputs_kernel",
+      "source_lock": "dc1e53e673a6beaac310c1683ee5f9ae2e7e7471ae27209d7f6890d63998546f",
+      "target_commit": "db9527a46873454610df6dbedf79a36d6bf1a7f6"
+    },
+    "grid": [
+      1
+    ],
+    "arguments": {
+      "target_input_ids_ptr": {
+        "shape": [
+          512
+        ],
+        "dtype": "int32",
+        "initializer": "arange",
+        "start": 100
+      },
+      "target_positions_ptr": {
+        "shape": [
+          512
+        ],
+        "dtype": "int64",
+        "initializer": "arange"
+      },
+      "last_sampled_ptr": {
+        "shape": [
+          4
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          999,
+          0,
+          0,
+          0
+        ]
+      },
+      "idx_mapping_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          0
+        ]
+      },
+      "out_input_ids_ptr": {
+        "shape": [
+          516
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "out_positions_ptr": {
+        "shape": [
+          516
+        ],
+        "dtype": "int64",
+        "initializer": "zeros"
+      },
+      "last_token_indices_ptr": {
+        "shape": [
+          4
+        ],
+        "dtype": "int64",
+        "initializer": "zeros"
+      },
+      "out_query_start_loc_ptr": {
+        "shape": [
+          5
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "out_seq_lens_ptr": {
+        "shape": [
+          4
+        ],
+        "dtype": "int32",
+        "initializer": "zeros"
+      },
+      "query_start_loc_ptr": {
+        "shape": [
+          2
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          0,
+          512
+        ]
+      },
+      "seq_lens_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          512
+        ]
+      },
+      "num_rejected_ptr": {
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "initializer": "values",
+        "values": [
+          1
+        ]
+      },
+      "max_num_reqs": 4,
+      "max_model_len": 512,
+      "BLOCK_SIZE": 512
+    }
+  }
+]

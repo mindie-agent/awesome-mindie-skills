@@ -1,0 +1,22 @@
+id: vllm-ascend-build
+category: environment
+summary:
+  zh: 构建固定版本并核对远端运行路径
+  en: Compile and verify vLLM-Ascend from a pinned workspace or PR revision inside
+    a ready Ascend container.
+tags:
+- Ascend
+- vLLM Ascend
+execution: host
+role: workflow
+source:
+  project: va-workflows
+  path: .agents/skills/vllm-ascend-build/SKILL.md
+  sha256: ee67763b7f6a17348976d43c1765bf12d0559adf7b837a0b251d26b8a01f53d5
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

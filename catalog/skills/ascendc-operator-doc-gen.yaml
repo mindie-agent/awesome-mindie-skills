@@ -11,7 +11,7 @@ tags:
 execution: host
 role: task
 source:
-  project: ascend-agent-skills
+  project: ascend-gitcode-agent-skills
   path: community/Op/ascendc-operator-doc-gen/SKILL.md
   sha256: 32714d75ab289d4d6e89af4919a0ef2e0d42cedaca76008af84cb6af18db3202
 review:

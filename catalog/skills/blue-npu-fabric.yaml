@@ -1,0 +1,23 @@
+id: blue-npu-fabric
+category: debugging
+summary:
+  zh: 跨机 NPU 数据面与 fabric 身份排查：hccs_ping RoCE 连通性判读与假阳性识别、firewalld 主机 TCP 拦截、950DT（A5）rootinfo/ub_endpoint/urma_admin、EID 漂移，按 EI 错误码路由。
+  en: Diagnose cross-machine NPU data-plane and fabric identity — hccs_ping RoCE checks
+    and false positives, firewalld host-TCP blocking, 950DT (A5) rootinfo, ub_endpoint,
+    and urma_admin, plus EID drift; routed by EI error codes.
+tags:
+- Ascend
+- RoCE
+execution: npu
+role: task
+source:
+  project: blue-server-toolkit
+  path: skills/blue-npu-fabric/SKILL.md
+  sha256: 27d0b354fc03b2bc1fd4793a1e6e14da201a72591dc82fdda46ae4d5302290d5
+review:
+  status: definition-reviewed
+  date: '2026-10-20'
+  evidence: evidence/blue-server-toolkit-definition-review-2026-10-20.md
+validation:
+  status: not-recorded
+  cases: []

@@ -11,7 +11,7 @@ tags:
 execution: depends-on-checks
 role: task
 source:
-  project: ascend-agent-skills
+  project: ascend-gitcode-agent-skills
   path: community/Op/simple-vector-triton-gpu-to-npu/SKILL.md
   sha256: d0623c86ddd8ffc91b5c7fc67b96b6d9ba13d106b33da5c57431972e126f8a9c
 review:

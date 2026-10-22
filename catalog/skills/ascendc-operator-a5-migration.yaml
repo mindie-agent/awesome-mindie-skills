@@ -10,7 +10,7 @@ tags:
 execution: depends-on-checks
 role: task
 source:
-  project: ascend-agent-skills
+  project: ascend-gitcode-agent-skills
   path: official/Common/ascendc-operator-A5-migration/SKILL.md
   sha256: 268c1099df857a274393a11feac0ab7aa5162a1c7effb097ac1ae65c3d609e81
 review:

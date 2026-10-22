@@ -54,6 +54,7 @@ The topic covers specification, pipeline design, implementation/migration, numer
 
 [Classification and usage](docs/operator-skills.md) · [Machine-readable statistics](catalog/topics/operator-skills-2026-10-22.json) · [Entry table CSV](catalog/topics/operator-skills-2026-10-22.csv)
 
+
 ## Skill catalogue
 
 Entries are grouped by their primary task and show technology tags, execution requirements, and metadata links. Definition reviews inspect pinned skill instructions and their declared purpose. Execution reproductions record specific environments and cases; coverage counts appear below.
@@ -69,18 +70,27 @@ Each entry's metadata links to its review scope, reproduction cases, and evidenc
 
 <!-- CATALOG:START -->
 
-305 skills · 10 categories
+342 skills · 10 categories
 
-Definitions reviewed: 305 · Entries with execution reproductions: 0. See each entry's metadata for scope.
+Definitions reviewed: 342 · Entries with execution reproductions: 1. See each entry's metadata for scope.
 
 | Upstream Source | Listed | Maintainer | License |
 |---|---|---|---|
 | [vllm-ascend-skills](https://github.com/pisceskkk/vllm-ascend-skills) | 17 | pisceskkk | MIT |
 | [cannbot-skills](https://gitcode.com/cann/cannbot-skills) | 78 | CANNBot SIG (cann) | CANN Open Software License v2.0 |
+| [ascend-pooling-workflows](https://github.com/Yuli-yx/awesome-mindie-skills) | 1 | zouyida2052 and Yuli-yx | CC0-1.0 AND MIT (see package NOTICE) |
+| [awesome-va-skills](https://github.com/Yuli-yx/awesome-va-skills) | 3 | Yuli-yx (adapted collection); wangxiaoteng888 (AISBench origin) | MIT (the three listed packages only) |
+| [va-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 10 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | MIT |
+| [va-hixl-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 5 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | CANN-2.0 |
+| [va-apache-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 4 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | Apache-2.0 |
+| [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
+| [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 2 | Henry-Avery | MIT |
+| [vllm-mrv2-kernel-tools](https://github.com/Liamup777/vllm-mrv2-kernel-tools) | 1 | Liamup777 | Apache-2.0 |
+| [upstream-downstream-analysis](https://github.com/SOMEONEUNSEEN/awesome-mindie-skills) | 1 | SOMEONEUNSEEN | CC0-1.0 |
+| [vllm-ascend-pd-disaggregation-skills](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills) | 3 | nwpu-zxr | MIT |
 | [cannbot](https://gitcode.com/cann/cannbot) | 53 | CANNBot SIG (cann) | CANN Open Software License v2.0; CAKE plugin also includes Apache-2.0 |
 | [cannbot-knowledge](https://gitcode.com/cann/cannbot-knowledge) | 7 | CANNBot SIG (cann) | CANN Open Software License v2.0 |
 | [ascendc-skills](https://gitcode.com/ascendc-agent/ascendc-skills) | 31 | ascendc-agent | Not declared in the pinned repository root |
-| [ascend-agent-skills](https://gitcode.com/Ascend/agent-skills) | 23 | Ascend community | Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated sources retain their terms |
 | [akg](https://github.com/mindspore-ai/akg) | 49 | MindSpore AKG maintainers | Apache-2.0 |
 | [hive](https://github.com/KernelHive/ascendc-skill) | 4 | KernelHive | Not declared in the pinned repository root; bundled references retain their terms |
 | [model-agent](https://gitcode.com/Ascend/model-agent) | 22 | Ascend community | BSD-3-Clause; incorporated skills retain their upstream terms |
@@ -88,6 +98,7 @@ Definitions reviewed: 305 · Entries with execution reproductions: 0. See each e
 | [awesome](https://github.com/ascend-ai-coding/awesome-ascend-skills) | 4 | ascend-ai-coding | Not declared in the pinned repository root; synchronized sources retain their terms |
 | [mindiesd](https://github.com/Ascend/MindIE-SD) | 2 | Ascend MindIE-SD maintainers | MulanPSL-2.0 |
 | [asc-devkit](https://gitcode.com/cann/asc-devkit) | 4 | CANN AscendC maintainers | CANN Open Software License v2.0 |
+| [ascend-gitcode-agent-skills](https://gitcode.com/Ascend/agent-skills) | 23 | Ascend community | Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated sources retain their terms |
 
 - [Environment and dependencies](#environment)
 - [Model integration and conversion](#model-integration)
@@ -108,12 +119,28 @@ Check drivers, CANN, framework compatibility, containers, and devices.
 
 - [ascendc-env-check](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/ascendc-env-check/SKILL.md) — Inspect NPU devices, CANN configuration, toolchain dependencies, and the detected architecture.
   `CANNBot` `Ascend C` `Implementation and migration` `NPU execution` · [Metadata](catalog/skills/ascendc-env-check.yaml)
+- [blue-server-provisioning](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-server-provisioning/SKILL.md) — Bring up fresh Ascend servers and containers — bare-metal HDK driver and firmware installation (HwHiAiUser, driver before firmware), container creation with start-docker-A2/A3/A5.sh, and image-ID discipline.
+  `Ascend` `CANN` `Docker` `NPU execution` · [Metadata](catalog/skills/blue-server-provisioning.yaml)
+- [blue-vllm-ascend-build](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-ascend-build/SKILL.md) — Build or upgrade vllm-ascend from source — editable two-step install, version pairing via vllm-main-verified.commit, setuptools 77 or newer, pip mirror setup, rsync-then-chown sync, and an error-keyword FAQ; pure CPU.
+  `vLLM Ascend` `CANN` `Host tools` · [Metadata](catalog/skills/blue-vllm-ascend-build.yaml)
 - [cann-env-setup](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/cann-env-setup/SKILL.md) — Prepare CANN installation and environment configuration for Ascend operator development.
   `CANNBot` `Operator support` `Implementation and migration` `NPU execution` · [Metadata](catalog/skills/cann-env-setup.yaml)
+- [machine-management](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/machine-management/SKILL.md) — Add, verify, repair, or remove a managed remote NPU host for this workspace.
+  `Ascend` `vLLM Ascend` `Hardware depends on checks` `Workflow` · [Metadata](catalog/skills/machine-management.yaml)
+- [remote-code-parity](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/remote-code-parity/SKILL.md) — Ensure a ready remote runtime runs the exact current local workspace state before any remote smoke, service launch, or benchmark.
+  `Ascend` `vLLM Ascend` `Host tools` `Workflow` · [Metadata](catalog/skills/remote-code-parity.yaml)
+- [remote-toolbox](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/remote-toolbox/SKILL.md) — Resolve, probe, execute, observe jobs, sync, manage service lifecycle, transfer artifacts, and clean VAWS remote Ascend session containers through structured agent-facing CLI entrypoints..
+  `Ascend` `vLLM Ascend` `Host tools` `Workflow` · [Metadata](catalog/skills/remote-toolbox.yaml)
 - [repo-env-check](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-official/ops-direct-invoke/skills/repo-env-check/SKILL.md) — Inspect selected Python/CANN environment candidates and record scoped environment evidence.
   `CANNBot` `Ascend C` `Implementation and migration` `NPU execution` · [Metadata](catalog/skills/repo-env-check.yaml)
+- [repo-init](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/repo-init/SKILL.md) — Initialize this workspace after clone.
+  `Ascend` `vLLM Ascend` `Host tools` `Workflow` · [Metadata](catalog/skills/repo-init.yaml)
+- [session-management](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/session-management/SKILL.md) — Create, list, inspect, remove, and garbage-collect isolated VAWS agent sessions.
+  `Ascend` `vLLM Ascend` `Host tools` `Workflow` · [Metadata](catalog/skills/session-management.yaml)
 - [triton-operator-env-config](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/triton-operator-env-config/SKILL.md) — Verify the CANN, Python, PyTorch, torch_npu, and Triton-Ascend development environment.
   `Model Agent` `Triton` `Implementation and migration` `NPU execution` · [Metadata](catalog/skills/triton-operator-env-config.yaml)
+- [vllm-ascend-build](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-build/SKILL.md) — Compile and verify vLLM-Ascend from a pinned workspace or PR revision inside a ready Ascend container.
+  `Ascend` `vLLM Ascend` `Host tools` `Workflow` · [Metadata](catalog/skills/vllm-ascend-build.yaml)
 
 <a id="model-integration"></a>
 
@@ -121,8 +148,16 @@ Check drivers, CANN, framework compatibility, containers, and devices.
 
 Integrate models, convert weights, and verify configuration and input/output contracts.
 
+- [main2main](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/main2main/SKILL.md) — Adapt vLLM-Ascend to upstream vLLM main changes.
+  `Ascend` `vLLM Ascend` `Offline analysis` `Workflow` · [Metadata](catalog/skills/main2main.yaml)
 - [model-infer-migrator](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/model/model-infer-migrator/SKILL.md) — Adapt HF models or local code to cann-recipes-infer or a standalone runner and establish an eager inference baseline.
   `CANNBot` `PyTorch` `cann-recipes-infer` `NPU execution` · [Metadata](catalog/skills/model-infer-migrator.yaml)
+- [modelscope](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/modelscope/SKILL.md) — Download, resume, status-check, and SHA256-verify ModelScope model weights.
+  `Ascend` `vLLM Ascend` `Host tools` `Workflow` · [Metadata](catalog/skills/modelscope.yaml)
+- [pd-disaggregation-design](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills/blob/2852c18ac977783f336f8c8864ca84dfee3f5cc6/skills/pd-disaggregation-design/SKILL.md) — Design and review PD connectors; assess new cache layouts against specs, shapes, strides and storage semantics to identify compatibility gaps.
+  `vLLM` `vLLM Ascend` `PD` `KV Cache` `Hardware depends on checks` · [Metadata](catalog/skills/pd-disaggregation-design.yaml)
+- [vllm-ascend-model-adapter](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-model-adapter/SKILL.md) — Adapt and debug existing or new models for vLLM on Ascend NPU.
+  `Ascend` `vLLM Ascend` `NPU execution` `Workflow` · [Metadata](catalog/skills/vllm-ascend-model-adapter.yaml)
 
 <a id="serving"></a>
 
@@ -130,10 +165,18 @@ Integrate models, convert weights, and verify configuration and input/output con
 
 Deploy colocated or disaggregated services and verify topology, endpoints, and requests.
 
+- [ascend-memcache-pooling](https://github.com/Yuli-yx/awesome-mindie-skills/blob/2844c25cd3f63cd0cd817cce866de827653babf2/skills/ascend-memcache-pooling/SKILL.md) — Deploy A3/A5 DRAM/SSD pools, preserve P/D transport, inspect Host RoCE and monitor multi-DP HBM, external reuse and SSD readback evidence.
+  `MemCache` `MemFabric` `vLLM Ascend` `SSD` `Host RoCE` `Monitoring` `NPU execution` `Workflow` · [Metadata](catalog/skills/ascend-memcache-pooling.yaml)
+- [blue-vllm-service](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-service/SKILL.md) — Manage the vLLM-on-Ascend service lifecycle — start and stop vllm serve in containers, health checks, multi-service layout, P/D disaggregated bring-up (mooncake, load-balance proxy), TP and parallelism planning, and graph-mode debugging.
+  `vLLM Ascend` `NPU execution` · [Metadata](catalog/skills/blue-vllm-service.yaml)
 - [model-infer-parallel-analysis](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/model/model-infer-parallel-analysis/SKILL.md) — Analyze model structure and Atlas A2/A3 specifications to propose parallel_config candidates with quantitative rationale.
   `CANNBot` `PyTorch` `Parallelism` `Host tools` · [Metadata](catalog/skills/model-infer-parallel-analysis.yaml)
 - [model-infer-parallel-impl](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/model/model-infer-parallel-impl/SKILL.md) — Implement approved TP/EP configurations across parallel layers, communication groups, weights, and launch settings, then validate execution.
   `CANNBot` `PyTorch` `HCCL` `NPU execution` · [Metadata](catalog/skills/model-infer-parallel-impl.yaml)
+- [pd-disaggregation-serving](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills/blob/2852c18ac977783f336f8c8864ca84dfee3f5cc6/skills/pd-disaggregation-serving/SKILL.md) — Prepare or deploy P/D/proxy services using existing lifecycle controllers when available; verify routing, actual KV transfer and cleanup.
+  `vLLM` `vLLM Ascend` `PD` `KV Cache` `Hardware depends on checks` `Workflow` · [Metadata](catalog/skills/pd-disaggregation-serving.yaml)
+- [platform-agent-launch-config](https://github.com/Henry-Avery/ascend-agent-skills/blob/c95957444543f136fa30ba054d1afd5cf3900622/skills/platform-agent-launch-config/SKILL.md) — Trace an inference platform launch path and reuse existing configuration to prepare field guidance, agent scripts, differences, and gaps for a human or agent handoff.
+  `vLLM Ascend` `AiClusterHub` `PD` `Host tools` · [Metadata](catalog/skills/platform-agent-launch-config.yaml)
 - [vllm-ascend-pd-serving](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-pd-serving/SKILL.md) — Plan and review prefill/decode vLLM Ascend serving with explicit roles, connectors, ordering and KV transfer evidence.
   `vLLM Ascend` `PD` `NPU execution` · [Metadata](catalog/skills/vllm-ascend-pd-serving.yaml)
 - [vllm-ascend-serving](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-serving/SKILL.md) — Plan and review one colocated vLLM Ascend service lifecycle, including source pairing, device selection, launch, health, and cleanup.
@@ -145,6 +188,8 @@ Deploy colocated or disaggregated services and verify topology, endpoints, and r
 
 Fix references and case matrices to compare outputs, numerical error, and task quality.
 
+- [aisbench-accuracy](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/aisbench-accuracy/SKILL.md) — Run AISBench dataset accuracy evaluation against a running vLLM service, aligning sampling, prompts and answer postprocessing with the baseline.
+  `Ascend` `vLLM Ascend` `NPU execution` `Workflow` · [Metadata](catalog/skills/aisbench-accuracy.yaml)
 - [aog-input-gen-builder](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/ascendc-port-orchestrator/skills/aog-input-gen-builder/SKILL.md) — Generate normal and edge-case input datasets from an AscendC source package or differentiable reference.
   `CANNBot` `Ascend C` `Testing and numerical validation` `Community` `NPU execution` · [Metadata](catalog/skills/aog-input-gen-builder.yaml)
 - [api-perf-test](https://gitcode.com/ascendc-agent/ascendc-skills/blob/0a46bf1d4fd373c3a8cc136aa6a4a958e9f4f236/skills/docs/skill_3510_api_perf_test/SKILL.md) — Build and run DAV_3510 API performance cases and inspect profiling results.
@@ -206,12 +251,16 @@ Fix references and case matrices to compare outputs, numerical error, and task q
 
 Evaluate throughput and latency using warmup, repeated measurements, and controlled comparisons.
 
+- [aisbench-pd-benchmark](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/aisbench-pd-benchmark/SKILL.md) — Prepare proxy-routed AISBench cases with tokenizer-based datasets, separate warmup and formal runs, and captured configuration and results.
+  `vLLM Ascend` `AISBench` `PD` `NPU execution` · [Metadata](catalog/skills/aisbench-pd-benchmark.yaml)
 - [aog-perf-eval](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/ascendc-port-orchestrator/skills/aog-perf-eval/SKILL.md) — Evaluate generated AscendC operators with profiler and wall-clock measurements.
   `CANNBot` `Ascend C` `Profiling and optimization` `Community` `NPU execution` · [Metadata](catalog/skills/aog-perf-eval.yaml)
 - [ascendc-operator-performance-eval](https://gitcode.com/Ascend/agent-skills/blob/a4011846f6d79fcee3e7b90fafe588d8a51fbc91/community/Op/ascendc-operator-performance-eval/SKILL.md) — Benchmark an AscendC implementation against its reference using profiler cases and comparison reports.
   `Ascend Agent Skills` `Ascend C` `Profiling and optimization` `Community` `NPU execution` · [Metadata](catalog/skills/ascendc-operator-performance-eval.yaml)
 - [model-agent-ascendc-operator-performance-eval](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/ascendc-operator-performance-eval/SKILL.md) — Benchmark an AscendC implementation against its reference using profiler cases and comparison reports.
   `Model Agent` `Ascend C` `Profiling and optimization` `NPU execution` · [Metadata](catalog/skills/model-agent-ascendc-operator-performance-eval.yaml)
+- [pd-pure-role-benchmark](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/pd-pure-role-benchmark/SKILL.md) — Validate pure Prefill and Decode capacity and end-to-end steady QPS with TTFT, TPOT, cache-hit, role-bottleneck and MTP controls.
+  `vLLM Ascend` `AISBench` `PD` `MTP` `NPU execution` `Workflow` · [Metadata](catalog/skills/pd-pure-role-benchmark.yaml)
 - [triton-operator-performance-eval](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/triton-operator-performance-eval/SKILL.md) — Measure Triton-Ascend latency and hardware utilization with msprof and report bottlenecks.
   `Model Agent` `Triton` `Profiling and optimization` `NPU execution` · [Metadata](catalog/skills/triton-operator-performance-eval.yaml)
 - [vllm-ascend-benchmark](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-benchmark/SKILL.md) — Measure one vLLM Ascend online-serving code state with warmup, repeated runs and normalized metrics.
@@ -225,8 +274,14 @@ Evaluate throughput and latency using warmup, repeated measurements, and control
 
 Collect or analyze traces, per-rank behavior, and HBM use with traceable evidence.
 
+- [ascend-memory-profiling](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/ascend-memory-profiling/SKILL.md) — Profile and attribute HBM memory usage on Ascend NPU for vLLM serving scenarios.
+  `Ascend` `vLLM Ascend` `NPU execution` `Workflow` · [Metadata](catalog/skills/ascend-memory-profiling.yaml)
 - [ascend-profiling-analysis](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/ascend-profiling-analysis/SKILL.md) — Analyze Ascend profiler roots into rank, step, layer, block, operator and cross-rank findings with traceable evidence.
   `Ascend` `Profiling` `Offline analysis` · [Metadata](catalog/skills/ascend-profiling-analysis.yaml)
+- [ascend-profiling-collection](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/ascend-profiling-collection/SKILL.md) — Collect one Ascend torch-profiler case end-to-end on a workspace-managed remote NPU container.
+  `Ascend` `vLLM Ascend` `NPU execution` `Workflow` · [Metadata](catalog/skills/ascend-profiling-collection.yaml)
+- [blue-vllm-profiling](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-profiling/SKILL.md) — Capture and interpret profiling for vLLM on Ascend — launch flags, /start_profile and /stop_profile, steady-state windows, per-rank analyse() parsing, step_trace_time buckets, operator attribution, and bottleneck triage.
+  `vLLM Ascend` `Profiling` `torch_npu` `NPU execution` · [Metadata](catalog/skills/blue-vllm-profiling.yaml)
 - [ge-memory-analysis](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/graph/ge-memory-analysis/SKILL.md) — Triage GE device memory, host leaks, and operator addresses, and attribute memory use from logs and reports.
   `CANNBot` `GE` `HBM` `Hardware depends on checks` · [Metadata](catalog/skills/ge-memory-analysis.yaml)
 - [model-infer-perf-breakdown](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/model/model-infer-perf-breakdown/SKILL.md) — Break down kernel_details.csv and traces by model component and generate an HTML report of timing, gaps, and anomalous layers.
@@ -665,6 +720,8 @@ Connect kernel implementation, case validation, and per-shape optimization.
   `CANNBot` `Triton` `Specification and modeling` `Host tools` · [Metadata](catalog/skills/triton-task-extractor.yaml)
 - [vector-triton-ascend-ops-optimizer](https://gitcode.com/Ascend/agent-skills/blob/a4011846f6d79fcee3e7b90fafe588d8a51fbc91/community/Op/vector-triton-ascend-ops-optimizer/SKILL.md) — Optimize Vector Triton kernels using UB budgeting, batching, pipelines, and measured comparisons.
   `Ascend Agent Skills` `Triton` `Profiling and optimization` `Community` `NPU execution` · [Metadata](catalog/skills/vector-triton-ascend-ops-optimizer.yaml)
+- [vllm-mrv2-kernel-workflow](https://github.com/Liamup777/vllm-mrv2-kernel-tools/blob/ed71b1b56994e419998e4cd85f5ace013f92447d/skills/vllm-mrv2-kernel-workflow/SKILL.md) — Review new MRV2 Triton kernels between vLLM tags or commits, generate source-grounded cases, and optionally verify sources and execute and measure them on Ascend.
+  `vLLM Ascend` `Triton` `MRV2` `Hardware depends on checks` `Workflow` `Reproduction recorded` · [Metadata](catalog/skills/vllm-mrv2-kernel-workflow.yaml) · [Validation record](evidence/vllm-mrv2-execution-2026-10-21.md)
 - [workflow-bootstrap](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-official/ops-registry-invoke/skills/workflow-bootstrap/SKILL.md) — Detect the target architecture and select the matching registered-operator workflow.
   `CANNBot` `Ascend C` `Implementation and migration` `NPU execution` `Workflow` · [Metadata](catalog/skills/workflow-bootstrap.yaml)
 
@@ -694,10 +751,25 @@ Reduce startup, communication, graph, and operator failures and verify fixes.
   `CANNBot` `Ascend C` `Testing and numerical validation` `NPU execution` · [Metadata](catalog/skills/ascendc-runtime-debug.yaml)
 - [asys-toolkit](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/tools/asys-toolkit/SKILL.md) — Use asys in Ascend EP environments to collect failure information, inspect device health, and parse diagnostic artifacts.
   `CANNBot` `CANN` `asys` `Hardware depends on checks` · [Metadata](catalog/skills/asys-toolkit.yaml)
+- [blue-npu-fabric](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-npu-fabric/SKILL.md) — Diagnose cross-machine NPU data-plane and fabric identity — hccs_ping RoCE checks and false positives, firewalld host-TCP blocking, 950DT (A5) rootinfo, ub_endpoint, and urma_admin, plus EID drift; routed by EI error codes.
+  `Ascend` `RoCE` `NPU execution` · [Metadata](catalog/skills/blue-npu-fabric.yaml)
+- [debugging-vllm-ascend-pd-accuracy](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/debugging-vllm-ascend-pd-accuracy/SKILL.md) — Diagnose PD repetition and accuracy divergence using P/D/proxy comparisons, single-variable experiments, KV fingerprints and first-divergence evidence.
+  `vLLM Ascend` `PD` `KV transfer` `Accuracy` `NPU execution` `Workflow` · [Metadata](catalog/skills/debugging-vllm-ascend-pd-accuracy.yaml)
+- [driver-peermem-check](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/driver-peermem-check/SKILL.md) — 分析 Ascend 驱动 .run 包中是否包含 npu_peermem.ko 及相关源码。适用于：
+- 判断某个驱动版本是否支持 d2d/d2rd RDMA 传输
+- 对比不同平台的驱动包内容差异
+- 检查 npu_peermem 模块的构建依赖是否就绪
+- 用户提到驱动包、npu_peermem、d2d RDMA 失败、peer memory 等问题时
+.
+  `Ascend` `HIXL` `Offline analysis` `Workflow` · [Metadata](catalog/skills/driver-peermem-check.yaml)
 - [ge-dynamic-shape-diagnose](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/graph/ge-dynamic-shape-diagnose/SKILL.md) — Identify unknown-graph and dynamic-shape scheduling triggers from GE compiler logs.
   `CANNBot` `GE` `Offline analysis` · [Metadata](catalog/skills/ge-dynamic-shape-diagnose.yaml)
 - [gm-align-debug](https://gitcode.com/ascendc-agent/ascendc-skills/blob/0a46bf1d4fd373c3a8cc136aa6a4a958e9f4f236/skills/common/gm-align-debug/SKILL.md) — Reproduce GM/UB copy alignment and byte-reinterpretation failures using memory dumps.
   `AscendC Agent` `Ascend C` `Testing and numerical validation` `NPU execution` · [Metadata](catalog/skills/gm-align-debug.yaml)
+- [hixl-troubleshoot](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/hixl-troubleshoot/SKILL.md) — 在 Ascend 上定位 HIXL/ADXL/HIXL_CS 建链、传输问题。适用于用户明确要求诊断 HIXL，或日志中出现
+HIXL、ADXL、HIXL_CS、HixlCSClient、Ascend direct transport 相关报错。
+.
+  `Ascend` `HIXL` `NPU execution` `Workflow` · [Metadata](catalog/skills/hixl-troubleshoot.yaml)
 - [model-agent-ascendc-operator-compile-debug](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/ascendc-operator-compile-debug/SKILL.md) — Build an AscendC extension, install its package, run precision tests, and repair failures.
   `Model Agent` `Ascend C` `Testing and numerical validation` `NPU execution` · [Metadata](catalog/skills/model-agent-ascendc-operator-compile-debug.yaml)
 - [model-agent-ascendc-operator-precision-debug](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/ascendc-operator-precision-debug/SKILL.md) — Analyze numerical error patterns, isolate the faulty computation, and validate targeted AscendC repairs.
@@ -710,6 +782,8 @@ Reduce startup, communication, graph, and operator failures and verify fixes.
   `CANNBot` `CANN` `msaicerr` `Hardware depends on checks` · [Metadata](catalog/skills/msaicerr-toolkit.yaml)
 - [msnpureport-toolkit](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/tools/msnpureport-toolkit/SKILL.md) — Export device logs and query or set diagnostic configuration with the required permissions in supported Ascend EP environments.
   `CANNBot` `CANN` `msnpureport` `NPU execution` · [Metadata](catalog/skills/msnpureport-toolkit.yaml)
+- [pd-disaggregation-accuracy-debug](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills/blob/2852c18ac977783f336f8c8864ca84dfee3f5cc6/skills/pd-disaggregation-accuracy-debug/SKILL.md) — Diagnose PD accuracy top-down or bottom-up, aligning completed P KV/state with D contents and placement before first consumption to establish the cause.
+  `vLLM` `vLLM Ascend` `PD` `KV Cache` `Hardware depends on checks` `Workflow` · [Metadata](catalog/skills/pd-disaggregation-accuracy-debug.yaml)
 - [torch-npugraph-ex-dfx-triage](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/graph/torch-npugraph-ex-dfx-triage/SKILL.md) — Collect layered logs and route npugraph_ex issues to compilation, runtime, accuracy, or performance diagnosis.
   `CANNBot` `PyTorch` `npugraph_ex` `Hardware depends on checks` `Workflow` · [Metadata](catalog/skills/torch-npugraph-ex-dfx-triage.yaml)
 - [triton-precision-debug](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/triton-precision-debug/SKILL.md) — Diagnose Triton-Ascend numerical failures and validate a targeted repair.
@@ -727,6 +801,8 @@ Reduce startup, communication, graph, and operator failures and verify fixes.
 
 Map changes to build, correctness, and performance checks and record coverage.
 
+- [analyze-upstream-downstream](https://github.com/SOMEONEUNSEEN/awesome-mindie-skills/blob/614d7c22c05f147d96e09044aa1b8e62cc9ec89e/skills/analyze-upstream-downstream/SKILL.md) — Trace actual calls and replacement boundaries between an upstream framework and its downstream adaptation, distinguish inherited behavior, synchronized changes and migration gaps, and produce sanitized evidence with a minimal migration plan.
+  `Framework plugins` `Platform adaptations` `Host tools` `Workflow` · [Metadata](catalog/skills/analyze-upstream-downstream.yaml)
 - [aog-report-gen](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/ascendc-port-orchestrator/skills/aog-report-gen/SKILL.md) — Generate a project report for cross-generation migration or backward-operator generation.
   `CANNBot` `Ascend C` `Review and delivery` `Community` `Host tools` · [Metadata](catalog/skills/aog-report-gen.yaml)
 - [aog-self-critic](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/ascendc-port-orchestrator/skills/aog-self-critic/SKILL.md) — Audit the current operator-development session for recurring process failures and corrective actions.
@@ -753,6 +829,10 @@ Map changes to build, correctness, and performance checks and record coverage.
   `Ascend Agent Skills` `Ascend C` `Review and delivery` `Community` `Host tools` · [Metadata](catalog/skills/ascendc-operator-doc-writer.yaml)
 - [ascendc-sync-audit](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/ascendc-sync-audit/SKILL.md) — Audit pipeline and intercore signals and producer/consumer buffer consistency, then propose repairs.
   `CANNBot` `Ascend C` `Review and delivery` `Host tools` · [Metadata](catalog/skills/ascendc-sync-audit.yaml)
+- [blue-npu-ops](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-npu-ops/SKILL.md) — Operate a single NPU server — npu-smi status reading, HBM usage and orphan release, precise-PID cleanup of leftover processes, idle checks, A3 chip numbering and device visibility mapping, and torch-based FLOPS measurement.
+  `Ascend` `HBM` `NPU execution` · [Metadata](catalog/skills/blue-npu-ops.yaml)
+- [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-server-toolkit/SKILL.md) — Perform high-frequency daily operations on remote Ascend NPU development servers — SSH connection checks and stability (persistent ControlMaster multiplexing), code sync, UT execution, model and image download, log viewing, container management, and file transfer; also the routing hub when unsure which sibling skill fits.
+  `Ascend` `Docker` `SSH` `Host tools` · [Metadata](catalog/skills/blue-server-toolkit.yaml)
 - [cake-code-review](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/collaborative-agent-kernel-evolution/skills/cake-code-review/SKILL.md) — Review generated AscendC structure and algorithm correctness before evaluation.
   `CANNBot` `Ascend C` `Review and delivery` `Community` `Host tools` · [Metadata](catalog/skills/cake-code-review.yaml)
 - [cake-review](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/collaborative-agent-kernel-evolution/skills/cake-review/SKILL.md) — Review the complete kernel-generation trace and record process and implementation improvements.
@@ -765,6 +845,18 @@ Map changes to build, correctness, and performance checks and record coverage.
   `AscendC Agent` `Ascend C` `Review and delivery` `Host tools` · [Metadata](catalog/skills/examples-docs-validator.yaml)
 - [git-version-management](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/collaborative-agent-kernel-evolution/skills/git-version-management/SKILL.md) — Isolate operator variants with Git worktrees and record stage commits and provenance.
   `CANNBot` `Ascend C` `Review and delivery` `Community` `Host tools` · [Metadata](catalog/skills/git-version-management.yaml)
+- [hixl-pr-review](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/hixl-pr-review/SKILL.md) — HIXL 代码检视技能。用于检视 GitCode 上的 HIXL 项目 PR，当用户要求检视PR，审查PR时调用此skill。
+自动分析代码变更，检查内存泄漏、安全漏洞和可读性，生成结构化报告并发布评论。
+.
+  `Ascend` `HIXL` `Offline analysis` `Workflow` · [Metadata](catalog/skills/hixl-pr-review.yaml)
+- [hixl-srs-doc-generator](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/hixl-srs-doc-generator/SKILL.md) — 当用户要求为 HIXL 或 ADXL 功能生成、扩展或评审 SRS/需求设计文档时使用，特别涉及 src/hixl 或 src/llm_datadist/adxl 目录下的变更。
+触发关键词包括 SRS、设计文档、需求描述、功能要点、技术方案、相关文档、测试方案，或将简短需求转化为完整设计文档的请求。
+.
+  `Ascend` `HIXL` `Offline analysis` `Workflow` · [Metadata](catalog/skills/hixl-srs-doc-generator.yaml)
+- [hixl-ut-generator](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/hixl-ut-generator/SKILL.md) — 为 HIXL 仓库中的 C++ 改动生成单元测试（UT）方案与代码草稿。
+支持三种输入源：
+1.
+  `Ascend` `HIXL` `Offline analysis` `Workflow` · [Metadata](catalog/skills/hixl-ut-generator.yaml)
 - [model-agent-ascendc-operator-code-review](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/ascendc-operator-code-review/SKILL.md) — Review AscendC source for correctness and engineering-rule violations.
   `Model Agent` `Ascend C` `Review and delivery` `Host tools` · [Metadata](catalog/skills/model-agent-ascendc-operator-code-review.yaml)
 - [op-dashboard](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/collaborative-agent-kernel-evolution/skills/op-dashboard/SKILL.md) — Generate an interactive operator dashboard for algorithm flow, UB tiling, precision, and performance.
@@ -779,6 +871,12 @@ Map changes to build, correctness, and performance checks and record coverage.
   `Model Agent` `Triton` `Review and delivery` `Host tools` · [Metadata](catalog/skills/triton-operator-doc-gen.yaml)
 - [vllm-ascend-change-validation](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-change-validation/SKILL.md) — Map a vLLM or vllm-ascend diff to sufficient correctness, build and performance evidence and summarize coverage.
   `vLLM Ascend` `Hardware depends on checks` · [Metadata](catalog/skills/vllm-ascend-change-validation.yaml)
+- [vllm-ascend-release-note-writer](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-release-note-writer/SKILL.md) — You are a release note writer for vLLM Ascend project (vllm-project/vllm-ascend).
+  `Ascend` `vLLM Ascend` `Offline analysis` `Workflow` · [Metadata](catalog/skills/vllm-ascend-release-note-writer.yaml)
+- [vllm-ascend-release](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-release/SKILL.md) — End-to-end release management skill for vLLM Ascend.
+  `Ascend` `vLLM Ascend` `Offline analysis` `Workflow` · [Metadata](catalog/skills/vllm-ascend-release.yaml)
+- [vllm-dev-chat-organization](https://github.com/Henry-Avery/ascend-agent-skills/blob/c95957444543f136fa30ba054d1afd5cf3900622/skills/vllm-dev-chat-organization/SKILL.md) — Name vLLM development chats by their actual goal, organize a specified scope, and prepare or perform authorized archival.
+  `vLLM` `vLLM Ascend` `Host tools` · [Metadata](catalog/skills/vllm-dev-chat-organization.yaml)
 
 <!-- CATALOG:END -->
 

@@ -63,3 +63,11 @@ The catalogue and topic files are original metadata and links. Original source l
 - Source-level checks matched 244 retained definitions to the original Git-object bytes at their pinned revisions. Seventeen connector-fetched GitHub definitions matched the blob object IDs returned by their pinned source trees. The four DevKit definitions were fetched at the recorded full commit through GitCode's raw endpoint.
 - Windows checkout CRLF conversion was observed in the knowledge repository. Hash checks use original Git-object bytes rather than normalized checkout text.
 - `git diff --check`: passed. These checks validate catalogue structure and source identity, not NPU behavior.
+
+## Integration with current main
+
+The topic was integrated with main at `5bb728bd5421371af2223dd10518010bc798b1ce`. Main already contained 90 catalogue entries; the 252 additions bring the combined catalogue to 342 entries across 23 source projects. The topic remains 271 packages and 264 distinct definitions.
+
+Main already used the source identifier `ascend-agent-skills` for Henry-Avery's GitHub collection. The separate Ascend GitCode collection is registered as `ascend-gitcode-agent-skills`; its 23 catalogue entries, topic records, and pinned revision retain that separate source identity.
+
+The integrated catalogue passes metadata and local-link validation (342 entries, 10 categories, 23 sources, 829 links), both generated README checks, and the existing 17 cache-metrics tests.

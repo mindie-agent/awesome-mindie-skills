@@ -1,0 +1,24 @@
+id: pd-disaggregation-serving
+category: serving
+summary:
+  zh: 准备或部署 P/D/proxy 服务，复用已有生命周期管理工具，验证路由、真实 KV 传输与资源回收。
+  en: Prepare or deploy P/D/proxy services using existing lifecycle controllers when available; verify
+    routing, actual KV transfer and cleanup.
+tags:
+- vLLM
+- vLLM Ascend
+- PD
+- KV Cache
+execution: depends-on-checks
+role: workflow
+source:
+  project: vllm-ascend-pd-disaggregation-skills
+  path: skills/pd-disaggregation-serving/SKILL.md
+  sha256: d54acff60d18f81959c8321c6c2d9ee5f323db43ea7d454a147b6a1f94dab2fd
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/pd-disaggregation-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,23 @@
+id: remote-toolbox
+category: environment
+summary:
+  zh: 执行远端任务、同步、服务与产物操作
+  en: Resolve, probe, execute, observe jobs, sync, manage service lifecycle, transfer
+    artifacts, and clean VAWS remote Ascend session containers through structured
+    agent-facing CLI entrypoints..
+tags:
+- Ascend
+- vLLM Ascend
+execution: host
+role: workflow
+source:
+  project: va-workflows
+  path: .agents/skills/remote-toolbox/SKILL.md
+  sha256: 508452de949b2c2ed44fbe19db6d5b4ea762af0b1eedcdd84e3fff6da9389618
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

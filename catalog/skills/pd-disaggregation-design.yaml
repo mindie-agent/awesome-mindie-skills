@@ -1,0 +1,24 @@
+id: pd-disaggregation-design
+category: model-integration
+summary:
+  zh: 设计与审查 PD connector，依据 cache spec、shape、stride 和存储语义评估新 layout 的兼容性与适配缺口。
+  en: Design and review PD connectors; assess new cache layouts against specs, shapes, strides and storage
+    semantics to identify compatibility gaps.
+tags:
+- vLLM
+- vLLM Ascend
+- PD
+- KV Cache
+execution: depends-on-checks
+role: task
+source:
+  project: vllm-ascend-pd-disaggregation-skills
+  path: skills/pd-disaggregation-design/SKILL.md
+  sha256: 6109a74a692a1792e1fb6877b55aa1e6263d39fd8e4165a24106c7909e607567
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/pd-disaggregation-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

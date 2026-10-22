@@ -1,0 +1,21 @@
+id: vllm-ascend-release
+category: delivery
+summary:
+  zh: 组织 vLLM Ascend 发布检查和交付
+  en: End-to-end release management skill for vLLM Ascend.
+tags:
+- Ascend
+- vLLM Ascend
+execution: offline
+role: workflow
+source:
+  project: va-apache-workflows
+  path: .agents/skills/vllm-ascend-release/SKILL.md
+  sha256: 54d237d19339fb2cdb298d2edc02995a4007b2c572a53332ef3d72f6c7867062
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

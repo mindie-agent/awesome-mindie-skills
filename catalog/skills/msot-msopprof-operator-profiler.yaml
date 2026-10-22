@@ -10,7 +10,7 @@ tags:
 execution: npu
 role: task
 source:
-  project: ascend-agent-skills
+  project: ascend-gitcode-agent-skills
   path: official/MindStudio/skills/msot-msopprof-operator-profiler/SKILL.md
   sha256: b2c251ceb5e224961dc2c5c7a85b397044da746be07e69193f60a1fbb1889d47
 review:

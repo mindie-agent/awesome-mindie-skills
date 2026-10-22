@@ -54,6 +54,7 @@
 
 [专题分类与使用说明](docs/operator-skills.md) · [机器可读统计](catalog/topics/operator-skills-2026-10-22.json) · [条目表 CSV](catalog/topics/operator-skills-2026-10-22.csv)
 
+
 ## 技能目录
 
 目录按主要任务分类，条目展示技术栈、执行条件与元数据入口。定义审阅核对固定版本的技能说明与声明用途；运行复现按具体环境和用例记录，覆盖数量见下方统计。
@@ -69,18 +70,27 @@
 
 <!-- CATALOG:START -->
 
-305 个技能 · 10 个分类
+342 个技能 · 10 个分类
 
-定义已审阅：305 · 已有运行复现记录：0。具体范围见各条目记录。
+定义已审阅：342 · 已有运行复现记录：1。具体范围见各条目记录。
 
 | 来源项目 | 已收录 | 维护者 | 许可证 |
 |---|---|---|---|
 | [vllm-ascend-skills](https://github.com/pisceskkk/vllm-ascend-skills) | 17 | pisceskkk | MIT |
 | [cannbot-skills](https://gitcode.com/cann/cannbot-skills) | 78 | CANNBot SIG (cann) | CANN Open Software License v2.0 |
+| [ascend-pooling-workflows](https://github.com/Yuli-yx/awesome-mindie-skills) | 1 | zouyida2052 and Yuli-yx | CC0-1.0 AND MIT (see package NOTICE) |
+| [awesome-va-skills](https://github.com/Yuli-yx/awesome-va-skills) | 3 | Yuli-yx (adapted collection); wangxiaoteng888 (AISBench origin) | MIT (the three listed packages only) |
+| [va-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 10 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | MIT |
+| [va-hixl-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 5 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | CANN-2.0 |
+| [va-apache-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 4 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | Apache-2.0 |
+| [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
+| [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 2 | Henry-Avery | MIT |
+| [vllm-mrv2-kernel-tools](https://github.com/Liamup777/vllm-mrv2-kernel-tools) | 1 | Liamup777 | Apache-2.0 |
+| [upstream-downstream-analysis](https://github.com/SOMEONEUNSEEN/awesome-mindie-skills) | 1 | SOMEONEUNSEEN | CC0-1.0 |
+| [vllm-ascend-pd-disaggregation-skills](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills) | 3 | nwpu-zxr | MIT |
 | [cannbot](https://gitcode.com/cann/cannbot) | 53 | CANNBot SIG (cann) | CANN Open Software License v2.0; CAKE plugin also includes Apache-2.0 |
 | [cannbot-knowledge](https://gitcode.com/cann/cannbot-knowledge) | 7 | CANNBot SIG (cann) | CANN Open Software License v2.0 |
 | [ascendc-skills](https://gitcode.com/ascendc-agent/ascendc-skills) | 31 | ascendc-agent | Not declared in the pinned repository root |
-| [ascend-agent-skills](https://gitcode.com/Ascend/agent-skills) | 23 | Ascend community | Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated sources retain their terms |
 | [akg](https://github.com/mindspore-ai/akg) | 49 | MindSpore AKG maintainers | Apache-2.0 |
 | [hive](https://github.com/KernelHive/ascendc-skill) | 4 | KernelHive | Not declared in the pinned repository root; bundled references retain their terms |
 | [model-agent](https://gitcode.com/Ascend/model-agent) | 22 | Ascend community | BSD-3-Clause; incorporated skills retain their upstream terms |
@@ -88,6 +98,7 @@
 | [awesome](https://github.com/ascend-ai-coding/awesome-ascend-skills) | 4 | ascend-ai-coding | Not declared in the pinned repository root; synchronized sources retain their terms |
 | [mindiesd](https://github.com/Ascend/MindIE-SD) | 2 | Ascend MindIE-SD maintainers | MulanPSL-2.0 |
 | [asc-devkit](https://gitcode.com/cann/asc-devkit) | 4 | CANN AscendC maintainers | CANN Open Software License v2.0 |
+| [ascend-gitcode-agent-skills](https://gitcode.com/Ascend/agent-skills) | 23 | Ascend community | Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated sources retain their terms |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -108,12 +119,28 @@
 
 - [ascendc-env-check](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/ascendc-env-check/SKILL.md) — 检查 NPU 设备、CANN 配置、工具链依赖和实际架构。
   `CANNBot` `Ascend C` `Implementation and migration` `执行需 NPU` · [条目](catalog/skills/ascendc-env-check.yaml)
+- [blue-server-provisioning](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-server-provisioning/SKILL.md) — 全新昇腾服务器与容器初始化：裸机 HDK 驱动与固件安装（HwHiAiUser、先驱动后固件）、start-docker-A2/A3/A5.sh 建容器、镜像 ID 纪律。
+  `Ascend` `CANN` `Docker` `执行需 NPU` · [条目](catalog/skills/blue-server-provisioning.yaml)
+- [blue-vllm-ascend-build](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-ascend-build/SKILL.md) — 从源码构建或升级 vllm-ascend：两步 editable 安装、按 vllm-main-verified.commit 配对版本、setuptools≥77、pip 镜像配置、rsync 后 chown 同步、错误关键词 FAQ；纯 CPU 操作。
+  `vLLM Ascend` `CANN` `主机工具` · [条目](catalog/skills/blue-vllm-ascend-build.yaml)
 - [cann-env-setup](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/cann-env-setup/SKILL.md) — 准备昇腾算子开发所需的 CANN 安装和环境配置。
   `CANNBot` `Operator support` `Implementation and migration` `执行需 NPU` · [条目](catalog/skills/cann-env-setup.yaml)
+- [machine-management](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/machine-management/SKILL.md) — 接入、验证和修复远端 NPU 主机
+  `Ascend` `vLLM Ascend` `设备取决于检查项` `流程编排` · [条目](catalog/skills/machine-management.yaml)
+- [remote-code-parity](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/remote-code-parity/SKILL.md) — 核对本地与远端执行源码一致性
+  `Ascend` `vLLM Ascend` `主机工具` `流程编排` · [条目](catalog/skills/remote-code-parity.yaml)
+- [remote-toolbox](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/remote-toolbox/SKILL.md) — 执行远端任务、同步、服务与产物操作
+  `Ascend` `vLLM Ascend` `主机工具` `流程编排` · [条目](catalog/skills/remote-toolbox.yaml)
 - [repo-env-check](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-official/ops-direct-invoke/skills/repo-env-check/SKILL.md) — 检查选定 Python/CANN 环境并记录对应环境证据。
   `CANNBot` `Ascend C` `Implementation and migration` `执行需 NPU` · [条目](catalog/skills/repo-env-check.yaml)
+- [repo-init](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/repo-init/SKILL.md) — 初始化工作区、GitHub 与源码子模块
+  `Ascend` `vLLM Ascend` `主机工具` `流程编排` · [条目](catalog/skills/repo-init.yaml)
+- [session-management](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/session-management/SKILL.md) — 创建与管理隔离开发会话和资源租约
+  `Ascend` `vLLM Ascend` `主机工具` `流程编排` · [条目](catalog/skills/session-management.yaml)
 - [triton-operator-env-config](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/triton-operator-env-config/SKILL.md) — 验证 CANN、Python、PyTorch、torch_npu 和 Triton-Ascend 开发环境。
   `Model Agent` `Triton` `Implementation and migration` `执行需 NPU` · [条目](catalog/skills/triton-operator-env-config.yaml)
+- [vllm-ascend-build](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-build/SKILL.md) — 构建固定版本并核对远端运行路径
+  `Ascend` `vLLM Ascend` `主机工具` `流程编排` · [条目](catalog/skills/vllm-ascend-build.yaml)
 
 <a id="model-integration"></a>
 
@@ -121,8 +148,16 @@
 
 接入模型、转换权重，并核对配置与输入输出。
 
+- [main2main](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/main2main/SKILL.md) — 分析并适配 vLLM 主线兼容性变化
+  `Ascend` `vLLM Ascend` `离线分析` `流程编排` · [条目](catalog/skills/main2main.yaml)
 - [model-infer-migrator](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/model/model-infer-migrator/SKILL.md) — 将 HF 模型或本地代码适配到 cann-recipes-infer 或独立 Runner，建立 eager 推理基线。
   `CANNBot` `PyTorch` `cann-recipes-infer` `执行需 NPU` · [条目](catalog/skills/model-infer-migrator.yaml)
+- [modelscope](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/modelscope/SKILL.md) — 下载、续传和校验 ModelScope 权重
+  `Ascend` `vLLM Ascend` `主机工具` `流程编排` · [条目](catalog/skills/modelscope.yaml)
+- [pd-disaggregation-design](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills/blob/2852c18ac977783f336f8c8864ca84dfee3f5cc6/skills/pd-disaggregation-design/SKILL.md) — 设计与审查 PD connector，依据 cache spec、shape、stride 和存储语义评估新 layout 的兼容性与适配缺口。
+  `vLLM` `vLLM Ascend` `PD` `KV Cache` `设备取决于检查项` · [条目](catalog/skills/pd-disaggregation-design.yaml)
+- [vllm-ascend-model-adapter](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-model-adapter/SKILL.md) — 适配与调试 Ascend 上的 vLLM 模型
+  `Ascend` `vLLM Ascend` `执行需 NPU` `流程编排` · [条目](catalog/skills/vllm-ascend-model-adapter.yaml)
 
 <a id="serving"></a>
 
@@ -130,10 +165,18 @@
 
 部署共置或 PD 分离服务，验证拓扑、端点与请求。
 
+- [ascend-memcache-pooling](https://github.com/Yuli-yx/awesome-mindie-skills/blob/2844c25cd3f63cd0cd817cce866de827653babf2/skills/ascend-memcache-pooling/SKILL.md) — 部署 A3/A5 DRAM/SSD 池化，保留 P/D 传输，核对 Host RoCE，并监控多 DP 的 HBM、池复用与 SSD 回读证据。
+  `MemCache` `MemFabric` `vLLM Ascend` `SSD` `Host RoCE` `Monitoring` `执行需 NPU` `流程编排` · [条目](catalog/skills/ascend-memcache-pooling.yaml)
+- [blue-vllm-service](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-service/SKILL.md) — vLLM on Ascend 的服务生命周期：容器内起停 vllm serve、健康检查、多服务布局、P/D 分离拉起（mooncake、负载均衡 proxy）、TP/并行度规划、graph 模式排障。
+  `vLLM Ascend` `执行需 NPU` · [条目](catalog/skills/blue-vllm-service.yaml)
 - [model-infer-parallel-analysis](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/model/model-infer-parallel-analysis/SKILL.md) — 根据模型结构与 Atlas A2/A3 规格分析并行策略，输出 parallel_config 候选和定量依据。
   `CANNBot` `PyTorch` `Parallelism` `主机工具` · [条目](catalog/skills/model-infer-parallel-analysis.yaml)
 - [model-infer-parallel-impl](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/model/model-infer-parallel-impl/SKILL.md) — 按确认的 TP/EP 配置改造并行层、通信组、权重和启动配置，并验证模型运行。
   `CANNBot` `PyTorch` `HCCL` `执行需 NPU` · [条目](catalog/skills/model-infer-parallel-impl.yaml)
+- [pd-disaggregation-serving](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills/blob/2852c18ac977783f336f8c8864ca84dfee3f5cc6/skills/pd-disaggregation-serving/SKILL.md) — 准备或部署 P/D/proxy 服务，复用已有生命周期管理工具，验证路由、真实 KV 传输与资源回收。
+  `vLLM` `vLLM Ascend` `PD` `KV Cache` `设备取决于检查项` `流程编排` · [条目](catalog/skills/pd-disaggregation-serving.yaml)
+- [platform-agent-launch-config](https://github.com/Henry-Avery/ascend-agent-skills/blob/c95957444543f136fa30ba054d1afd5cf3900622/skills/platform-agent-launch-config/SKILL.md) — 梳理推理平台启动链，复用已有配置，整理填写说明、Agent 脚本、差异与缺项，供人工或 Agent 接续。
+  `vLLM Ascend` `AiClusterHub` `PD` `主机工具` · [条目](catalog/skills/platform-agent-launch-config.yaml)
 - [vllm-ascend-pd-serving](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-pd-serving/SKILL.md) — 部署 Prefill/Decode 分离服务，验证连接器、角色启动顺序与 KV 传输。
   `vLLM Ascend` `PD` `执行需 NPU` · [条目](catalog/skills/vllm-ascend-pd-serving.yaml)
 - [vllm-ascend-serving](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-serving/SKILL.md) — 完成共置服务的版本配对、设备选择、启动、健康检查与清理。
@@ -145,6 +188,8 @@
 
 固定参考与用例矩阵，比较输出、误差和任务质量。
 
+- [aisbench-accuracy](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/aisbench-accuracy/SKILL.md) — 执行数据集精度评估与采样配置对齐
+  `Ascend` `vLLM Ascend` `执行需 NPU` `流程编排` · [条目](catalog/skills/aisbench-accuracy.yaml)
 - [aog-input-gen-builder](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/ascendc-port-orchestrator/skills/aog-input-gen-builder/SKILL.md) — 从 AscendC 源包或可微标杆生成常规与边界输入数据。
   `CANNBot` `Ascend C` `Testing and numerical validation` `Community` `执行需 NPU` · [条目](catalog/skills/aog-input-gen-builder.yaml)
 - [api-perf-test](https://gitcode.com/ascendc-agent/ascendc-skills/blob/0a46bf1d4fd373c3a8cc136aa6a4a958e9f4f236/skills/docs/skill_3510_api_perf_test/SKILL.md) — 构建运行 DAV_3510 API 性能用例并分析采集结果。
@@ -206,12 +251,16 @@
 
 通过预热、重复测量和受控对比评估吞吐与延迟。
 
+- [aisbench-pd-benchmark](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/aisbench-pd-benchmark/SKILL.md) — 通过 P/D 代理运行 AISBench，构建定长或重复前缀数据，分离预热与正式测量并保留配置和结果。
+  `vLLM Ascend` `AISBench` `PD` `执行需 NPU` · [条目](catalog/skills/aisbench-pd-benchmark.yaml)
 - [aog-perf-eval](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/ascendc-port-orchestrator/skills/aog-perf-eval/SKILL.md) — 以 Profiler 和墙钟两种方式评估生成的 AscendC 算子。
   `CANNBot` `Ascend C` `Profiling and optimization` `Community` `执行需 NPU` · [条目](catalog/skills/aog-perf-eval.yaml)
 - [ascendc-operator-performance-eval](https://gitcode.com/Ascend/agent-skills/blob/a4011846f6d79fcee3e7b90fafe588d8a51fbc91/community/Op/ascendc-operator-performance-eval/SKILL.md) — 使用 Profiler 用例和对比报告评估 AscendC 实现与标杆性能。
   `Ascend Agent Skills` `Ascend C` `Profiling and optimization` `Community` `执行需 NPU` · [条目](catalog/skills/ascendc-operator-performance-eval.yaml)
 - [model-agent-ascendc-operator-performance-eval](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/ascendc-operator-performance-eval/SKILL.md) — 使用 Profiler 用例和对比报告评估 AscendC 实现与标杆性能。
   `Model Agent` `Ascend C` `Profiling and optimization` `执行需 NPU` · [条目](catalog/skills/model-agent-ascendc-operator-performance-eval.yaml)
+- [pd-pure-role-benchmark](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/pd-pure-role-benchmark/SKILL.md) — 分别验收纯 P、纯 D 容量及端到端稳态 QPS，核对 TTFT、TPOT、缓存命中、角色瓶颈和 MTP 对照。
+  `vLLM Ascend` `AISBench` `PD` `MTP` `执行需 NPU` `流程编排` · [条目](catalog/skills/pd-pure-role-benchmark.yaml)
 - [triton-operator-performance-eval](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/triton-operator-performance-eval/SKILL.md) — 使用 msprof 测量 Triton-Ascend 时延和利用率并报告瓶颈。
   `Model Agent` `Triton` `Profiling and optimization` `执行需 NPU` · [条目](catalog/skills/triton-operator-performance-eval.yaml)
 - [vllm-ascend-benchmark](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-benchmark/SKILL.md) — 对一个代码状态进行预热与重复测量，输出归一化吞吐和延迟指标。
@@ -225,8 +274,14 @@
 
 采集或分析 trace、逐 rank 行为与 HBM 占用，保留证据。
 
+- [ascend-memory-profiling](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/ascend-memory-profiling/SKILL.md) — 采集和归因推理服务的 HBM 占用
+  `Ascend` `vLLM Ascend` `执行需 NPU` `流程编排` · [条目](catalog/skills/ascend-memory-profiling.yaml)
 - [ascend-profiling-analysis](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/ascend-profiling-analysis/SKILL.md) — 分析 rank、step、layer、block、算子及跨 rank 行为，输出可追溯的瓶颈证据。
   `Ascend` `Profiling` `离线分析` · [条目](catalog/skills/ascend-profiling-analysis.yaml)
+- [ascend-profiling-collection](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/ascend-profiling-collection/SKILL.md) — 采集单次 Ascend torch profiler 工作负载
+  `Ascend` `vLLM Ascend` `执行需 NPU` `流程编排` · [条目](catalog/skills/ascend-profiling-collection.yaml)
+- [blue-vllm-profiling](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-vllm-profiling/SKILL.md) — vLLM on Ascend 的 profiling 采集与判读：启动 flags、/start_profile 与 /stop_profile、稳态窗口选取、逐 rank analyse() 解析、step_trace_time 分桶、算子归因与瓶颈定位。
+  `vLLM Ascend` `Profiling` `torch_npu` `执行需 NPU` · [条目](catalog/skills/blue-vllm-profiling.yaml)
 - [ge-memory-analysis](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/graph/ge-memory-analysis/SKILL.md) — 分诊 GE Device 显存、Host 泄漏及算子地址问题，结合日志和报告进行内存归因。
   `CANNBot` `GE` `HBM` `设备取决于检查项` · [条目](catalog/skills/ge-memory-analysis.yaml)
 - [model-infer-perf-breakdown](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/model/model-infer-perf-breakdown/SKILL.md) — 将 kernel_details.csv 与 trace 按模型组件拆解，生成耗时、空隙和异常层 HTML 报告。
@@ -665,6 +720,8 @@
   `CANNBot` `Triton` `Specification and modeling` `主机工具` · [条目](catalog/skills/triton-task-extractor.yaml)
 - [vector-triton-ascend-ops-optimizer](https://gitcode.com/Ascend/agent-skills/blob/a4011846f6d79fcee3e7b90fafe588d8a51fbc91/community/Op/vector-triton-ascend-ops-optimizer/SKILL.md) — 通过 UB 预算、批处理和流水优化 Vector Triton，并进行实测对比。
   `Ascend Agent Skills` `Triton` `Profiling and optimization` `Community` `执行需 NPU` · [条目](catalog/skills/vector-triton-ascend-ops-optimizer.yaml)
+- [vllm-mrv2-kernel-workflow](https://github.com/Liamup777/vllm-mrv2-kernel-tools/blob/ed71b1b56994e419998e4cd85f5ace013f92447d/skills/vllm-mrv2-kernel-workflow/SKILL.md) — 比较 vLLM tag 或 commit 的 MRV2 Triton 新增算子，生成源码约束的用例，可选在 Ascend 上验证源码并执行、测量。
+  `vLLM Ascend` `Triton` `MRV2` `设备取决于检查项` `流程编排` `已有复现记录` · [条目](catalog/skills/vllm-mrv2-kernel-workflow.yaml) · [验证记录](evidence/vllm-mrv2-execution-2026-10-21.md)
 - [workflow-bootstrap](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-official/ops-registry-invoke/skills/workflow-bootstrap/SKILL.md) — 检测目标架构并选择对应注册算子工作流。
   `CANNBot` `Ascend C` `Implementation and migration` `执行需 NPU` `流程编排` · [条目](catalog/skills/workflow-bootstrap.yaml)
 
@@ -694,10 +751,18 @@
   `CANNBot` `Ascend C` `Testing and numerical validation` `执行需 NPU` · [条目](catalog/skills/ascendc-runtime-debug.yaml)
 - [asys-toolkit](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/tools/asys-toolkit/SKILL.md) — 在 Ascend EP 环境使用 asys 收集故障信息、检查设备健康并解析诊断产物。
   `CANNBot` `CANN` `asys` `设备取决于检查项` · [条目](catalog/skills/asys-toolkit.yaml)
+- [blue-npu-fabric](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-npu-fabric/SKILL.md) — 跨机 NPU 数据面与 fabric 身份排查：hccs_ping RoCE 连通性判读与假阳性识别、firewalld 主机 TCP 拦截、950DT（A5）rootinfo/ub_endpoint/urma_admin、EID 漂移，按 EI 错误码路由。
+  `Ascend` `RoCE` `执行需 NPU` · [条目](catalog/skills/blue-npu-fabric.yaml)
+- [debugging-vllm-ascend-pd-accuracy](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/debugging-vllm-ascend-pd-accuracy/SKILL.md) — 对照 P、D 和代理响应，以单变量实验、KV 指纹及首次输出偏差定位 P/D 复读、乱码和精度异常。
+  `vLLM Ascend` `PD` `KV transfer` `Accuracy` `执行需 NPU` `流程编排` · [条目](catalog/skills/debugging-vllm-ascend-pd-accuracy.yaml)
+- [driver-peermem-check](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/driver-peermem-check/SKILL.md) — 检查驱动包的 peer-memory 支持
+  `Ascend` `HIXL` `离线分析` `流程编排` · [条目](catalog/skills/driver-peermem-check.yaml)
 - [ge-dynamic-shape-diagnose](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/graph/ge-dynamic-shape-diagnose/SKILL.md) — 根据 GE 编译日志定位 unknown graph 与动态 shape 调度的触发原因。
   `CANNBot` `GE` `离线分析` · [条目](catalog/skills/ge-dynamic-shape-diagnose.yaml)
 - [gm-align-debug](https://gitcode.com/ascendc-agent/ascendc-skills/blob/0a46bf1d4fd373c3a8cc136aa6a4a958e9f4f236/skills/common/gm-align-debug/SKILL.md) — 通过内存 Dump 复现 GM/UB 搬运对齐及字节重解释问题。
   `AscendC Agent` `Ascend C` `Testing and numerical validation` `执行需 NPU` · [条目](catalog/skills/gm-align-debug.yaml)
+- [hixl-troubleshoot](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/hixl-troubleshoot/SKILL.md) — 定界 HIXL/ADXL 建链与传输失败
+  `Ascend` `HIXL` `执行需 NPU` `流程编排` · [条目](catalog/skills/hixl-troubleshoot.yaml)
 - [model-agent-ascendc-operator-compile-debug](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/ascendc-operator-compile-debug/SKILL.md) — 构建安装 AscendC 扩展，运行精度测试并修复失败。
   `Model Agent` `Ascend C` `Testing and numerical validation` `执行需 NPU` · [条目](catalog/skills/model-agent-ascendc-operator-compile-debug.yaml)
 - [model-agent-ascendc-operator-precision-debug](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/ascendc-operator-precision-debug/SKILL.md) — 分析数值误差形态、隔离异常计算并验证 AscendC 修复。
@@ -710,6 +775,8 @@
   `CANNBot` `CANN` `msaicerr` `设备取决于检查项` · [条目](catalog/skills/msaicerr-toolkit.yaml)
 - [msnpureport-toolkit](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/tools/msnpureport-toolkit/SKILL.md) — 在受支持的 Ascend EP 环境导出 Device 日志，并按权限查询或设置维测配置。
   `CANNBot` `CANN` `msnpureport` `执行需 NPU` · [条目](catalog/skills/msnpureport-toolkit.yaml)
+- [pd-disaggregation-accuracy-debug](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills/blob/2852c18ac977783f336f8c8864ca84dfee3f5cc6/skills/pd-disaggregation-accuracy-debug/SKILL.md) — 从上而下或从底而上诊断 PD 精度，对齐 P 完成的 KV/state 与 D 首次消费前的内容及位置，定位原因。
+  `vLLM` `vLLM Ascend` `PD` `KV Cache` `设备取决于检查项` `流程编排` · [条目](catalog/skills/pd-disaggregation-accuracy-debug.yaml)
 - [torch-npugraph-ex-dfx-triage](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/graph/torch-npugraph-ex-dfx-triage/SKILL.md) — 收集分层日志并将 npugraph_ex 问题路由到编译、运行时、精度或性能诊断。
   `CANNBot` `PyTorch` `npugraph_ex` `设备取决于检查项` `流程编排` · [条目](catalog/skills/torch-npugraph-ex-dfx-triage.yaml)
 - [triton-precision-debug](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/triton-precision-debug/SKILL.md) — 定位 Triton-Ascend 数值异常并验证针对性修复。
@@ -727,6 +794,8 @@
 
 将变更映射到构建、正确性和性能验证，记录覆盖范围。
 
+- [analyze-upstream-downstream](https://github.com/SOMEONEUNSEEN/awesome-mindie-skills/blob/614d7c22c05f147d96e09044aa1b8e62cc9ec89e/skills/analyze-upstream-downstream/SKILL.md) — 追踪上游框架与下游适配的实际调用和替换边界，区分继承能力、已同步项与迁移缺口，输出脱敏证据和最小迁移计划。
+  `Framework plugins` `Platform adaptations` `主机工具` `流程编排` · [条目](catalog/skills/analyze-upstream-downstream.yaml)
 - [aog-report-gen](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/ascendc-port-orchestrator/skills/aog-report-gen/SKILL.md) — 为跨代迁移或反向算子生成输出项目报告。
   `CANNBot` `Ascend C` `Review and delivery` `Community` `主机工具` · [条目](catalog/skills/aog-report-gen.yaml)
 - [aog-self-critic](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/ascendc-port-orchestrator/skills/aog-self-critic/SKILL.md) — 检查当前算子开发会话的重复流程问题并提出修正。
@@ -753,6 +822,10 @@
   `Ascend Agent Skills` `Ascend C` `Review and delivery` `Community` `主机工具` · [条目](catalog/skills/ascendc-operator-doc-writer.yaml)
 - [ascendc-sync-audit](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/ascendc-sync-audit/SKILL.md) — 检查流水、核间信号和生产消费 Buffer 一致性，并提出修复。
   `CANNBot` `Ascend C` `Review and delivery` `主机工具` · [条目](catalog/skills/ascendc-sync-audit.yaml)
+- [blue-npu-ops](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-npu-ops/SKILL.md) — 单服务器 NPU 运维操作：npu-smi 状态判读、HBM 占用与残留释放、按精确 PID 清理遗留进程、空闲检查、A3 芯片编号与可见设备映射、torch 实测算力。
+  `Ascend` `HBM` `执行需 NPU` · [条目](catalog/skills/blue-npu-ops.yaml)
+- [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit/blob/5707a86922713f830f1f5fea2bedbb0a0a1cdc3a/skills/blue-server-toolkit/SKILL.md) — 在昇腾 NPU 远程开发服务器上执行高频日常操作：SSH 连接检查与稳定性（ControlMaster 常驻复用）、代码同步、UT 运行、模型/镜像下载、日志查看、容器管理与文件传输；也是不确定用哪个姊妹 skill 时的路由入口。
+  `Ascend` `Docker` `SSH` `主机工具` · [条目](catalog/skills/blue-server-toolkit.yaml)
 - [cake-code-review](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/collaborative-agent-kernel-evolution/skills/cake-code-review/SKILL.md) — 在评测前检查生成 AscendC 的结构和算法正确性。
   `CANNBot` `Ascend C` `Review and delivery` `Community` `主机工具` · [条目](catalog/skills/cake-code-review.yaml)
 - [cake-review](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/collaborative-agent-kernel-evolution/skills/cake-review/SKILL.md) — 检视完整 Kernel 生成轨迹并记录流程和实现改进。
@@ -765,6 +838,12 @@
   `AscendC Agent` `Ascend C` `Review and delivery` `主机工具` · [条目](catalog/skills/examples-docs-validator.yaml)
 - [git-version-management](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/collaborative-agent-kernel-evolution/skills/git-version-management/SKILL.md) — 通过 Git worktree 隔离算子变体并记录阶段提交和来源。
   `CANNBot` `Ascend C` `Review and delivery` `Community` `主机工具` · [条目](catalog/skills/git-version-management.yaml)
+- [hixl-pr-review](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/hixl-pr-review/SKILL.md) — 按 HIXL 规则检视代码变更
+  `Ascend` `HIXL` `离线分析` `流程编排` · [条目](catalog/skills/hixl-pr-review.yaml)
+- [hixl-srs-doc-generator](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/hixl-srs-doc-generator/SKILL.md) — 编写和评审 HIXL 需求规格设计
+  `Ascend` `HIXL` `离线分析` `流程编排` · [条目](catalog/skills/hixl-srs-doc-generator.yaml)
+- [hixl-ut-generator](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/hixl-ut-generator/SKILL.md) — 生成与现有风格一致的 HIXL 单元测试方案
+  `Ascend` `HIXL` `离线分析` `流程编排` · [条目](catalog/skills/hixl-ut-generator.yaml)
 - [model-agent-ascendc-operator-code-review](https://gitcode.com/Ascend/model-agent/blob/b355135ad6e4e67861a83305ba115af8928cfb83/skills/optimization/ascendc-operator-code-review/SKILL.md) — 检查 AscendC 代码正确性和工程规范问题。
   `Model Agent` `Ascend C` `Review and delivery` `主机工具` · [条目](catalog/skills/model-agent-ascendc-operator-code-review.yaml)
 - [op-dashboard](https://gitcode.com/cann/cannbot/blob/88637debe061dccc41cd6808f871f446f9c46c7a/plugins-community/collaborative-agent-kernel-evolution/skills/op-dashboard/SKILL.md) — 生成展示算法流、UB 切分、精度和性能的算子交互面板。
@@ -779,6 +858,12 @@
   `Model Agent` `Triton` `Review and delivery` `主机工具` · [条目](catalog/skills/triton-operator-doc-gen.yaml)
 - [vllm-ascend-change-validation](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-change-validation/SKILL.md) — 根据 baseline/candidate 差异确定构建、正确性与性能检查，报告通过项及覆盖缺口。
   `vLLM Ascend` `设备取决于检查项` · [条目](catalog/skills/vllm-ascend-change-validation.yaml)
+- [vllm-ascend-release-note-writer](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-release-note-writer/SKILL.md) — 整理版本说明与发布记录
+  `Ascend` `vLLM Ascend` `离线分析` `流程编排` · [条目](catalog/skills/vllm-ascend-release-note-writer.yaml)
+- [vllm-ascend-release](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-release/SKILL.md) — 组织 vLLM Ascend 发布检查和交付
+  `Ascend` `vLLM Ascend` `离线分析` `流程编排` · [条目](catalog/skills/vllm-ascend-release.yaml)
+- [vllm-dev-chat-organization](https://github.com/Henry-Avery/ascend-agent-skills/blob/c95957444543f136fa30ba054d1afd5cf3900622/skills/vllm-dev-chat-organization/SKILL.md) — 按实际工作目标命名 vLLM 开发会话，整理指定范围，并在授权后准备或执行归档。
+  `vLLM` `vLLM Ascend` `主机工具` · [条目](catalog/skills/vllm-dev-chat-organization.yaml)
 
 <!-- CATALOG:END -->
 

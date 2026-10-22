@@ -1,0 +1,191 @@
+{
+  "record_type": "sanitized_execution_summary",
+  "date": "2026-10-21",
+  "tool_revision": "ed71b1b56994e419998e4cd85f5ace013f92447d",
+  "device": "npu:0",
+  "warmup": 10,
+  "rounds": 50,
+  "timeout_seconds": 180,
+  "source_lock_fingerprint": "dc1e53e673a6beaac310c1683ee5f9ae2e7e7471ae27209d7f6890d63998546f",
+  "note": "Extracted from recorded full-run result JSON. Private hostnames and absolute filesystem paths omitted. Timing summaries and statuses unchanged. Numerical correctness was not checked.",
+  "results": [
+    {
+      "kernel": "_prepare_prefill_inputs_kernel",
+      "scenarios": [
+        {
+          "name": "smoke_one_request",
+          "status": "success",
+          "correctness": "not_checked",
+          "attempts": 1,
+          "latency_us": {
+            "mean": 82.31439992785454,
+            "p50": 81.34999871253967,
+            "p90": 88.14199939370155,
+            "p99": 116.08680225908749,
+            "min": 47.21999913454056,
+            "max": 132.10000097751617
+          },
+          "binding": {
+            "target": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator:_prepare_prefill_inputs_kernel",
+            "module": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator",
+            "relative_file": "vllm/v1/worker/gpu/spec_decode/draft_model/speculator.py",
+            "file_sha256": "f0c2c06c0c3e7fe1205001d99c722e76a2868eb23aa3071a0d9534d142d1d789"
+          },
+          "benchmark_scope": "Triton launch only; input reset and check excluded"
+        },
+        {
+          "name": "typical_mixed_rejection_padding",
+          "status": "success",
+          "correctness": "not_checked",
+          "attempts": 1,
+          "latency_us": {
+            "mean": 92.08360016345978,
+            "p50": 92.71999821066856,
+            "p90": 97.45399728417397,
+            "p99": 103.93540017306805,
+            "min": 29.100000858306885,
+            "max": 104.19999808073044
+          },
+          "binding": {
+            "target": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator:_prepare_prefill_inputs_kernel",
+            "module": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator",
+            "relative_file": "vllm/v1/worker/gpu/spec_decode/draft_model/speculator.py",
+            "file_sha256": "f0c2c06c0c3e7fe1205001d99c722e76a2868eb23aa3071a0d9534d142d1d789"
+          },
+          "benchmark_scope": "Triton launch only; input reset and check excluded"
+        },
+        {
+          "name": "boundary_512_two_iterations",
+          "status": "success",
+          "correctness": "not_checked",
+          "attempts": 1,
+          "latency_us": {
+            "mean": 90.74879989027977,
+            "p50": 86.53999865055084,
+            "p90": 97.31600135564804,
+            "p99": 122.23220080137253,
+            "min": 80.70000261068344,
+            "max": 122.34000116586685
+          },
+          "binding": {
+            "target": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator:_prepare_prefill_inputs_kernel",
+            "module": "vllm.v1.worker.gpu.spec_decode.draft_model.speculator",
+            "relative_file": "vllm/v1/worker/gpu/spec_decode/draft_model/speculator.py",
+            "file_sha256": "f0c2c06c0c3e7fe1205001d99c722e76a2868eb23aa3071a0d9534d142d1d789"
+          },
+          "benchmark_scope": "Triton launch only; input reset and check excluded"
+        }
+      ]
+    },
+    {
+      "kernel": "_gather_draft_sampled_kernel",
+      "scenarios": [
+        {
+          "name": "smoke_two_logits",
+          "status": "success",
+          "correctness": "not_checked",
+          "attempts": 1,
+          "latency_us": {
+            "mean": 83.32440003752708,
+            "p50": 78.25000211596489,
+            "p90": 89.792001247406,
+            "p99": 277.3494032025332,
+            "min": 41.839998215436935,
+            "max": 413.5400056838989
+          },
+          "binding": {
+            "target": "vllm.v1.worker.gpu.spec_decode.rejection_sampler:_gather_draft_sampled_kernel",
+            "module": "vllm.v1.worker.gpu.spec_decode.rejection_sampler",
+            "relative_file": "vllm/v1/worker/gpu/spec_decode/rejection_sampler.py",
+            "file_sha256": "b682782f05f43b21f4ad1f995e37b6288d782b0dd4e3ba66db0919f5c5a9ae29"
+          },
+          "benchmark_scope": "Triton launch only; input reset and check excluded"
+        },
+        {
+          "name": "mixed_placeholder_state_mapping",
+          "status": "success",
+          "correctness": "not_checked",
+          "attempts": 1,
+          "latency_us": {
+            "mean": 83.32759998738766,
+            "p50": 84.03999730944633,
+            "p90": 89.57200199365616,
+            "p99": 103.27700167894363,
+            "min": 43.90000179409981,
+            "max": 103.6200001835823
+          },
+          "binding": {
+            "target": "vllm.v1.worker.gpu.spec_decode.rejection_sampler:_gather_draft_sampled_kernel",
+            "module": "vllm.v1.worker.gpu.spec_decode.rejection_sampler",
+            "relative_file": "vllm/v1/worker/gpu/spec_decode/rejection_sampler.py",
+            "file_sha256": "b682782f05f43b21f4ad1f995e37b6288d782b0dd4e3ba66db0919f5c5a9ae29"
+          },
+          "benchmark_scope": "Triton launch only; input reset and check excluded"
+        },
+        {
+          "name": "tile_minus_one_1023",
+          "status": "success",
+          "correctness": "not_checked",
+          "attempts": 1,
+          "latency_us": {
+            "mean": 107.8455999493599,
+            "p50": 107.7599972486496,
+            "p90": 108.38799774646759,
+            "p99": 109.08880174160004,
+            "min": 106.91999644041061,
+            "max": 109.52000319957733
+          },
+          "binding": {
+            "target": "vllm.v1.worker.gpu.spec_decode.rejection_sampler:_gather_draft_sampled_kernel",
+            "module": "vllm.v1.worker.gpu.spec_decode.rejection_sampler",
+            "relative_file": "vllm/v1/worker/gpu/spec_decode/rejection_sampler.py",
+            "file_sha256": "b682782f05f43b21f4ad1f995e37b6288d782b0dd4e3ba66db0919f5c5a9ae29"
+          },
+          "benchmark_scope": "Triton launch only; input reset and check excluded"
+        },
+        {
+          "name": "tile_exact_1024",
+          "status": "success",
+          "correctness": "not_checked",
+          "attempts": 1,
+          "latency_us": {
+            "mean": 113.28600004315376,
+            "p50": 108.61000046133995,
+            "p90": 126.4699935913086,
+            "p99": 137.94319972395897,
+            "min": 106.64000362157822,
+            "max": 139.0800029039383
+          },
+          "binding": {
+            "target": "vllm.v1.worker.gpu.spec_decode.rejection_sampler:_gather_draft_sampled_kernel",
+            "module": "vllm.v1.worker.gpu.spec_decode.rejection_sampler",
+            "relative_file": "vllm/v1/worker/gpu/spec_decode/rejection_sampler.py",
+            "file_sha256": "b682782f05f43b21f4ad1f995e37b6288d782b0dd4e3ba66db0919f5c5a9ae29"
+          },
+          "benchmark_scope": "Triton launch only; input reset and check excluded"
+        },
+        {
+          "name": "tile_plus_one_1025",
+          "status": "success",
+          "correctness": "not_checked",
+          "attempts": 1,
+          "latency_us": {
+            "mean": 115.28320029377937,
+            "p50": 114.7800013422966,
+            "p90": 125.83199888467789,
+            "p99": 130.18459513783455,
+            "min": 106.76000267267227,
+            "max": 130.89999556541443
+          },
+          "binding": {
+            "target": "vllm.v1.worker.gpu.spec_decode.rejection_sampler:_gather_draft_sampled_kernel",
+            "module": "vllm.v1.worker.gpu.spec_decode.rejection_sampler",
+            "relative_file": "vllm/v1/worker/gpu/spec_decode/rejection_sampler.py",
+            "file_sha256": "b682782f05f43b21f4ad1f995e37b6288d782b0dd4e3ba66db0919f5c5a9ae29"
+          },
+          "benchmark_scope": "Triton launch only; input reset and check excluded"
+        }
+      ]
+    }
+  ]
+}

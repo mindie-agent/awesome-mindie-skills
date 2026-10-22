@@ -1,0 +1,21 @@
+id: vllm-dev-chat-organization
+category: delivery
+summary:
+  zh: 按实际工作目标命名 vLLM 开发会话，整理指定范围，并在授权后准备或执行归档。
+  en: Name vLLM development chats by their actual goal, organize a specified scope, and prepare or perform authorized archival.
+tags:
+- vLLM
+- vLLM Ascend
+execution: host
+role: task
+source:
+  project: ascend-agent-skills
+  path: skills/vllm-dev-chat-organization/SKILL.md
+  sha256: 84a5d5e5772381afad858af0d1e02bb8e8d5e39856d453d446a2165ecd385394
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/vllm-dev-chat-organization-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

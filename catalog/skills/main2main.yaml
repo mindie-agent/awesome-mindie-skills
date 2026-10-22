@@ -1,0 +1,21 @@
+id: main2main
+category: model-integration
+summary:
+  zh: 分析并适配 vLLM 主线兼容性变化
+  en: Adapt vLLM-Ascend to upstream vLLM main changes.
+tags:
+- Ascend
+- vLLM Ascend
+execution: offline
+role: workflow
+source:
+  project: va-apache-workflows
+  path: .agents/skills/main2main/SKILL.md
+  sha256: cafb766a60fb297ca0daeccc89a91c9989dfafe6adc0734c81d1fdfaee33f974
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

@@ -1,0 +1,22 @@
+id: ascend-profiling-collection
+category: profiling
+summary:
+  zh: 采集单次 Ascend torch profiler 工作负载
+  en: Collect one Ascend torch-profiler case end-to-end on a workspace-managed remote
+    NPU container.
+tags:
+- Ascend
+- vLLM Ascend
+execution: npu
+role: workflow
+source:
+  project: va-workflows
+  path: .agents/skills/ascend-profiling-collection/SKILL.md
+  sha256: 7bb6c9d78cc03f7bafac07e06b6011c0c8ca51da0fc00c21cc072e88f0908ca3
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

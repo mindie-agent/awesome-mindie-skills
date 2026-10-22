@@ -1,0 +1,21 @@
+id: repo-init
+category: environment
+summary:
+  zh: 初始化工作区、GitHub 与源码子模块
+  en: Initialize this workspace after clone.
+tags:
+- Ascend
+- vLLM Ascend
+execution: host
+role: workflow
+source:
+  project: va-workflows
+  path: .agents/skills/repo-init/SKILL.md
+  sha256: 42572c8325ba759d89999fb70b8727488c66c7f1bb82a33ab5d90ccfac3e9001
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []

@@ -10,7 +10,7 @@
 
 ## 获取上游技能集
 
-根据所选条目在[来源记录](../catalog/sources.yaml)中声明的仓库地址与固定 commit 获取源码。以下命令可用于拉取当前目录收录的两套上游技能集合，请在本地工作目录中按需执行：
+根据所选条目在[来源记录](../catalog/sources.yaml)中声明的仓库地址与固定 commit 获取源码。以下命令可用于拉取当前目录收录的上游技能集合，请在本地工作目录中按需执行：
 
 ### vLLM Ascend Skills
 
@@ -29,6 +29,17 @@ git -C cannbot-skills checkout --detach 5891c39619a56716b6f73a335ed7709560bb2da8
 ```
 
 CANNBot 的技能入口分布在 `model/<name>/SKILL.md`、`ops/<name>/SKILL.md`、`graph/<name>/SKILL.md` 和 `tools/<name>/SKILL.md` 等路径下。入口可根据任务进一步路由至同级子技能、芯片架构专用说明或插件代理。插件发现与配置方式见上游安装指南。
+
+### 补充的 P/D 工作流
+
+```bash
+git clone https://github.com/Yuli-yx/awesome-va-skills.git
+git -C awesome-va-skills checkout --detach 8d9f7ee56d088f15a398181590c4512bfc725d6f
+```
+
+本次收录的三个入口位于 `.agents/skills/`。保留完整包，包括脚本、参考文档、示例、Agent 元数据及 LICENSE；纯 P／纯 D 容量验收还需同一版本的 AISBench PD benchmark 包。AISBench skill 原始来源为 wangxiaoteng888，具体版本和本地改动见来源仓库的 `ATTRIBUTION.md`。MIT 适用于本次三个包，合集内其他包保留各自许可证。
+
+按所选技能安装 Python／工具依赖，按需另行获取 AISBench 和前缀测试 wrapper。注册技能不会启动服务或下载模型；inventory 和 case 是运行时输入。合集中还保留旧 `.agents/lib/`、`.agents/scripts/` 和 `.remote-dev/` 工具；选择旧托管集成时需保留完整路径，也可使用已配置的 MindIE remote companion 工具。旧布局不声明兼容当前 MindIE 组件接口。
 
 ## 加载技能说明
 
@@ -58,3 +69,18 @@ CANNBot 的技能入口分布在 `model/<name>/SKILL.md`、`ops/<name>/SKILL.md`
 ## 留存与分享结果
 
 执行过程中请保留源码 commit、软硬件运行环境、用例配置、原始日志与产物路径。若希望分享可复现案例或提交条目修正，请按照[贡献指南](../CONTRIBUTING.zh.md)及[验证规则](validation-policy.zh.md)中定义的字段提交。
+
+### 新增 VA 合集工作流
+
+新增 `va-workflows`、`va-apache-workflows`、`va-hixl-workflows` 使用同一个完整
+合集快照，按各包的 MIT / Apache / CANN 许可证分别登记：
+
+```bash
+git clone https://github.com/Yuli-yx/awesome-va-skills.git awesome-va-collection
+git -C awesome-va-collection checkout --detach 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
+```
+
+保留完整技能包及其需要的 `.agents/lib/`、`.agents/scripts/`、`.remote-dev/`。
+旧执行工具尚未宣称适配新版 MindIE coordinator API，集成前先检查差异，避免覆盖
+现有运行状态。原始作者与许可边界见合集 ATTRIBUTION.md。先前三个 PD 条目继续
+保留各自已经审阅的来源版本；池化另走独立 PR。

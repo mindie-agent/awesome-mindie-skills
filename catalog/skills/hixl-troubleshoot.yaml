@@ -1,0 +1,25 @@
+id: hixl-troubleshoot
+category: debugging
+summary:
+  zh: 定界 HIXL/ADXL 建链与传输失败
+  en: '在 Ascend 上定位 HIXL/ADXL/HIXL_CS 建链、传输问题。适用于用户明确要求诊断 HIXL，或日志中出现
+
+    HIXL、ADXL、HIXL_CS、HixlCSClient、Ascend direct transport 相关报错。
+
+    .'
+tags:
+- Ascend
+- HIXL
+execution: npu
+role: workflow
+source:
+  project: va-hixl-workflows
+  path: .agents/skills/hixl-troubleshoot/SKILL.md
+  sha256: 5cbc9148120946961dcd85df0edf64ece8a07c9bd7ec68e39e003887e7ee32c0
+review:
+  status: definition-reviewed
+  date: '2026-10-21'
+  evidence: evidence/va-collection-definition-review-2026-10-21.md
+validation:
+  status: not-recorded
+  cases: []
