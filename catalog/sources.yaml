@@ -40,3 +40,8 @@ sources:
     revision: 5707a86922713f830f1f5fea2bedbb0a0a1cdc3a
     license: MIT
     maintainer: xuchi-0808
+  ascend-agent-skills:
+    repository: https://github.com/Henry-Avery/ascend-agent-skills
+    revision: 0d34abd7e3b2e599d8bc5d2bbded76d732fa1e4a
+    license: MIT
+    maintainer: Henry-Avery

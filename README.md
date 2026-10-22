@@ -63,9 +63,9 @@
 
 <!-- CATALOG:START -->
 
-83 个技能 · 10 个分类
+84 个技能 · 10 个分类
 
-定义已审阅：83 · 已有运行复现记录：0。具体范围见各条目记录。
+定义已审阅：84 · 已有运行复现记录：0。具体范围见各条目记录。
 
 | 来源项目 | 已收录 | 维护者 | 许可证 |
 |---|---|---|---|
@@ -77,6 +77,7 @@
 | [va-hixl-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 5 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | CANN-2.0 |
 | [va-apache-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 4 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | Apache-2.0 |
 | [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
+| [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 1 | Henry-Avery | MIT |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -324,6 +325,8 @@
   `Ascend` `vLLM Ascend` `离线分析` `流程编排` · [条目](catalog/skills/vllm-ascend-release-note-writer.yaml)
 - [vllm-ascend-release](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-release/SKILL.md) — 组织 vLLM Ascend 发布检查和交付
   `Ascend` `vLLM Ascend` `离线分析` `流程编排` · [条目](catalog/skills/vllm-ascend-release.yaml)
+- [vllm-dev-chat-organization](https://github.com/Henry-Avery/ascend-agent-skills/blob/0d34abd7e3b2e599d8bc5d2bbded76d732fa1e4a/skills/vllm-dev-chat-organization/SKILL.md) — 按实际工作目标命名 vLLM 开发会话，整理指定范围，并在授权后准备或执行归档。
+  `vLLM` `vLLM Ascend` `主机工具` · [条目](catalog/skills/vllm-dev-chat-organization.yaml)
 
 <!-- CATALOG:END -->
 

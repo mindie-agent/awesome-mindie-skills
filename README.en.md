@@ -63,9 +63,9 @@ Each entry's metadata links to its review scope, reproduction cases, and evidenc
 
 <!-- CATALOG:START -->
 
-83 skills · 10 categories
+84 skills · 10 categories
 
-Definitions reviewed: 83 · Entries with execution reproductions: 0. See each entry's metadata for scope.
+Definitions reviewed: 84 · Entries with execution reproductions: 0. See each entry's metadata for scope.
 
 | Upstream Source | Listed | Maintainer | License |
 |---|---|---|---|
@@ -77,6 +77,7 @@ Definitions reviewed: 83 · Entries with execution reproductions: 0. See each en
 | [va-hixl-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 5 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | CANN-2.0 |
 | [va-apache-workflows](https://github.com/Yuli-yx/awesome-va-skills) | 4 | Yuli-yx collection; original authors credited in ATTRIBUTION.md | Apache-2.0 |
 | [blue-server-toolkit](https://github.com/xuchi-0808/blue-server-toolkit) | 7 | xuchi-0808 | MIT |
+| [ascend-agent-skills](https://github.com/Henry-Avery/ascend-agent-skills) | 1 | Henry-Avery | MIT |
 
 - [Environment and dependencies](#environment)
 - [Model integration and conversion](#model-integration)
@@ -337,6 +338,8 @@ Map changes to build, correctness, and performance checks and record coverage.
   `Ascend` `vLLM Ascend` `Offline analysis` `Workflow` · [Metadata](catalog/skills/vllm-ascend-release-note-writer.yaml)
 - [vllm-ascend-release](https://github.com/Yuli-yx/awesome-va-skills/blob/7d3aa5f3b55049a2f917b4ca682c1e9963033c18/.agents/skills/vllm-ascend-release/SKILL.md) — End-to-end release management skill for vLLM Ascend.
   `Ascend` `vLLM Ascend` `Offline analysis` `Workflow` · [Metadata](catalog/skills/vllm-ascend-release.yaml)
+- [vllm-dev-chat-organization](https://github.com/Henry-Avery/ascend-agent-skills/blob/0d34abd7e3b2e599d8bc5d2bbded76d732fa1e4a/skills/vllm-dev-chat-organization/SKILL.md) — Name vLLM development chats by their actual goal, organize a specified scope, and prepare or perform authorized archival.
+  `vLLM` `vLLM Ascend` `Host tools` · [Metadata](catalog/skills/vllm-dev-chat-organization.yaml)
 
 <!-- CATALOG:END -->
 
