@@ -1,0 +1,23 @@
+id: vllm-host-memory-leak
+category: debugging
+summary:
+  zh: 结合 USS/PSS/RSS、被动通知计数和经验证的 BCC 分配栈定位 EngineCore/Worker 主机内存增长，并保留进程身份与归因证据。
+  en: Diagnose EngineCore/Worker host RAM growth using USS/PSS/RSS, passive notification counters, and validated BCC allocation traces with process identity and attribution evidence.
+tags:
+- vLLM Ascend
+- Host memory
+- BCC
+- ZMQ
+execution: depends-on-checks
+role: workflow
+source:
+  project: vllm-ascend-workspace
+  path: .agents/skills/vllm-host-memory-leak/SKILL.md
+  sha256: a655055fe55e8c13d1429be5c2b57f0d4ee31a468a6c480f0f458b46ed027c51
+review:
+  status: definition-reviewed
+  date: '2026-10-29'
+  evidence: evidence/workspace-diagnostics-definition-review-2026-10-29.md
+validation:
+  status: not-recorded
+  cases: []

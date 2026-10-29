@@ -70,9 +70,9 @@
 
 <!-- CATALOG:START -->
 
-342 个技能 · 10 个分类
+344 个技能 · 10 个分类
 
-定义已审阅：342 · 已有运行复现记录：1。具体范围见各条目记录。
+定义已审阅：344 · 已有运行复现记录：1。具体范围见各条目记录。
 
 | 来源项目 | 已收录 | 维护者 | 许可证 |
 |---|---|---|---|
@@ -99,6 +99,7 @@
 | [mindiesd](https://github.com/Ascend/MindIE-SD) | 2 | Ascend MindIE-SD maintainers | MulanPSL-2.0 |
 | [asc-devkit](https://gitcode.com/cann/asc-devkit) | 4 | CANN AscendC maintainers | CANN Open Software License v2.0 |
 | [ascend-gitcode-agent-skills](https://gitcode.com/Ascend/agent-skills) | 23 | Ascend community | Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated sources retain their terms |
+| [vllm-ascend-workspace](https://github.com/wangxiaoteng888/vllm-ascend-workspace) | 2 | wangxiaoteng888 (contributed skills); Qi Mao and workspace contributors | MIT; bundled smem: GPL-2.0-or-later (see package NOTICE) |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -294,6 +295,8 @@
   `Ascend Agent Skills` `Operator support` `Profiling and optimization` `离线分析` · [条目](catalog/skills/op-mfu-calculator.yaml)
 - [ops-profiling](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/ops-profiling/SKILL.md) — 采集可比较的算子时延和硬件指标，输出逐 Kernel 瓶颈分析。
   `CANNBot` `Operator support` `Profiling and optimization` `执行需 NPU` · [条目](catalog/skills/ops-profiling.yaml)
+- [pd-decode-profiling](https://github.com/wangxiaoteng888/vllm-ascend-workspace/blob/bb4b39c4c1989a63ab7a6860e8c42c8756b2773b/.agents/skills/pd-decode-profiling/SKILL.md) — 验证 D 节点实际发生 decode 后采集短窗口 PD trace，检查逐 rank 输出并生成带 SHA-256 校验的 trace 归档。
+  `vLLM Ascend` `PD` `Profiling` `执行需 NPU` `流程编排` · [条目](catalog/skills/pd-decode-profiling.yaml)
 - [performance-analyzer](https://github.com/Just-it/AscendOpGenAgent/blob/595ce700122e1fea46d5bdc0949578b130ba404f/skills/ascendc/performance-analyzer/SKILL.md) — 采集对比 AscendC Kernel 性能并定位优化方向。
   `AscendOpGenAgent` `Ascend C` `Profiling and optimization` `执行需 NPU` · [条目](catalog/skills/performance-analyzer.yaml)
 - [performance-summary](https://github.com/mindspore-ai/akg/blob/5aa15f3fe4d856eb60cd3b27447e04f5f1fb4dff/akg_agents/python/akg_agents/op/resources/skills/performance-summary/SKILL.md) — 汇总不同用例的 Kernel 评测结果和优化观察。
@@ -787,6 +790,8 @@
   `vLLM Ascend` `HCCL` `执行需 NPU` · [条目](catalog/skills/vllm-ascend-distributed-debug.yaml)
 - [vllm-ascend-graph-debug](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-graph-debug/SKILL.md) — 通过受控实验和中间快照定位图捕获、回放及 eager/graph 分歧。
   `vLLM Ascend` `Graph` `执行需 NPU` · [条目](catalog/skills/vllm-ascend-graph-debug.yaml)
+- [vllm-host-memory-leak](https://github.com/wangxiaoteng888/vllm-ascend-workspace/blob/bb4b39c4c1989a63ab7a6860e8c42c8756b2773b/.agents/skills/vllm-host-memory-leak/SKILL.md) — 结合 USS/PSS/RSS、被动通知计数和经验证的 BCC 分配栈定位 EngineCore/Worker 主机内存增长，并保留进程身份与归因证据。
+  `vLLM Ascend` `Host memory` `BCC` `ZMQ` `设备取决于检查项` `流程编排` · [条目](catalog/skills/vllm-host-memory-leak.yaml)
 
 <a id="delivery"></a>
 
