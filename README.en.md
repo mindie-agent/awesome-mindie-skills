@@ -70,9 +70,9 @@ Each entry's metadata links to its review scope, reproduction cases, and evidenc
 
 <!-- CATALOG:START -->
 
-342 skills · 10 categories
+344 skills · 10 categories
 
-Definitions reviewed: 342 · Entries with execution reproductions: 1. See each entry's metadata for scope.
+Definitions reviewed: 344 · Entries with execution reproductions: 1. See each entry's metadata for scope.
 
 | Upstream Source | Listed | Maintainer | License |
 |---|---|---|---|
@@ -99,6 +99,7 @@ Definitions reviewed: 342 · Entries with execution reproductions: 1. See each e
 | [mindiesd](https://github.com/Ascend/MindIE-SD) | 2 | Ascend MindIE-SD maintainers | MulanPSL-2.0 |
 | [asc-devkit](https://gitcode.com/cann/asc-devkit) | 4 | CANN AscendC maintainers | CANN Open Software License v2.0 |
 | [ascend-gitcode-agent-skills](https://gitcode.com/Ascend/agent-skills) | 23 | Ascend community | Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated sources retain their terms |
+| [vllm-ascend-workspace](https://github.com/wangxiaoteng888/vllm-ascend-workspace) | 2 | wangxiaoteng888 (contributed skills); Qi Mao and workspace contributors | MIT; bundled smem: GPL-2.0-or-later (see package NOTICE) |
 
 - [Environment and dependencies](#environment)
 - [Model integration and conversion](#model-integration)
@@ -294,6 +295,8 @@ Collect or analyze traces, per-rank behavior, and HBM use with traceable evidenc
   `Ascend Agent Skills` `Operator support` `Profiling and optimization` `Offline analysis` · [Metadata](catalog/skills/op-mfu-calculator.yaml)
 - [ops-profiling](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/ops-profiling/SKILL.md) — Collect comparable operator latency and hardware metrics and report per-kernel bottlenecks.
   `CANNBot` `Operator support` `Profiling and optimization` `NPU execution` · [Metadata](catalog/skills/ops-profiling.yaml)
+- [pd-decode-profiling](https://github.com/wangxiaoteng888/vllm-ascend-workspace/blob/bb4b39c4c1989a63ab7a6860e8c42c8756b2773b/.agents/skills/pd-decode-profiling/SKILL.md) — Capture a short PD trace after confirming D-node decode activity, check per-rank outputs, and package trace views with a SHA-256 checksum.
+  `vLLM Ascend` `PD` `Profiling` `NPU execution` `Workflow` · [Metadata](catalog/skills/pd-decode-profiling.yaml)
 - [performance-analyzer](https://github.com/Just-it/AscendOpGenAgent/blob/595ce700122e1fea46d5bdc0949578b130ba404f/skills/ascendc/performance-analyzer/SKILL.md) — Collect and compare AscendC kernel performance and identify optimization directions.
   `AscendOpGenAgent` `Ascend C` `Profiling and optimization` `NPU execution` · [Metadata](catalog/skills/performance-analyzer.yaml)
 - [performance-summary](https://github.com/mindspore-ai/akg/blob/5aa15f3fe4d856eb60cd3b27447e04f5f1fb4dff/akg_agents/python/akg_agents/op/resources/skills/performance-summary/SKILL.md) — Summarize kernel benchmark results and optimization observations across cases.
@@ -794,6 +797,8 @@ HIXL、ADXL、HIXL_CS、HixlCSClient、Ascend direct transport 相关报错。
   `vLLM Ascend` `HCCL` `NPU execution` · [Metadata](catalog/skills/vllm-ascend-distributed-debug.yaml)
 - [vllm-ascend-graph-debug](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-graph-debug/SKILL.md) — Localize Ascend graph capture, replay or eager/graph divergence with controlled experiments and intermediate snapshots.
   `vLLM Ascend` `Graph` `NPU execution` · [Metadata](catalog/skills/vllm-ascend-graph-debug.yaml)
+- [vllm-host-memory-leak](https://github.com/wangxiaoteng888/vllm-ascend-workspace/blob/bb4b39c4c1989a63ab7a6860e8c42c8756b2773b/.agents/skills/vllm-host-memory-leak/SKILL.md) — Diagnose EngineCore/Worker host RAM growth using USS/PSS/RSS, passive notification counters, and validated BCC allocation traces with process identity and attribution evidence.
+  `vLLM Ascend` `Host memory` `BCC` `ZMQ` `Hardware depends on checks` `Workflow` · [Metadata](catalog/skills/vllm-host-memory-leak.yaml)
 
 <a id="delivery"></a>
 

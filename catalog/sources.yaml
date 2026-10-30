@@ -118,3 +118,8 @@ sources:
     license: Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated
       sources retain their terms
     maintainer: Ascend community
+  vllm-ascend-workspace:
+    repository: https://github.com/wangxiaoteng888/vllm-ascend-workspace
+    revision: bb4b39c4c1989a63ab7a6860e8c42c8756b2773b
+    license: 'MIT; bundled smem: GPL-2.0-or-later (see package NOTICE)'
+    maintainer: wangxiaoteng888 (contributed skills); Qi Mao and workspace contributors

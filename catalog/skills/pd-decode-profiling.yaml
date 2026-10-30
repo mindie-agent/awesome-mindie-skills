@@ -1,0 +1,22 @@
+id: pd-decode-profiling
+category: profiling
+summary:
+  zh: 验证 D 节点实际发生 decode 后采集短窗口 PD trace，检查逐 rank 输出并生成带 SHA-256 校验的 trace 归档。
+  en: Capture a short PD trace after confirming D-node decode activity, check per-rank outputs, and package trace views with a SHA-256 checksum.
+tags:
+- vLLM Ascend
+- PD
+- Profiling
+execution: npu
+role: workflow
+source:
+  project: vllm-ascend-workspace
+  path: .agents/skills/pd-decode-profiling/SKILL.md
+  sha256: e517b49ca02254804149235ae55ee829fa44463e43ab75974f45206c37d21e29
+review:
+  status: definition-reviewed
+  date: '2026-10-29'
+  evidence: evidence/workspace-diagnostics-definition-review-2026-10-29.md
+validation:
+  status: not-recorded
+  cases: []
