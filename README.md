@@ -70,9 +70,9 @@
 
 <!-- CATALOG:START -->
 
-344 个技能 · 10 个分类
+349 个技能 · 10 个分类
 
-定义已审阅：344 · 已有运行复现记录：1。具体范围见各条目记录。
+定义已审阅：349 · 已有运行复现记录：1。具体范围见各条目记录。
 
 | 来源项目 | 已收录 | 维护者 | 许可证 |
 |---|---|---|---|
@@ -100,6 +100,8 @@
 | [asc-devkit](https://gitcode.com/cann/asc-devkit) | 4 | CANN AscendC maintainers | CANN Open Software License v2.0 |
 | [ascend-gitcode-agent-skills](https://gitcode.com/Ascend/agent-skills) | 23 | Ascend community | Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated sources retain their terms |
 | [vllm-ascend-workspace](https://github.com/wangxiaoteng888/vllm-ascend-workspace) | 2 | wangxiaoteng888 (contributed skills); Qi Mao and workspace contributors | MIT; bundled smem: GPL-2.0-or-later (see package NOTICE) |
+| [awesome-agent-skills](https://github.com/zhaochuang001/awesome-agent-skills) | 1 | zhaochuang (zhaochuang001) | MIT |
+| [runtime-guard-docs](https://github.com/djh95/runtime-guard-docs) | 4 | djh95 | Not declared in the pinned repository root |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -780,12 +782,22 @@
   `CANNBot` `CANN` `msnpureport` `执行需 NPU` · [条目](catalog/skills/msnpureport-toolkit.yaml)
 - [pd-disaggregation-accuracy-debug](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills/blob/2852c18ac977783f336f8c8864ca84dfee3f5cc6/skills/pd-disaggregation-accuracy-debug/SKILL.md) — 从上而下或从底而上诊断 PD 精度，对齐 P 完成的 KV/state 与 D 首次消费前的内容及位置，定位原因。
   `vLLM` `vLLM Ascend` `PD` `KV Cache` `设备取决于检查项` `流程编排` · [条目](catalog/skills/pd-disaggregation-accuracy-debug.yaml)
+- [runtime-guard-config-recommender](https://github.com/djh95/runtime-guard-docs/blob/45bc2603f48f883a448ed7c2bbeed38f9a2398e1/06_agent_skills/config-recommender/SKILL.md) — 按在线巡检、单请求精确定界或热重载抓取场景生成 vLLM-Ascend runtime_guard 与 dump_kv 配置。
+  `Ascend` `vLLM Ascend` `KV cache` `Runtime Guard` `离线分析` · [条目](catalog/skills/runtime-guard-config-recommender.yaml)
+- [runtime-guard-investigation](https://github.com/djh95/runtime-guard-docs/blob/45bc2603f48f883a448ed7c2bbeed38f9a2398e1/06_agent_skills/investigation/SKILL.md) — 编排 vLLM-Ascend runtime_guard 在线异常检测、同模式同拓扑 force-feed 清洁标杆采集与 KV 十问定界闭环。
+  `Ascend` `vLLM Ascend` `KV cache` `Runtime Guard` `Accuracy` `执行需 NPU` `流程编排` · [条目](catalog/skills/runtime-guard-investigation.yaml)
+- [runtime-guard-kv-analysis](https://github.com/djh95/runtime-guard-docs/blob/45bc2603f48f883a448ed7c2bbeed38f9a2398e1/06_agent_skills/analysis/SKILL.md) — 离线汇总 runtime_guard 告警报告与漏检样本评分，关联异常请求并执行 verify_request_kv 落盘完备性硬门控与单侧 .pt 有效槽抽查（确认 PASS 后移交 ref-kv-dump 与 investigation 定界）。
+  `Ascend` `vLLM Ascend` `KV cache` `Runtime Guard` `Accuracy` `离线分析` · [条目](catalog/skills/runtime-guard-kv-analysis.yaml)
+- [runtime-guard-ref-kv-dump](https://github.com/djh95/runtime-guard-docs/blob/45bc2603f48f883a448ed7c2bbeed38f9a2398e1/06_agent_skills/ref-kv-dump/SKILL.md) — 基于异常请求 token 序列构造 n_prompt + n_output - 1 同模式同拓扑 force-feed 请求并抓取清洁对照 KV。
+  `Ascend` `vLLM Ascend` `KV cache` `Runtime Guard` `执行需 NPU` · [条目](catalog/skills/runtime-guard-ref-kv-dump.yaml)
 - [torch-npugraph-ex-dfx-triage](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/graph/torch-npugraph-ex-dfx-triage/SKILL.md) — 收集分层日志并将 npugraph_ex 问题路由到编译、运行时、精度或性能诊断。
   `CANNBot` `PyTorch` `npugraph_ex` `设备取决于检查项` `流程编排` · [条目](catalog/skills/torch-npugraph-ex-dfx-triage.yaml)
 - [triton-precision-debug](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/triton-precision-debug/SKILL.md) — 定位 Triton-Ascend 数值异常并验证针对性修复。
   `CANNBot` `Triton` `Testing and numerical validation` `执行需 NPU` · [条目](catalog/skills/triton-precision-debug.yaml)
 - [ub-boundary-check](https://gitcode.com/ascendc-agent/ascendc-skills/blob/0a46bf1d4fd373c3a8cc136aa6a4a958e9f4f236/skills/common/ub-boundary-check/SKILL.md) — 复现 UB 边界、向量读写、Mask 和搬运内存问题。
   `AscendC Agent` `Ascend C` `Testing and numerical validation` `执行需 NPU` · [条目](catalog/skills/ub-boundary-check.yaml)
+- [vllm-ascend-accuracy](https://github.com/zhaochuang001/awesome-agent-skills/blob/836e239f80cb76c45a5dd667839e40f336789472/vllm-ascend-accuracy/SKILL.md) — 针对 vLLM-Ascend 指标下降、贪婪输出偏离、乱码复读与 NaN/Inf 崩溃，结合进程环境快照、11 维单变量消融矩阵与四档修复定级排查精度问题。
+  `Ascend` `vLLM Ascend` `Accuracy` `执行需 NPU` `流程编排` · [条目](catalog/skills/vllm-ascend-accuracy.yaml)
 - [vllm-ascend-distributed-debug](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-distributed-debug/SKILL.md) — 根据拓扑和逐 rank 证据定位启动、collective、端点与卡死问题。
   `vLLM Ascend` `HCCL` `执行需 NPU` · [条目](catalog/skills/vllm-ascend-distributed-debug.yaml)
 - [vllm-ascend-graph-debug](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-graph-debug/SKILL.md) — 通过受控实验和中间快照定位图捕获、回放及 eager/graph 分歧。

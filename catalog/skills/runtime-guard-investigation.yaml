@@ -1,0 +1,25 @@
+id: runtime-guard-investigation
+category: debugging
+summary:
+  zh: 编排 vLLM-Ascend runtime_guard 在线异常检测、同模式同拓扑 force-feed 清洁标杆采集与 KV 十问定界闭环。
+  en: Orchestrate vLLM-Ascend runtime_guard online anomaly capture, same-mode/same-topology
+    force-feed reference KV collection, and Q1-Q10 KV delimitation.
+tags:
+- Ascend
+- vLLM Ascend
+- KV cache
+- Runtime Guard
+- Accuracy
+execution: npu
+role: workflow
+source:
+  project: runtime-guard-docs
+  path: 06_agent_skills/investigation/SKILL.md
+  sha256: 0e49d3954364bab30cf5f37d70afdf1b1ad7fc8940f17aafcfe77d8db1065c57
+review:
+  status: definition-reviewed
+  date: '2026-11-02'
+  evidence: evidence/accuracy-and-runtime-guard-definition-review-2026-11-02.md
+validation:
+  status: not-recorded
+  cases: []
