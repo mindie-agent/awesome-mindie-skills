@@ -70,9 +70,9 @@ Each entry's metadata links to its review scope, reproduction cases, and evidenc
 
 <!-- CATALOG:START -->
 
-344 skills · 10 categories
+349 skills · 10 categories
 
-Definitions reviewed: 344 · Entries with execution reproductions: 1. See each entry's metadata for scope.
+Definitions reviewed: 349 · Entries with execution reproductions: 1. See each entry's metadata for scope.
 
 | Upstream Source | Listed | Maintainer | License |
 |---|---|---|---|
@@ -100,6 +100,8 @@ Definitions reviewed: 344 · Entries with execution reproductions: 1. See each e
 | [asc-devkit](https://gitcode.com/cann/asc-devkit) | 4 | CANN AscendC maintainers | CANN Open Software License v2.0 |
 | [ascend-gitcode-agent-skills](https://gitcode.com/Ascend/agent-skills) | 23 | Ascend community | Apache-2.0 (code/configuration) AND CC-BY-SA-4.0 (documentation); incorporated sources retain their terms |
 | [vllm-ascend-workspace](https://github.com/wangxiaoteng888/vllm-ascend-workspace) | 2 | wangxiaoteng888 (contributed skills); Qi Mao and workspace contributors | MIT; bundled smem: GPL-2.0-or-later (see package NOTICE) |
+| [awesome-agent-skills](https://github.com/zhaochuang001/awesome-agent-skills) | 1 | zhaochuang (zhaochuang001) | MIT |
+| [runtime-guard-docs](https://github.com/djh95/runtime-guard-docs) | 4 | djh95 | Not declared in the pinned repository root |
 
 - [Environment and dependencies](#environment)
 - [Model integration and conversion](#model-integration)
@@ -787,12 +789,22 @@ HIXL、ADXL、HIXL_CS、HixlCSClient、Ascend direct transport 相关报错。
   `CANNBot` `CANN` `msnpureport` `NPU execution` · [Metadata](catalog/skills/msnpureport-toolkit.yaml)
 - [pd-disaggregation-accuracy-debug](https://github.com/nwpu-zxr/vllm-ascend-pd-disaggregation-skills/blob/2852c18ac977783f336f8c8864ca84dfee3f5cc6/skills/pd-disaggregation-accuracy-debug/SKILL.md) — Diagnose PD accuracy top-down or bottom-up, aligning completed P KV/state with D contents and placement before first consumption to establish the cause.
   `vLLM` `vLLM Ascend` `PD` `KV Cache` `Hardware depends on checks` `Workflow` · [Metadata](catalog/skills/pd-disaggregation-accuracy-debug.yaml)
+- [runtime-guard-config-recommender](https://github.com/djh95/runtime-guard-docs/blob/45bc2603f48f883a448ed7c2bbeed38f9a2398e1/06_agent_skills/config-recommender/SKILL.md) — Generate vLLM-Ascend runtime_guard detector, report, hot-reload, and dump_kv configurations for online monitoring, single-request delimitation, or manual KV capture.
+  `Ascend` `vLLM Ascend` `KV cache` `Runtime Guard` `Offline analysis` · [Metadata](catalog/skills/runtime-guard-config-recommender.yaml)
+- [runtime-guard-investigation](https://github.com/djh95/runtime-guard-docs/blob/45bc2603f48f883a448ed7c2bbeed38f9a2398e1/06_agent_skills/investigation/SKILL.md) — Orchestrate vLLM-Ascend runtime_guard online anomaly capture, same-mode/same-topology force-feed reference KV collection, and Q1-Q10 KV delimitation.
+  `Ascend` `vLLM Ascend` `KV cache` `Runtime Guard` `Accuracy` `NPU execution` `Workflow` · [Metadata](catalog/skills/runtime-guard-investigation.yaml)
+- [runtime-guard-kv-analysis](https://github.com/djh95/runtime-guard-docs/blob/45bc2603f48f883a448ed7c2bbeed38f9a2398e1/06_agent_skills/analysis/SKILL.md) — Analyze anomalous versus reference runtime_guard KV dumps using 3-level unused-slot hygiene, numeric-first gating before cosine similarity, dual-table localization, and Q1-Q10 delimitation.
+  `Ascend` `vLLM Ascend` `KV cache` `Runtime Guard` `Accuracy` `Hardware depends on checks` · [Metadata](catalog/skills/runtime-guard-kv-analysis.yaml)
+- [runtime-guard-ref-kv-dump](https://github.com/djh95/runtime-guard-docs/blob/45bc2603f48f883a448ed7c2bbeed38f9a2398e1/06_agent_skills/ref-kv-dump/SKILL.md) — Construct a same-mode, same-topology force-feed request of length n_prompt + n_output - 1 from an anomalous request trace to dump clean reference KV tensors.
+  `Ascend` `vLLM Ascend` `KV cache` `Runtime Guard` `NPU execution` · [Metadata](catalog/skills/runtime-guard-ref-kv-dump.yaml)
 - [torch-npugraph-ex-dfx-triage](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/graph/torch-npugraph-ex-dfx-triage/SKILL.md) — Collect layered logs and route npugraph_ex issues to compilation, runtime, accuracy, or performance diagnosis.
   `CANNBot` `PyTorch` `npugraph_ex` `Hardware depends on checks` `Workflow` · [Metadata](catalog/skills/torch-npugraph-ex-dfx-triage.yaml)
 - [triton-precision-debug](https://gitcode.com/cann/cannbot-skills/blob/5891c39619a56716b6f73a335ed7709560bb2da8/ops/triton-precision-debug/SKILL.md) — Diagnose Triton-Ascend numerical failures and validate a targeted repair.
   `CANNBot` `Triton` `Testing and numerical validation` `NPU execution` · [Metadata](catalog/skills/triton-precision-debug.yaml)
 - [ub-boundary-check](https://gitcode.com/ascendc-agent/ascendc-skills/blob/0a46bf1d4fd373c3a8cc136aa6a4a958e9f4f236/skills/common/ub-boundary-check/SKILL.md) — Reproduce UB boundary, vector-load/store, mask, and data-copy memory failures.
   `AscendC Agent` `Ascend C` `Testing and numerical validation` `NPU execution` · [Metadata](catalog/skills/ub-boundary-check.yaml)
+- [vllm-ascend-accuracy](https://github.com/zhaochuang001/awesome-agent-skills/blob/836e239f80cb76c45a5dd667839e40f336789472/vllm-ascend-accuracy/SKILL.md) — Diagnose vLLM-Ascend benchmark drops, greedy output divergence, repetition/gibberish, and NaN/Inf collapse using 11-dimension single-variable ablation and msprobe layerwise comparison.
+  `Ascend` `vLLM Ascend` `Accuracy` `msprobe` `NPU execution` `Workflow` · [Metadata](catalog/skills/vllm-ascend-accuracy.yaml)
 - [vllm-ascend-distributed-debug](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-distributed-debug/SKILL.md) — Diagnose Ascend multi-rank startup, collective, endpoint and hang failures using explicit topology and per-rank evidence.
   `vLLM Ascend` `HCCL` `NPU execution` · [Metadata](catalog/skills/vllm-ascend-distributed-debug.yaml)
 - [vllm-ascend-graph-debug](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-graph-debug/SKILL.md) — Localize Ascend graph capture, replay or eager/graph divergence with controlled experiments and intermediate snapshots.

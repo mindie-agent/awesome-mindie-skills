@@ -1,0 +1,26 @@
+id: runtime-guard-kv-analysis
+category: debugging
+summary:
+  zh: 对 runtime_guard 导出的异常与标杆 KV 执行未用槽三级分类、数值异常优先门控、双表定位与 Q1-Q10 十问定界。
+  en: Analyze anomalous versus reference runtime_guard KV dumps using 3-level unused-slot
+    hygiene, numeric-first gating before cosine similarity, dual-table localization,
+    and Q1-Q10 delimitation.
+tags:
+- Ascend
+- vLLM Ascend
+- KV cache
+- Runtime Guard
+- Accuracy
+execution: depends-on-checks
+role: task
+source:
+  project: runtime-guard-docs
+  path: 06_agent_skills/analysis/SKILL.md
+  sha256: a69b763c0f8500a1a3d184102acc5fd385aea61833becc3cc28d6ed65c366bd4
+review:
+  status: definition-reviewed
+  date: '2026-11-02'
+  evidence: evidence/accuracy-and-runtime-guard-definition-review-2026-11-02.md
+validation:
+  status: not-recorded
+  cases: []

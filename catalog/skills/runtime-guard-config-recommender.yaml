@@ -1,0 +1,25 @@
+id: runtime-guard-config-recommender
+category: debugging
+summary:
+  zh: 按在线巡检、单请求精确定界或热重载抓取场景生成 vLLM-Ascend runtime_guard 与 dump_kv 配置。
+  en: Generate vLLM-Ascend runtime_guard detector, report, hot-reload, and dump_kv
+    configurations for online monitoring, single-request delimitation, or manual KV
+    capture.
+tags:
+- Ascend
+- vLLM Ascend
+- KV cache
+- Runtime Guard
+execution: offline
+role: task
+source:
+  project: runtime-guard-docs
+  path: 06_agent_skills/config-recommender/SKILL.md
+  sha256: 98b7c2981f0fd5d5a4822be8bb3af6385b632f8f3ca22395f9745e44e78bda8f
+review:
+  status: definition-reviewed
+  date: '2026-11-02'
+  evidence: evidence/accuracy-and-runtime-guard-definition-review-2026-11-02.md
+validation:
+  status: not-recorded
+  cases: []

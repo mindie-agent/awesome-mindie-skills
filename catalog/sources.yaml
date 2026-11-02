@@ -123,3 +123,13 @@ sources:
     revision: bb4b39c4c1989a63ab7a6860e8c42c8756b2773b
     license: 'MIT; bundled smem: GPL-2.0-or-later (see package NOTICE)'
     maintainer: wangxiaoteng888 (contributed skills); Qi Mao and workspace contributors
+  awesome-agent-skills:
+    repository: https://github.com/zhaochuang001/awesome-agent-skills
+    revision: 836e239f80cb76c45a5dd667839e40f336789472
+    license: MIT
+    maintainer: zhaochuang (zhaochuang001)
+  runtime-guard-docs:
+    repository: https://github.com/djh95/runtime-guard-docs
+    revision: 45bc2603f48f883a448ed7c2bbeed38f9a2398e1
+    license: Not declared in the pinned repository root
+    maintainer: djh95

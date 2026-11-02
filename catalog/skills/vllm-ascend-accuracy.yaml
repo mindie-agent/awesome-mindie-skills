@@ -1,0 +1,25 @@
+id: vllm-ascend-accuracy
+category: debugging
+summary:
+  zh: 针对 vLLM-Ascend 指标下降、贪婪输出偏离、乱码复读与 NaN/Inf 崩溃，按 11 维单变量消融与 msprobe 逐层比对定位精度问题。
+  en: Diagnose vLLM-Ascend benchmark drops, greedy output divergence, repetition/gibberish,
+    and NaN/Inf collapse using 11-dimension single-variable ablation and msprobe layerwise
+    comparison.
+tags:
+- Ascend
+- vLLM Ascend
+- Accuracy
+- msprobe
+execution: npu
+role: workflow
+source:
+  project: awesome-agent-skills
+  path: vllm-ascend-accuracy/SKILL.md
+  sha256: 929c5e7cc4f3893b98274ed56f63bc65dfaaeaaf6f80aad80bcdad0b25eb975e
+review:
+  status: definition-reviewed
+  date: '2026-11-02'
+  evidence: evidence/accuracy-and-runtime-guard-definition-review-2026-11-02.md
+validation:
+  status: not-recorded
+  cases: []
