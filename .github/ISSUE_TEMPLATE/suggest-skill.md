@@ -1,6 +1,6 @@
 ---
 name: Suggest a skill
-about: Propose a skill for Ascend inference engineering
+about: Propose an existing, publicly accessible skill package for Ascend inference engineering
 title: 'Add skill: '
 labels: ''
 assignees: ''
@@ -8,7 +8,7 @@ assignees: ''
 
 ## Task and expected result
 
-Describe when someone should use this skill and what it produces.
+Describe when someone should use this skill and what it produces. Suggestions must point to an existing, publicly inspectable `SKILL.md` at a pinned commit revision (rather than an unimplemented requirement placeholder).
 
 ## Source
 
