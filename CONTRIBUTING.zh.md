@@ -6,7 +6,7 @@
 
 ## 贡献方式
 
-- **推荐新技能或技能集合**：使用[技能推荐 Issue 模板](.github/ISSUE_TEMPLATE/suggest-skill.md)，说明该技能解决的工程任务与预期产出；
+- **推荐已有公开技能或技能集合**：使用[技能推荐 Issue 模板](.github/ISSUE_TEMPLATE/suggest-skill.md)，提供公开可访问的 `SKILL.md` 路径、固定 commit、维护者与许可证（尚未实现的想法请先在上游技能仓库完成定义后再提交收录，不保留无实体的需求占位 Issue）；
 - **修正条目信息**：若发现中英文摘要、链接、前置依赖或元数据有误，可使用[条目问题反馈模板](.github/ISSUE_TEMPLATE/broken-entry.md)提交 Issue，或直接提交修正 PR；
 - **补充运行复现案例**：按照[验证规则](docs/validation-policy.zh.md)记录软硬件环境、验证范围与结果证据；
 - **改进任务导航与分类**：结合具体技能条目优化分类说明或提出新分类建议。

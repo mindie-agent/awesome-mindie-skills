@@ -69,6 +69,10 @@ workspace; do not overwrite its runtime state. Original package attribution and
 MIT/Apache/CANN license distinctions remain in the collection's ATTRIBUTION.md.
 The earlier three PD entries intentionally retain their separate reviewed source.
 
+### Operator integration, Triton-Ascend, and AscendC workflows
+
+Every skill in this catalogue is a self-contained public text/script package (`SKILL.md` plus optional `references/` and `scripts/`)—no external video walkthrough or private intranet portal is required. For integrating or reviewing operators in inference frameworks (such as MLA / custom attention bindings, `npugraph_ex` decode graph dispatch, and P/D cache layouts in vLLM Ascend) or developing standalone Triton-Ascend and AscendC kernels, start from the scenario routing map in [Triton-Ascend and AscendC operator skills](operator-skills.md#quickstart-map-by-engineering-scenario). Bundled skills under `skills/<name>/SKILL.md` in this repository (such as [`analyze-upstream-downstream`](../skills/analyze-upstream-downstream/SKILL.md)) can be loaded directly from a local clone of `awesome-mindie-skills`.
+
 ## Load the selected instructions
 
 Give your coding assistant the actual entrypoint path from `source.path` in the selected catalogue entry, the target repository, and the task inputs. If your client supports discovering skill directories, configure discovery using that client's documented settings and verify that the selected skill was loaded.

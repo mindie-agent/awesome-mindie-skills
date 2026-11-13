@@ -41,6 +41,21 @@ git -C awesome-va-skills checkout --detach 8d9f7ee56d088f15a398181590c4512bfc725
 
 按所选技能安装 Python／工具依赖，按需另行获取 AISBench 和前缀测试 wrapper。注册技能不会启动服务或下载模型；inventory 和 case 是运行时输入。合集中还保留旧 `.agents/lib/`、`.agents/scripts/` 和 `.remote-dev/` 工具；选择旧托管集成时需保留完整路径，也可使用已配置的 MindIE remote companion 工具。旧布局不声明兼容当前 MindIE 组件接口。
 
+### 新增 VA 合集工作流
+
+新增 `va-workflows`、`va-apache-workflows`、`va-hixl-workflows` 使用同一个完整合集快照，按各包的 MIT / Apache / CANN 许可证分别登记：
+
+```bash
+git clone https://github.com/Yuli-yx/awesome-va-skills.git awesome-va-collection
+git -C awesome-va-collection checkout --detach 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
+```
+
+保留完整技能包及其需要的 `.agents/lib/`、`.agents/scripts/`、`.remote-dev/`。旧执行工具尚未宣称适配新版 MindIE coordinator API，集成前先检查差异，避免覆盖现有运行状态。原始作者与许可边界见合集 `ATTRIBUTION.md`。先前三个 PD 条目继续保留各自已经审阅的来源版本；池化另走独立 PR。
+
+### 算子接入评审、Triton-Ascend 与 AscendC 工作流
+
+本目录收录的所有技能均为自包含的公开文本与脚本包（`SKILL.md` 及可选的 `references/`、`scripts/`），无需依赖外部讲解视频或内部网络门户即可直接检视与使用。若需将自定义算子（如 MLA / FlashMLA 注意力算子、`npugraph_ex` 图模式分发、P/D 缓存布局适配）接入 vLLM Ascend 等推理框架或对算子集成 PR 进行代码评审，以及独立开发 Triton-Ascend / AscendC 算子，可先按[算子专题场景导航](operator-skills.md#quickstart-map-by-engineering-scenario)选择对应入口；本仓库 `skills/<name>/SKILL.md` 下自带的技能（如 [`analyze-upstream-downstream`](../skills/analyze-upstream-downstream/SKILL.md)）克隆本仓库后即可直接加载。
+
 ## 加载技能说明
 
 向 AI 编程助手或智能体提供所选条目 `source.path` 对应的本地 `SKILL.md` 路径、目标工程仓库路径及任务输入参数。若客户端支持自动发现技能目录，可按客户端文档配置技能搜索路径，并在会话开始时确认目标技能已加载。
@@ -69,18 +84,3 @@ git -C awesome-va-skills checkout --detach 8d9f7ee56d088f15a398181590c4512bfc725
 ## 留存与分享结果
 
 执行过程中请保留源码 commit、软硬件运行环境、用例配置、原始日志与产物路径。若希望分享可复现案例或提交条目修正，请按照[贡献指南](../CONTRIBUTING.zh.md)及[验证规则](validation-policy.zh.md)中定义的字段提交。
-
-### 新增 VA 合集工作流
-
-新增 `va-workflows`、`va-apache-workflows`、`va-hixl-workflows` 使用同一个完整
-合集快照，按各包的 MIT / Apache / CANN 许可证分别登记：
-
-```bash
-git clone https://github.com/Yuli-yx/awesome-va-skills.git awesome-va-collection
-git -C awesome-va-collection checkout --detach 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
-```
-
-保留完整技能包及其需要的 `.agents/lib/`、`.agents/scripts/`、`.remote-dev/`。
-旧执行工具尚未宣称适配新版 MindIE coordinator API，集成前先检查差异，避免覆盖
-现有运行状态。原始作者与许可边界见合集 ATTRIBUTION.md。先前三个 PD 条目继续
-保留各自已经审阅的来源版本；池化另走独立 PR。

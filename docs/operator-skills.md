@@ -4,6 +4,22 @@ This topic indexes fixed public skill packages for operator specification, desig
 
 The [JSON manifest](../catalog/topics/operator-skills-2026-10-22.json) contains every retained entry, lifecycle assignment, source revision, definition hash, complete directory link, duplicate association, and scope exclusion. The [CSV table](../catalog/topics/operator-skills-2026-10-22.csv) is convenient for filtering. The catalogue-wide taxonomy remains unchanged.
 
+All listed skills are self-contained public text and script packages (`SKILL.md` plus optional `references/` and `scripts/`). No external video walkthrough or private intranet portal is required—clone the pinned public commit (or read bundled packages under `skills/`) and point your coding assistant to the relevant `SKILL.md`.
+
+## Quickstart map by engineering scenario
+
+Treat these entrypoints as an advisory map rather than a rigid checklist—load only the `SKILL.md` matching your active sub-problem and disclose supporting `references/` on demand:
+
+1. **Integrate an operator into an inference framework or review an integration PR** (for example, wiring FlashMLA / custom attention into vLLM Ascend MRv2, graph dispatch, and P/D disaggregation):
+   - **Branch / upstream port & call-binding diff**: [`analyze-upstream-downstream`](../skills/analyze-upstream-downstream/SKILL.md) ([metadata](../catalog/skills/analyze-upstream-downstream.yaml), bundled directly in this repository) traces inherited orchestration, overridden primitives, and entrypoint contracts across branches or forks.
+   - **KV cache / MLA layout & P/D compatibility**: [`model-infer-kvcache`](../catalog/skills/model-infer-kvcache.yaml) (contiguous, paged, MLA, or sliding-window KV cache + FA/MLA operator integration) and [`pd-disaggregation-design`](../catalog/skills/pd-disaggregation-design.yaml) (cache spec, shape, stride, and storage semantics across P/D connectors).
+   - **Custom-op registration, PyTorch bindings & decode graph (`npugraph_ex`) dispatch**: [`torch-custom-ops-guide`](../catalog/skills/torch-custom-ops-guide.yaml), [`torch-ascendc-op-extension`](../catalog/skills/torch-ascendc-op-extension.yaml), [`ascend-opplugin`](../catalog/skills/ascend-opplugin.yaml), [`model-infer-graph-mode`](../catalog/skills/model-infer-graph-mode.yaml), and [`vllm-ascend-graph-debug`](../catalog/skills/vllm-ascend-graph-debug.yaml).
+   - **Diff-scoped validation, MRv2 kernel checks & single-op isolation**: [`vllm-ascend-change-validation`](../catalog/skills/vllm-ascend-change-validation.yaml), [`vllm-ascend-correctness-validation`](../catalog/skills/vllm-ascend-correctness-validation.yaml), [`vllm-mrv2-kernel-workflow`](../catalog/skills/vllm-mrv2-kernel-workflow.yaml), and [`ascend-operator-debug`](../catalog/skills/ascend-operator-debug.yaml).
+2. **Develop or migrate a standalone Triton-Ascend kernel**:
+   - Check environment and build the first reference-matched candidate with [`triton-operator-env-config`](../catalog/skills/triton-operator-env-config.yaml), [`ascend-triton-operator-development`](../catalog/skills/ascend-triton-operator-development.yaml), or [`triton-ascend-migration`](../catalog/skills/triton-ascend-migration.yaml), then run shape/dtype/stride validation and per-shape profiling via [`ascend-triton-kernel-validation`](../catalog/skills/ascend-triton-kernel-validation.yaml), [`ascend-triton-kernel-optimization`](../catalog/skills/ascend-triton-kernel-optimization.yaml), or [`ascend-triton-workflow`](../catalog/skills/ascend-triton-workflow.yaml).
+3. **Develop, register, or review an AscendC custom operator**:
+   - Start from [`ascendc-env-check`](../catalog/skills/ascendc-env-check.yaml) and [`ascendc-operator-project-init`](../catalog/skills/ascendc-operator-project-init.yaml), convert direct-invocation kernels to ACLNN/GEIR registered ops with [`ascendc-direct-invoke-to-registry-invoke`](../catalog/skills/ascendc-direct-invoke-to-registry-invoke.yaml), and review or verify with [`ascendc-code-review`](../catalog/skills/ascendc-code-review.yaml), [`st-verifier`](../catalog/skills/st-verifier.yaml), and [`ascendc-evaluation`](../catalog/skills/ascendc-evaluation.yaml).
+
 ## Counts and counting units
 
 - Source review date: 2026-10-22.
@@ -12,7 +28,7 @@ The [JSON manifest](../catalog/topics/operator-skills-2026-10-22.json) contains 
 - Retained packages from these sources: **265**. Add six already-listed vLLM operator tasks for **271 operator-topic package entries** across 13 projects.
 - **264 unique definition byte sequences** appear in these 271 packages. Seven packages share definition bytes with another entry but have different scripts, references, or other directory resources; these remain separate catalogue records.
 - Definition-level split: **187 task definitions + 19 workflow definitions + 58 knowledge/case/example definitions**.
-- The full catalogue now contains **342 entries**, including unrelated pre-existing inference skills. This update adds 252 entries to the previous 90.
+- At the 2026-10-22 review snapshot, this import brought the full catalogue from 90 to **342 entries** (adding 252 entries); see the [English](../README.en.md) or [Chinese](../README.md) README for current catalogue totals as later skills are added.
 
 These are counts of fixed definitions and packages, not counts of independent capabilities or hardware-qualified workflows. Different definitions can overlap. A name match is not a deduplication rule.
 

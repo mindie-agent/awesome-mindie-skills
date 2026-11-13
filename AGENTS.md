@@ -1,6 +1,6 @@
 # Repository guidance
 
-- Maintain Chinese `README.md` and English `README.en.md` with matching examples and reciprocal links. Write other Markdown documents in English.
+- Maintain Chinese `README.md` and English `README.en.md` (along with paired `*.zh.md` / `*.md` guides where present) with matching examples and reciprocal links. Write standalone governance, topic, and evidence Markdown documents in English.
 - Edit skill metadata in `catalog/skills/`, taxonomy in `catalog/categories.yaml`, and upstream snapshots in `catalog/sources.yaml`.
 - Generate README content between `CATALOG:START` and `CATALOG:END` with `python3 scripts/render_catalog.py`. Preserve the surrounding editorial content.
 - Each skill has one primary category. Use tags for frameworks and components, and record execution conditions separately.

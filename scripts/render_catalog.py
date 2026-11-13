@@ -1,4 +1,20 @@
-"""Render bilingual README catalogue blocks from YAML."""
+"""Render bilingual README catalogue blocks from YAML.
+
+[Role]
+CLI renderer (`scripts/render_catalog.py`) generating the deterministic Markdown
+blocks between `CATALOG:START` and `CATALOG:END` in `README.md` and `README.en.md`.
+
+[Invariants]
+- Surrounding editorial sections outside the ordered marker pair are preserved.
+- `--check` fails with exit code 1 on stale blocks without mutating files.
+- Writes explicitly use Unix LF (`newline="\\n"`).
+
+[Timeouts & Locks]
+- Pure local file rendering (`< 2s`), lock-free, zero subprocesses or network calls.
+
+[Side-Effect Policy]
+- Read-only when `--check` is set; updates `README.md` and `README.en.md` otherwise.
+"""
 
 import argparse
 from pathlib import Path
@@ -91,7 +107,7 @@ def main():
             if updated != original:
                 stale.append(name)
                 if not args.check:
-                    path.write_text(updated, encoding="utf-8")
+                    path.write_text(updated, encoding="utf-8", newline="\n")
         if stale and args.check:
             raise ValueError("Stale generated content: " + ", ".join(stale))
         print("README catalogue blocks are current." if args.check else "Rendered both README catalogues.")

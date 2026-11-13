@@ -6,7 +6,7 @@ Help developers discover and share useful skills for Ascend inference engineerin
 
 ## Ways to contribute
 
-- Suggest a skill or source collection using the [skill suggestion template](.github/ISSUE_TEMPLATE/suggest-skill.md). Explain the task it addresses and the expected result.
+- Suggest an existing, publicly accessible skill or source collection using the [skill suggestion template](.github/ISSUE_TEMPLATE/suggest-skill.md) with its pinned commit, maintainer, and license (develop unimplemented ideas in an upstream skill repository first rather than opening placeholder issues).
 - Correct descriptions, translations, links, or prerequisites using the [entry issue template](.github/ISSUE_TEMPLATE/broken-entry.md), or submit a focused pull request.
 - Share a reproducible execution case with the environment, scope, and evidence described in the [validation policy](docs/validation-policy.md).
 - Improve task navigation and propose categories supported by concrete entries.
